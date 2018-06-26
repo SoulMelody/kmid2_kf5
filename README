@@ -68,7 +68,7 @@ How To Build KMid2
 cd <project_name_path>
 mkdir build
 cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`
+cmake .. -DCMAKE_INSTALL_PREFIX=`kf5-config --prefix`
 make
 make install or su -c 'make install'
 
