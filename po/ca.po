@@ -1,0 +1,2063 @@
+# Translation of kmid.po to Catalan
+# Copyright (C)
+#
+# Sebastià Pla <sastia@retemail.es>, 1999, 2000.
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2002, 2003, 2004, 2005, 2007, 2008, 2010.
+# Albert Astals Cid <astals11@terra.es>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmid\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-08-06 05:24+0200\n"
+"PO-Revision-Date: 2010-08-07 11:22+0200\n"
+"Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ca\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: alsa/alsabackend.cpp:78
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Fatal error from the ALSA sequencer backend. This usually happens when the "
+"kernel does not have ALSA support, the device node (/dev/snd/seq) does not "
+"exist, or the kernel module (snd_seq) is not loaded. Please check your ALSA/"
+"MIDI configuration. Returned error was: %1"
+msgstr ""
+"Error irrecuperable del dorsal seqüenciador de l'ALSA. Normalment passa quan "
+"el nucli no implementa l'ALSA, no existeix el node del dispositiu (/dev/snd/"
+"seq), o no el mòdul del nucli (snd_seq) no s'ha carregat. Comproveu la "
+"configuració de l'ALSA/MIDI. L'error retornat ha estat: %1"
+
+#: alsa/alsabackend.cpp:84
+msgctxt "@title:window"
+msgid "ALSA Sequencer Backend Error"
+msgstr "Error del dorsal seqüenciador per l'ALSA"
+
+#: alsa/alsabackend.cpp:209 alsa/alsabackend.cpp:223
+msgctxt "@info"
+msgid "Not found"
+msgstr "No s'ha trobat"
+
+#: alsa/alsabackend.cpp:210 alsa/alsabackend.cpp:224
+#, kde-format
+msgctxt "@info"
+msgid "Found version: %1"
+msgstr "S'ha trobat la versió: %1"
+
+#: src/playlistdialog.cpp:29
+msgctxt "@title:window"
+msgid "Manage Playlist"
+msgstr "Gestió de la llista de reproducció"
+
+#: src/main.cpp:29
+msgid "A KDE 4 MIDI/Karaoke player"
+msgstr "Un reproductor MIDI/Karaoke per al KDE 4"
+
+#: src/main.cpp:35
+msgid "KMid"
+msgstr "KMid"
+
+#: src/main.cpp:37 examples/kmidtest/kmidtest.cpp:91
+msgid "Pedro Lopez-Cabanillas"
+msgstr "Pedro Lopez-Cabanillas"
+
+#: src/main.cpp:37
+msgid "Maintainer"
+msgstr "Mantenidor"
+
+#: src/main.cpp:39
+msgid "Antonio Larrosa Jimenez"
+msgstr "Antonio Larrosa Jimenez"
+
+#: src/main.cpp:39
+msgid "Author"
+msgstr "Autor"
+
+#: src/main.cpp:43
+msgid "Song(s) to open"
+msgstr "Cançó a obrir"
+
+#: src/kmid2.cpp:169 src/kmid_part.cpp:211
+msgctxt "@info"
+msgid "No MIDI backend loaded."
+msgstr "No s'ha carregat cap dorsal de MIDI."
+
+#: src/kmid2.cpp:170 src/kmid_part.cpp:212
+msgctxt "@title:window"
+msgid "Fatal"
+msgstr "Fatal"
+
+#: src/kmid2.cpp:250
+msgctxt "@info:whatsthis"
+msgid "Exit the application"
+msgstr "Surt de l'aplicació"
+
+#: src/kmid2.cpp:252
+msgctxt "@info:whatsthis"
+msgid "Open a file from disk"
+msgstr "Obre un fitxer del disc"
+
+#: src/kmid2.cpp:254
+msgctxt "@info:whatsthis"
+msgid "Configure the program settings"
+msgstr "Configura l'arranjament del programa"
+
+#: src/kmid2.cpp:256
+msgctxt "@info:whatsthis"
+msgid "Print the lyrics"
+msgstr "Imprimeix la lletra"
+
+#: src/kmid2.cpp:261
+msgctxt "@action:inmenu"
+msgid "Save Lyrics..."
+msgstr "Desa la lletra..."
+
+#: src/kmid2.cpp:267 src/kmid_part.cpp:168
+msgctxt "@action player play"
+msgid "Play"
+msgstr "Reprodueix"
+
+#: src/kmid2.cpp:270 src/kmid_part.cpp:171
+msgctxt "@info:whatsthis"
+msgid "Start playback of the current session"
+msgstr "inicia la reproducció de la sessió actual"
+
+#: src/kmid2.cpp:276 src/kmid_part.cpp:177
+msgctxt "@action player pause"
+msgid "Pause"
+msgstr "Pausa"
+
+#: src/kmid2.cpp:278 src/kmid_part.cpp:179
+msgctxt "@info:whatsthis"
+msgid "Pause the playback"
+msgstr "Pausa la reproducció"
+
+#: src/kmid2.cpp:284
+msgctxt "@action player next song"
+msgid "Next song"
+msgstr "Cançó següent"
+
+#: src/kmid2.cpp:287
+msgctxt "@info:whatsthis"
+msgid "Next song"
+msgstr "Cançó següent"
+
+#: src/kmid2.cpp:293
+msgctxt "@action player previous song"
+msgid "Previous song"
+msgstr "Cançó prèvia"
+
+#: src/kmid2.cpp:296
+msgctxt "@info:whatsthis"
+msgid "Previous song"
+msgstr "Cançó prèvia"
+
+#: src/kmid2.cpp:302
+msgctxt "@action player skip forward"
+msgid "Forward"
+msgstr "Endavant"
+
+#: src/kmid2.cpp:304
+msgctxt "@info:whatsthis"
+msgid "Player seek forward"
+msgstr "Cerca ràpidament endavant"
+
+#: src/kmid2.cpp:310
+msgctxt "@action player skip backward"
+msgid "Rewind"
+msgstr "Rebobina"
+
+#: src/kmid2.cpp:312
+msgctxt "@info:whatsthis"
+msgid "Player seek backward"
+msgstr "Cerca ràpidament enrere"
+
+#: src/kmid2.cpp:318 src/kmid_part.cpp:185
+msgctxt "@action player stop"
+msgid "Stop"
+msgstr "Atura"
+
+#: src/kmid2.cpp:321 src/kmid_part.cpp:188
+msgctxt "@info:whatsthis"
+msgid "Stop playback or recording"
+msgstr "Atura la reproducció o la gravació"
+
+#: src/kmid2.cpp:327
+msgctxt "@action:inmenu"
+msgid "File info..."
+msgstr "Informació del fitxer..."
+
+#: src/kmid2.cpp:333
+msgctxt "@action playlist repeat"
+msgid "Repeat"
+msgstr "Repeteix"
+
+#: src/kmid2.cpp:339
+msgctxt "@action playlist shuffle"
+msgid "Shuffle"
+msgstr "Mescla"
+
+#: src/kmid2.cpp:346
+msgctxt "@action player auto-start"
+msgid "Auto-Start"
+msgstr "Inici automàtic"
+
+#: src/kmid2.cpp:351
+msgctxt "@action"
+msgid "Auto-Add to Playlist"
+msgstr "Afegeix automàticament a la llista de reproducció"
+
+#: src/kmid2.cpp:355
+msgctxt "@action"
+msgid "Load Playlist..."
+msgstr "Carrega una llista de reproducció..."
+
+#: src/kmid2.cpp:361
+msgctxt "@action"
+msgid "Save Playlist..."
+msgstr "Desa la llista de reproducció..."
+
+#: src/kmid2.cpp:367
+msgctxt "@action"
+msgid "Edit Playlist..."
+msgstr "Edita la llista de reproducció..."
+
+#: src/kmid2.cpp:373
+msgctxt "@action Pianola"
+msgid "Player Piano"
+msgstr "Teclat de piano"
+
+#: src/kmid2.cpp:374
+msgctxt "@info:whatsthis Pianola"
+msgid "Show or hide the player piano window"
+msgstr "Mostra o oculta la finestra del teclat de piano"
+
+#: src/kmid2.cpp:379
+msgctxt "@action"
+msgid "Channels"
+msgstr "Canals"
+
+#: src/kmid2.cpp:380
+msgctxt "@info:whatsthis"
+msgid "Show or hide the channels window"
+msgstr "Mostra o oculta la finestra dels canals"
+
+#: src/kmid2.cpp:385
+msgctxt "@action load song settings"
+msgid "Load"
+msgstr "Carrega"
+
+#: src/kmid2.cpp:387
+msgctxt "@info:whatsthis"
+msgid "Load the stored settings for the current song"
+msgstr "Carrega l'arranjament desat de la cançó actual"
+
+#: src/kmid2.cpp:392
+msgctxt "@action save song settings"
+msgid "Save"
+msgstr "Desa"
+
+#: src/kmid2.cpp:394
+msgctxt "@info:whatsthis"
+msgid "Save the settings of the current song"
+msgstr "Desa l'arranjament de la cançó actual"
+
+#: src/kmid2.cpp:399
+msgctxt "@action auto load/save song settings"
+msgid "Automatic"
+msgstr "Automàtic"
+
+#: src/kmid2.cpp:400
+msgctxt "@info:whatsthis"
+msgid "Automatically load and save song settings"
+msgstr "Carrega/desa automàticament l'arranjament de la cançó"
+
+#: src/kmid2.cpp:409
+msgctxt "@title:window"
+msgid "Open MIDI/Karaoke files"
+msgstr "Obre fitxers MIDI/Karaoke"
+
+#: src/kmid2.cpp:547
+msgctxt "@info:status player playing"
+msgid "playing"
+msgstr "en reproducció"
+
+#: src/kmid2.cpp:550
+msgctxt "@info:status player paused"
+msgid "paused"
+msgstr "en pausa"
+
+#: src/kmid2.cpp:553
+msgctxt "@info:status player stopped"
+msgid "stopped"
+msgstr "aturat"
+
+#: src/kmid2.cpp:557
+msgctxt "@info:status player loading"
+msgid "loading"
+msgstr "s'està carregant"
+
+#: src/kmid2.cpp:560
+msgctxt "@info:status player invalid status"
+msgid "not ready"
+msgstr "no està preparat"
+
+#: src/kmid2.cpp:570
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> [%2]"
+msgstr "<filename>%1</filename> [%2]"
+
+#: src/kmid2.cpp:792
+msgctxt "@title:group"
+msgid "Lyrics"
+msgstr "Lletres"
+
+#: src/kmid2.cpp:793
+msgctxt "@title:group"
+msgid "MIDI"
+msgstr "MIDI"
+
+#: src/kmid2.cpp:797
+msgctxt "@title:group"
+msgid "Soft Synths"
+msgstr "Sintetitzador per programari"
+
+#: src/kmid2.cpp:836
+msgctxt "@info"
+msgid "The new MIDI backend will take effect after restarting the program."
+msgstr ""
+"El nou dorsal de MIDI serà efectiu després de tornar a iniciar el programa."
+
+#: src/kmid2.cpp:838
+msgctxt "@title:window"
+msgid "MIDI Backend Changed"
+msgstr "Ha canviat el dorsal de MIDI"
+
+#: src/kmid2.cpp:937
+msgctxt "@info"
+msgid "No file loaded"
+msgstr "No s'ha carregat cap fitxer"
+
+#: src/kmid2.cpp:939
+#, kde-format
+msgctxt "@info"
+msgid "File: <filename>%1</filename><nl/>"
+msgstr "Fitxer: <filename>%1</filename><nl/>"
+
+#: src/kmid2.cpp:941 src/kmid2.cpp:945 src/kmid2.cpp:949 src/kmid2.cpp:953
+#: src/kmid2.cpp:957 src/kmid2.cpp:961 src/kmid2.cpp:965 src/kmid2.cpp:969
+msgctxt "@info"
+msgid "<nl/>"
+msgstr "<nl/>"
+
+#: src/kmid2.cpp:943
+#, kde-format
+msgctxt "@info"
+msgid "Copyright: <emphasis>%1</emphasis><nl/>"
+msgstr "Copyright: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:947
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke type: <emphasis>%1</emphasis><nl/>"
+msgstr "Tipus del Karaoke: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:951
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke version: <emphasis>%1</emphasis><nl/>"
+msgstr "Versió del Karaoke: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:955
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke info: <emphasis>%1</emphasis><nl/>"
+msgstr "Informació del Karaoke: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:959
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke language: <emphasis>%1</emphasis><nl/>"
+msgstr "Idioma del Karaoke: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:963
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke title: <emphasis>%1</emphasis><nl/>"
+msgstr "Títol del Karaoke: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:967
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke warnings: <emphasis>%1</emphasis><nl/>"
+msgstr "Avisos del Karaoke: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:970
+msgctxt "@title:window"
+msgid "Sequence Information"
+msgstr "Informació de seqüència"
+
+#: src/kmid2.cpp:980
+msgctxt "@title:window"
+msgid "Save lyrics to file"
+msgstr "Desa la lletra a un fitxer"
+
+#: src/kmid2.cpp:1028 src/kmid2.cpp:1079
+msgctxt "@title:window"
+msgid "MIDI Player connection"
+msgstr "Connexió a l'intèrpret MIDI"
+
+#: src/kmid2.cpp:1038
+msgctxt "@info"
+msgid ""
+"You need to select one MIDI port if you want to be able to listen sounds. "
+"This MIDI port may be a software synthesizer like Timidity++ or FluidSynth, "
+"or an external MIDI device, or a hardware synthesizer provided by your sound "
+"card. This setting can be changed later, using the Settings->Configure KMid-"
+">MIDI dialog. You can find more information in the <link url='help:/kmid/"
+"general-usage.html#using-midi'>online help documents</link><nl/>Please "
+"select one MIDI port now:"
+msgstr ""
+"Heu de seleccionar un port MIDI si voleu poder escoltar sons. El port MIDI "
+"pot ser un programari sintetitzador com el Timidity++ o el FluidSynth, o un "
+"dispositiu MIDI extern, o un maquinari sintetitzador proporcionat per la "
+"targeta de so. Aquest paràmetre es pot canviar més tard, utilitzant el "
+"diàleg Arranjament->Configura el KMid->MIDI. Podeu trobar més informació en "
+"els <link url='help:/kmid/general-usage.html#using-midi'>documents d'ajuda "
+"en línia</link><nl/>Seleccioneu ara un port MIDI:"
+
+#: src/kmid2.cpp:1071
+msgctxt "@info"
+msgid ""
+"There are no available MIDI ports in your system. You can specify a software "
+"synthesizer, such as TiMidity++ or FluidSynth, to be launched automatically "
+"when KMid starts. This option is located in the dialog Settings->Configure "
+"KMid, programs category. You can find more information in the <link "
+"url='help:/kmid/general-usage.html#using-midi'>online help documents</link>."
+msgstr ""
+"No hi ha cap port MIDI disponible en el sistema. Podeu especificar un "
+"programari sintetitzador com el TiMidity++ o el FluidSynth, per a que "
+"s'iniciï automàticament can engegui el KMid. Aquesta opció està ubicada en "
+"el diàleg Arranjament->Configura el KMid, en la categoria dels programes. "
+"Podeu trobar més informació en els <link url='help:/kmid/general-usage."
+"html#using-midi'>documents d'ajuda en línia</link>."
+
+#: src/kmid2.cpp:1114
+msgctxt "@title:window"
+msgid "Open playlist from file"
+msgstr "Obre la llista de reproducció des d'un fitxer"
+
+#: src/kmid2.cpp:1123
+msgctxt "@title:window"
+msgid "Save playlist to file"
+msgstr "Desa la llista de reproducció a un fitxer"
+
+#: src/kmid2.cpp:1217 src/kmid2.cpp:1261
+msgctxt "@title:window"
+msgid "Volume and Pitch"
+msgstr "Volum i to"
+
+#: src/kmid2.cpp:1226
+msgctxt "@label:slider Sound master volume"
+msgid "Vol."
+msgstr "Vol."
+
+#: src/kmid2.cpp:1230
+msgctxt "@label:slider Musical tone, note height (transpose)"
+msgid "Pitch"
+msgstr "To"
+
+#: src/kmid2.cpp:1240
+msgctxt "@info:whatsthis"
+msgid "MIDI master volume control"
+msgstr "Control mestre del volum MIDI"
+
+#: src/kmid2.cpp:1252
+msgctxt "@info:whatsthis"
+msgid "Note height transposition"
+msgstr "Transposició de l'altura de les notes"
+
+#: src/kmid2.cpp:1263
+msgctxt "@action:inmenu"
+msgid "Show or hide the volume and pitch controls"
+msgstr "Mostra o oculta els controls de volum i to"
+
+#: src/kmid2.cpp:1271 src/kmid2.cpp:1296
+msgctxt "@title:window"
+msgid "Time Position"
+msgstr "Posició del temps"
+
+#: src/kmid2.cpp:1282 src/kmid_partview.cpp:78
+msgctxt "@info:whatsthis"
+msgid "Time position control"
+msgstr "Control de posició del temps"
+
+#: src/kmid2.cpp:1298
+msgctxt "@action:inmenu"
+msgid "Show or hide the time position controls"
+msgstr "Mostra o oculta els controls de posició del temps"
+
+#: src/kmid2.cpp:1303 src/kmid2.cpp:1315
+msgctxt "@title:window"
+msgid "Text Encoding"
+msgstr "Codificació de text"
+
+#: src/kmid2.cpp:1307
+msgctxt "@info:whatsthis"
+msgid "Character encoding for lyrics and other text"
+msgstr "Codificació dels caràcters per a la lletra i altres texts"
+
+#: src/kmid2.cpp:1308
+msgctxt "@item:inlistbox Default MIDI text encoding"
+msgid "Default ( ASCII )"
+msgstr "Per defecte (ASCII)"
+
+#: src/kmid2.cpp:1317
+msgctxt "@action:inmenu"
+msgid "Show or hide the character encoding control"
+msgstr "Mostra o oculta el control de la codificació dels caràcters"
+
+#: src/kmid2.cpp:1322 src/kmid2.cpp:1377
+msgctxt "@title:window"
+msgid "Rhythm"
+msgstr "Ritme"
+
+#: src/kmid2.cpp:1329
+msgctxt "@label"
+msgid "Tempo:"
+msgstr "Tempo:"
+
+#: src/kmid2.cpp:1336
+msgctxt "@label:slider bpm=beats per minute"
+msgid "120.0 bpm"
+msgstr "120.0 bpm"
+
+#: src/kmid2.cpp:1337
+msgctxt "@info:whatsthis"
+msgid "Tempo, or song speed in beats per minute"
+msgstr "Tempo, o velocitat de la cançó en cops per minut"
+
+#: src/kmid2.cpp:1347
+msgctxt "@info:whatsthis"
+msgid "Tempo (song speed) control, between 50% and 200%"
+msgstr "Control del tempo (velocitat de la cançó), entre 50% i 200%"
+
+#: src/kmid2.cpp:1352
+msgctxt "@action:button"
+msgid "100%"
+msgstr "100%"
+
+#: src/kmid2.cpp:1353
+msgctxt "@info:whatsthis"
+msgid "Reset the song tempo (song speed) to 100%"
+msgstr "Restaura el tempo de la cançó (velocitat de la cançó) al 100%"
+
+#: src/kmid2.cpp:1357
+msgctxt "@label"
+msgid "Metronome:"
+msgstr "Metrònom:"
+
+#: src/kmid2.cpp:1365
+msgctxt "@info:whatsthis"
+msgid "Time position in measures:beats"
+msgstr "Posició del temps en mesures: cops"
+
+#: src/kmid2.cpp:1370
+msgctxt "@info:whatsthis"
+msgid "Visual metronome"
+msgstr "Metrònom visual"
+
+#: src/kmid2.cpp:1379
+msgctxt "@action:inmenu"
+msgid "Show or hide the rhythm controls"
+msgstr "Mostra o oculta els controls del ritme"
+
+#: src/kmid2.cpp:1387
+msgctxt "@info:whatsthis"
+msgid "Song lyrics, or some other text"
+msgstr "Lletra de la cançó, o algun altre text "
+
+#: src/kmid2.cpp:1410
+msgctxt "@label"
+msgid "Sample Songs"
+msgstr "Cançons d'exemple"
+
+#: src/kmid2.cpp:1421
+msgctxt "@label"
+msgid "System Songs"
+msgstr "Cançons del sistema"
+
+#: src/kmid2.cpp:1514 src/kmid_part.cpp:340
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Failed to run %2 with the provided arguments.<nl/>Returned message:<nl/>%3"
+msgid_plural ""
+"Failed to run %2 with the provided arguments.<nl/>Returned messages:<nl/>%3"
+msgstr[0] ""
+"Ha fallat en executar %2 amb els arguments assignats.<nl/>Missatge retornat:"
+"<nl/>%3"
+msgstr[1] ""
+"Ha fallat en executar %2 amb els arguments assignats.<nl/>Missatges "
+"retornats:<nl/>%3"
+
+#: src/kmid2.cpp:1520 src/kmid_part.cpp:346
+#, kde-format
+msgctxt "@title:window"
+msgid "%1 startup failed"
+msgstr "Fa fallat l'inici del %1"
+
+#: src/kmid2.cpp:1542 src/kmid_part.cpp:323
+#, kde-format
+msgctxt "@info"
+msgid ""
+"%2 has returned the following message when launched with the provided "
+"arguments."
+msgid_plural ""
+"%2 has returned the following messages when launched with the provided "
+"arguments."
+msgstr[0] ""
+"%2 ha retornat el missatge següent quan s'ha executat amb els arguments "
+"assignats."
+msgstr[1] ""
+"%2 ha retornat els missatges següents quan s'ha executat amb els arguments "
+"assignats."
+
+#: src/kmid2.cpp:1549 src/kmid_part.cpp:330
+#, kde-format
+msgctxt "@title:window"
+msgid "%2 message"
+msgid_plural "%2 messages"
+msgstr[0] "%2 missatge"
+msgstr[1] "%2 missatges"
+
+#: src/pianola.cpp:39
+msgctxt "@title:window"
+msgid "Player Piano"
+msgstr "Teclat de piano"
+
+#: src/pianola.cpp:45
+msgctxt "@title:menu"
+msgid "MIDI Channels"
+msgstr "Canals del MIDI"
+
+#: src/pianola.cpp:47
+msgctxt "@action:inmenu"
+msgid "Show all channels"
+msgstr "Mostra tots els canals"
+
+#: src/pianola.cpp:51
+msgctxt "@action:inmenu"
+msgid "Hide all channels"
+msgstr "Oculta tots els canals"
+
+#: src/pianola.cpp:82
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "Channel %1"
+msgstr "Canal %1"
+
+#: src/instrumentset.cpp:35
+msgctxt "@item:inlistbox"
+msgid "Acoustic Grand Piano"
+msgstr "Gran piano acústic"
+
+#: src/instrumentset.cpp:36
+msgctxt "@item:inlistbox"
+msgid "Bright Acoustic Piano"
+msgstr "Piano brillant acústic"
+
+#: src/instrumentset.cpp:37
+msgctxt "@item:inlistbox"
+msgid "Electric Grand Piano"
+msgstr "Gran piano elèctric"
+
+#: src/instrumentset.cpp:38
+msgctxt "@item:inlistbox"
+msgid "Honky-Tonk"
+msgstr "Honky-Tonk"
+
+#: src/instrumentset.cpp:39
+msgctxt "@item:inlistbox"
+msgid "Rhodes Piano"
+msgstr "Piano Rhodes"
+
+#: src/instrumentset.cpp:40
+msgctxt "@item:inlistbox"
+msgid "Chorused Piano"
+msgstr "Piano amb cor"
+
+#: src/instrumentset.cpp:41
+msgctxt "@item:inlistbox"
+msgid "Harpsichord"
+msgstr "Clavicèmbal"
+
+#: src/instrumentset.cpp:42
+msgctxt "@item:inlistbox"
+msgid "Clavinet"
+msgstr "Clavinet"
+
+#: src/instrumentset.cpp:43
+msgctxt "@item:inlistbox"
+msgid "Celesta"
+msgstr "Celesta"
+
+#: src/instrumentset.cpp:44
+msgctxt "@item:inlistbox"
+msgid "Glockenspiel"
+msgstr "Glockenspiel"
+
+#: src/instrumentset.cpp:45
+msgctxt "@item:inlistbox"
+msgid "Music Box"
+msgstr "Caixa de música"
+
+#: src/instrumentset.cpp:46
+msgctxt "@item:inlistbox"
+msgid "Vibraphone"
+msgstr "Vibràfon"
+
+#: src/instrumentset.cpp:47
+msgctxt "@item:inlistbox"
+msgid "Marimba"
+msgstr "Marimba"
+
+#: src/instrumentset.cpp:48
+msgctxt "@item:inlistbox"
+msgid "Xylophone"
+msgstr "Xilòfon"
+
+#: src/instrumentset.cpp:49
+msgctxt "@item:inlistbox"
+msgid "Tubular Bells"
+msgstr "Campanes tubulars"
+
+#: src/instrumentset.cpp:50
+msgctxt "@item:inlistbox"
+msgid "Dulcimer"
+msgstr "Dulcimer"
+
+#: src/instrumentset.cpp:51
+msgctxt "@item:inlistbox"
+msgid "Hammond Organ"
+msgstr "Orgue Hammond"
+
+#: src/instrumentset.cpp:52
+msgctxt "@item:inlistbox"
+msgid "Percussive Organ"
+msgstr "Orgue de percussió"
+
+#: src/instrumentset.cpp:53
+msgctxt "@item:inlistbox"
+msgid "Rock Organ"
+msgstr "Orgue de rock"
+
+#: src/instrumentset.cpp:54
+msgctxt "@item:inlistbox"
+msgid "Church Organ"
+msgstr "Orgue d'església"
+
+#: src/instrumentset.cpp:55
+msgctxt "@item:inlistbox"
+msgid "Reed Organ"
+msgstr "Orgue Reed"
+
+#: src/instrumentset.cpp:56
+msgctxt "@item:inlistbox"
+msgid "Accordion"
+msgstr "Acordió"
+
+#: src/instrumentset.cpp:57
+msgctxt "@item:inlistbox"
+msgid "Harmonica"
+msgstr "Harmònica"
+
+#: src/instrumentset.cpp:58
+msgctxt "@item:inlistbox"
+msgid "Tango Accordion"
+msgstr "Acordió de tango"
+
+#: src/instrumentset.cpp:59
+msgctxt "@item:inlistbox"
+msgid "Acoustic Guitar (Nylon)"
+msgstr "Guitarra acústica (niló)"
+
+#: src/instrumentset.cpp:60
+msgctxt "@item:inlistbox"
+msgid "Acoustic Guitar (Steel)"
+msgstr "Guitarra acústica (acer)"
+
+#: src/instrumentset.cpp:61
+msgctxt "@item:inlistbox"
+msgid "Electric Guitar (Jazz)"
+msgstr "Guitarra elèctrica (jazz)"
+
+#: src/instrumentset.cpp:62
+msgctxt "@item:inlistbox"
+msgid "Electric Guitar (Clean)"
+msgstr "Guitarra elèctrica (neta)"
+
+#: src/instrumentset.cpp:63
+msgctxt "@item:inlistbox"
+msgid "Electric Guitar (Muted)"
+msgstr "Guitarra elèctrica (amb sordina)"
+
+#: src/instrumentset.cpp:64
+msgctxt "@item:inlistbox"
+msgid "Overdriven Guitar"
+msgstr "Guitarra sobresaturada"
+
+#: src/instrumentset.cpp:65
+msgctxt "@item:inlistbox"
+msgid "Distortion Guitar"
+msgstr "Guitarra distorsionada"
+
+#: src/instrumentset.cpp:66
+msgctxt "@item:inlistbox"
+msgid "Guitar Harmonics"
+msgstr "Harmònics de guitarra"
+
+#: src/instrumentset.cpp:67
+msgctxt "@item:inlistbox"
+msgid "Acoustic Bass"
+msgstr "Baix acústic"
+
+#: src/instrumentset.cpp:68
+msgctxt "@item:inlistbox"
+msgid "Electric Bass (Finger)"
+msgstr "Baix elèctric (dit)"
+
+#: src/instrumentset.cpp:69
+msgctxt "@item:inlistbox"
+msgid "Electric Bass (Pick)"
+msgstr "Baix elèctric (pua)"
+
+#: src/instrumentset.cpp:70
+msgctxt "@item:inlistbox"
+msgid "Fretless Bass"
+msgstr "Baix sense trasts"
+
+#: src/instrumentset.cpp:71
+msgctxt "@item:inlistbox"
+msgid "Slap Bass 1"
+msgstr "Baix palmejat 1"
+
+#: src/instrumentset.cpp:72
+msgctxt "@item:inlistbox"
+msgid "Slap Bass 2"
+msgstr "Baix palmejat 2"
+
+#: src/instrumentset.cpp:73
+msgctxt "@item:inlistbox"
+msgid "Synth Bass 1"
+msgstr "Baix sintetitzat 1"
+
+#: src/instrumentset.cpp:74
+msgctxt "@item:inlistbox"
+msgid "Synth Bass 2"
+msgstr "Baix sintetitzat 2"
+
+#: src/instrumentset.cpp:75
+msgctxt "@item:inlistbox"
+msgid "Violin"
+msgstr "Violí"
+
+#: src/instrumentset.cpp:76
+msgctxt "@item:inlistbox"
+msgid "Viola"
+msgstr "Viola"
+
+#: src/instrumentset.cpp:77
+msgctxt "@item:inlistbox"
+msgid "Cello"
+msgstr "Violoncel"
+
+#: src/instrumentset.cpp:78
+msgctxt "@item:inlistbox"
+msgid "Contrabass"
+msgstr "Contrabaix"
+
+#: src/instrumentset.cpp:79
+msgctxt "@item:inlistbox"
+msgid "Tremolo Strings"
+msgstr "Cordes de trèmolo"
+
+#: src/instrumentset.cpp:80
+msgctxt "@item:inlistbox"
+msgid "Pizzicato Strings"
+msgstr "Cordes de pizzicato"
+
+#: src/instrumentset.cpp:81
+msgctxt "@item:inlistbox"
+msgid "Orchestral Harp"
+msgstr "Arpa orquestral"
+
+#: src/instrumentset.cpp:82
+msgctxt "@item:inlistbox"
+msgid "Timpani"
+msgstr "Timbals"
+
+#: src/instrumentset.cpp:83
+msgctxt "@item:inlistbox"
+msgid "String Ensemble 1"
+msgstr "Conjunt de corda 1"
+
+#: src/instrumentset.cpp:84
+msgctxt "@item:inlistbox"
+msgid "String Ensemble 2"
+msgstr "Conjunt de corda 2"
+
+#: src/instrumentset.cpp:85
+msgctxt "@item:inlistbox"
+msgid "Synth Strings 1"
+msgstr "Cordes sintetitzades 1"
+
+#: src/instrumentset.cpp:86
+msgctxt "@item:inlistbox"
+msgid "Synth Strings 2"
+msgstr "Cordes sintetitzades 2"
+
+#: src/instrumentset.cpp:87
+msgctxt "@item:inlistbox"
+msgid "Choir Aahs"
+msgstr "Aahs de cor"
+
+#: src/instrumentset.cpp:88
+msgctxt "@item:inlistbox"
+msgid "Voice Oohs"
+msgstr "Oohs de veu"
+
+#: src/instrumentset.cpp:89
+msgctxt "@item:inlistbox"
+msgid "Synth Voice"
+msgstr "Veu sintetitzada"
+
+#: src/instrumentset.cpp:90
+msgctxt "@item:inlistbox blow, stroke, impact"
+msgid "Orchestra Hit"
+msgstr "Cop d'orquestra"
+
+#: src/instrumentset.cpp:91
+msgctxt "@item:inlistbox"
+msgid "Trumpet"
+msgstr "Trompeta"
+
+#: src/instrumentset.cpp:92
+msgctxt "@item:inlistbox"
+msgid "Trombone"
+msgstr "Trombó"
+
+#: src/instrumentset.cpp:93
+msgctxt "@item:inlistbox"
+msgid "Tuba"
+msgstr "Tuba"
+
+#: src/instrumentset.cpp:94
+msgctxt "@item:inlistbox"
+msgid "Muted Trumpet"
+msgstr "Trompeta amb sordina"
+
+#: src/instrumentset.cpp:95
+msgctxt "@item:inlistbox"
+msgid "French Horn"
+msgstr "Trompa francesa"
+
+#: src/instrumentset.cpp:96
+msgctxt "@item:inlistbox"
+msgid "Brass Section"
+msgstr "Secció de vent"
+
+#: src/instrumentset.cpp:97
+msgctxt "@item:inlistbox"
+msgid "Synth Brass 1"
+msgstr "Vent sintetitzat 1"
+
+#: src/instrumentset.cpp:98
+msgctxt "@item:inlistbox"
+msgid "Synth Brass 2"
+msgstr "Vent sintetitzat 2"
+
+#: src/instrumentset.cpp:99
+msgctxt "@item:inlistbox"
+msgid "Soprano Sax"
+msgstr "Saxòfon soprano"
+
+#: src/instrumentset.cpp:100
+msgctxt "@item:inlistbox"
+msgid "Alto Sax"
+msgstr "Saxòfon alt"
+
+#: src/instrumentset.cpp:101
+msgctxt "@item:inlistbox"
+msgid "Tenor Sax"
+msgstr "Saxòfon tenor"
+
+#: src/instrumentset.cpp:102
+msgctxt "@item:inlistbox"
+msgid "Baritone Sax"
+msgstr "Saxòfon baríton"
+
+#: src/instrumentset.cpp:103
+msgctxt "@item:inlistbox"
+msgid "Oboe"
+msgstr "Oboè"
+
+#: src/instrumentset.cpp:104
+msgctxt "@item:inlistbox"
+msgid "English Horn"
+msgstr "Trompa anglesa"
+
+#: src/instrumentset.cpp:105
+msgctxt "@item:inlistbox"
+msgid "Bassoon"
+msgstr "Fagot"
+
+#: src/instrumentset.cpp:106
+msgctxt "@item:inlistbox"
+msgid "Clarinet"
+msgstr "Clarinet"
+
+#: src/instrumentset.cpp:107
+msgctxt "@item:inlistbox"
+msgid "Piccolo"
+msgstr "Flautí"
+
+#: src/instrumentset.cpp:108
+msgctxt "@item:inlistbox"
+msgid "Flute"
+msgstr "Flauta"
+
+#: src/instrumentset.cpp:109
+msgctxt ""
+"@item:inlistbox woodwind musical instrument. http://en.wikipedia.org/wiki/"
+"Recorder"
+msgid "Recorder"
+msgstr "Flauta dolça"
+
+#: src/instrumentset.cpp:110
+msgctxt "@item:inlistbox"
+msgid "Pan Flute"
+msgstr "Flauta de Pan"
+
+#: src/instrumentset.cpp:111
+msgctxt "@item:inlistbox"
+msgid "Blown Bottle"
+msgstr "Ampolla bufada"
+
+#: src/instrumentset.cpp:112
+msgctxt "@item:inlistbox"
+msgid "Shakuhachi"
+msgstr "Shakuhachi"
+
+#: src/instrumentset.cpp:113
+msgctxt "@item:inlistbox"
+msgid "Whistle"
+msgstr "Xiulet"
+
+#: src/instrumentset.cpp:114
+msgctxt "@item:inlistbox"
+msgid "Ocarina"
+msgstr "Ocarina"
+
+#: src/instrumentset.cpp:115
+msgctxt "@item:inlistbox"
+msgid "Lead 1 - Square Wave"
+msgstr "Veu 1 - Ona quadrada"
+
+#: src/instrumentset.cpp:116
+msgctxt "@item:inlistbox"
+msgid "Lead 2 - Saw Tooth"
+msgstr "Veu 2 - Dent de serra"
+
+#: src/instrumentset.cpp:117
+msgctxt "@item:inlistbox"
+msgid "Lead 3 - Calliope"
+msgstr "Veu 3 - Calliope"
+
+#: src/instrumentset.cpp:118
+msgctxt "@item:inlistbox"
+msgid "Lead 4 - Chiflead"
+msgstr "Veu 4 - Veu cantant"
+
+#: src/instrumentset.cpp:119
+msgctxt "@item:inlistbox"
+msgid "Lead 5 - Charang"
+msgstr "Veu 5 - Xaranga"
+
+#: src/instrumentset.cpp:120
+msgctxt "@item:inlistbox"
+msgid "Lead 6 - Voice"
+msgstr "Veu 6 - Veu"
+
+#: src/instrumentset.cpp:121
+msgctxt "@item:inlistbox"
+msgid "Lead 7 - Fifths"
+msgstr "Veu 7 - Cinquens"
+
+#: src/instrumentset.cpp:122
+msgctxt "@item:inlistbox"
+msgid "Lead 8 - Bass+Lead"
+msgstr "Veu 8 - Baix i veu"
+
+#: src/instrumentset.cpp:123
+msgctxt "@item:inlistbox"
+msgid "Pad 1 - New Age"
+msgstr "Acompanyament 1 - New Age"
+
+#: src/instrumentset.cpp:124
+msgctxt "@item:inlistbox"
+msgid "Pad 2 - Warm"
+msgstr "Acompanyament 2 - Càlid"
+
+#: src/instrumentset.cpp:125
+msgctxt "@item:inlistbox"
+msgid "Pad 3 - Polysynth"
+msgstr "Acompanyament 3 - Polisintetitzat"
+
+#: src/instrumentset.cpp:126
+msgctxt "@item:inlistbox"
+msgid "Pad 4 - Choir"
+msgstr "Acompanyament 4 - Cor"
+
+#: src/instrumentset.cpp:127
+msgctxt "@item:inlistbox"
+msgid "Pad 5 - Bow"
+msgstr "Acompanyament 5 - Arc"
+
+#: src/instrumentset.cpp:128
+msgctxt "@item:inlistbox"
+msgid "Pad 6 - Metallic"
+msgstr "Acompanyament 6 - Metàl·lic"
+
+#: src/instrumentset.cpp:129
+msgctxt "@item:inlistbox"
+msgid "Pad 7 - Halo"
+msgstr "Acompanyament 7 - Halo"
+
+#: src/instrumentset.cpp:130
+msgctxt "@item:inlistbox"
+msgid "Pad 8 - Sweep"
+msgstr "Acompanyament 8 - Escombrat"
+
+#: src/instrumentset.cpp:131
+msgctxt "@item:inlistbox"
+msgid "FX 1 - Rain"
+msgstr "FX 1 - Pluja"
+
+#: src/instrumentset.cpp:132
+msgctxt "@item:inlistbox"
+msgid "FX 2 - Soundtrack"
+msgstr "FX 2 - Banda sonora"
+
+#: src/instrumentset.cpp:133
+msgctxt "@item:inlistbox"
+msgid "FX 3 - Crystal"
+msgstr "FX 3 - Cristall"
+
+#: src/instrumentset.cpp:134
+msgctxt "@item:inlistbox"
+msgid "FX 4 - Atmosphere"
+msgstr "FX 4 - Atmosfera"
+
+#: src/instrumentset.cpp:135
+msgctxt "@item:inlistbox"
+msgid "FX 5 - Brightness"
+msgstr "FX 5 - Brillantor"
+
+#: src/instrumentset.cpp:136
+msgctxt "@item:inlistbox"
+msgid "FX 6 - Goblins"
+msgstr "FX 6 - Bubotes"
+
+#: src/instrumentset.cpp:137
+msgctxt "@item:inlistbox"
+msgid "FX 7 - Echoes"
+msgstr "FX 7 - Ecos"
+
+#: src/instrumentset.cpp:138
+msgctxt "@item:inlistbox"
+msgid "FX 8 - Sci-fi"
+msgstr "FX 8 - Ciència ficció"
+
+#: src/instrumentset.cpp:139
+msgctxt "@item:inlistbox"
+msgid "Sitar"
+msgstr "Sitar"
+
+#: src/instrumentset.cpp:140
+msgctxt "@item:inlistbox"
+msgid "Banjo"
+msgstr "Banjo"
+
+#: src/instrumentset.cpp:141
+msgctxt "@item:inlistbox"
+msgid "Shamisen"
+msgstr "Shamisen"
+
+#: src/instrumentset.cpp:142
+msgctxt "@item:inlistbox"
+msgid "Koto"
+msgstr "Koto"
+
+#: src/instrumentset.cpp:143
+msgctxt "@item:inlistbox"
+msgid "Kalimba"
+msgstr "Kalimba"
+
+#: src/instrumentset.cpp:144
+msgctxt "@item:inlistbox"
+msgid "Bagpipe"
+msgstr "Gaita"
+
+#: src/instrumentset.cpp:145
+msgctxt "@item:inlistbox"
+msgid "Fiddle"
+msgstr "Violí"
+
+#: src/instrumentset.cpp:146
+msgctxt "@item:inlistbox"
+msgid "Shannai"
+msgstr "Shannai"
+
+#: src/instrumentset.cpp:147
+msgctxt "@item:inlistbox"
+msgid "Tinkle Bell"
+msgstr "Campanetes"
+
+#: src/instrumentset.cpp:148
+msgctxt "@item:inlistbox"
+msgid "Agogo"
+msgstr "Agogo"
+
+#: src/instrumentset.cpp:149
+msgctxt "@item:inlistbox"
+msgid "Steel Drum"
+msgstr "Timbal metàl·lic"
+
+#: src/instrumentset.cpp:150
+msgctxt "@item:inlistbox"
+msgid "Wood Block"
+msgstr "Bloc de fusta"
+
+#: src/instrumentset.cpp:151
+msgctxt "@item:inlistbox"
+msgid "Taiko Drum"
+msgstr "Timbal taiko"
+
+#: src/instrumentset.cpp:152
+msgctxt "@item:inlistbox"
+msgid "Melodic Tom"
+msgstr "Timbal melòdic"
+
+#: src/instrumentset.cpp:153
+msgctxt "@item:inlistbox"
+msgid "Synth Drum"
+msgstr "Timbal sintetitzat"
+
+#: src/instrumentset.cpp:154
+msgctxt "@item:inlistbox"
+msgid "Reverse Cymbal"
+msgstr "Platet invertit"
+
+#: src/instrumentset.cpp:155
+msgctxt "@item:inlistbox"
+msgid "Guitar Fret Noise"
+msgstr "Soroll de trasts"
+
+#: src/instrumentset.cpp:156
+msgctxt "@item:inlistbox"
+msgid "Breath Noise"
+msgstr "Soroll de respiració"
+
+#: src/instrumentset.cpp:157
+msgctxt "@item:inlistbox"
+msgid "Seashore"
+msgstr "Platja"
+
+#: src/instrumentset.cpp:158
+msgctxt "@item:inlistbox"
+msgid "Bird Tweet"
+msgstr "Piular d'ocells"
+
+#: src/instrumentset.cpp:159
+msgctxt "@item:inlistbox"
+msgid "Telephone"
+msgstr "Telèfon"
+
+#: src/instrumentset.cpp:160
+msgctxt "@item:inlistbox"
+msgid "Helicopter"
+msgstr "Helicòpter"
+
+#: src/instrumentset.cpp:161
+msgctxt "@item:inlistbox"
+msgid "Applause"
+msgstr "Aplaudiment"
+
+#: src/instrumentset.cpp:162
+msgctxt "@item:inlistbox"
+msgid "Gunshot"
+msgstr "Tret"
+
+#: src/instrumentset.cpp:166
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Percussion %1"
+msgstr "Percussió %1"
+
+#: src/channels.cpp:42
+msgctxt "@title:window"
+msgid "MIDI Channels"
+msgstr "Canals del MIDI"
+
+#: src/channels.cpp:54
+msgctxt "MIDI channel number"
+msgid "Channel"
+msgstr "Canal"
+
+#: src/channels.cpp:57
+msgctxt "Sound muting"
+msgid "Mute"
+msgstr "Silenci"
+
+#: src/channels.cpp:60
+msgctxt "Soloist channel"
+msgid "Solo"
+msgstr "Solo"
+
+#: src/channels.cpp:63
+msgctxt "Channel volume level"
+msgid "Level"
+msgstr "Nivell"
+
+#: src/channels.cpp:66
+msgctxt "Instrument locked"
+msgid "Lock"
+msgstr "Bloqueig"
+
+#: src/channels.cpp:69
+msgctxt "MIDI program/patch, predefined instrument"
+msgid "Patch (sound setting)"
+msgstr "Modificació (configuració de so)"
+
+#: src/kmid_part.cpp:434
+msgctxt "@title"
+msgid "KMidPart"
+msgstr "KMidPart"
+
+#: src/kmid_part.cpp:435
+msgctxt "@info:credit"
+msgid "Pedro Lopez-Cabanillas"
+msgstr "Pedro Lopez-Cabanillas"
+
+#: src/kmid_part.cpp:436
+msgctxt "@info:credit"
+msgid "Maintainer"
+msgstr "Mantenidor"
+
+#: src/kmid_partview.cpp:60
+msgctxt "@info:whatsthis"
+msgid "Player play/stop control"
+msgstr "Control «reproducció/aturada» del reproductor"
+
+#: src/kmid_partview.cpp:61
+msgctxt "@info:tooltip player button"
+msgid "Play/Stop"
+msgstr "Reproducció/aturada"
+
+#: src/kmid_partview.cpp:68
+msgctxt "@info:whatsthis"
+msgid "Player pause control"
+msgstr "Control «pausa» del reproductor"
+
+#: src/kmid_partview.cpp:69
+msgctxt "@info:tooltip player button"
+msgid "Pause"
+msgstr "Pausa"
+
+#: src/kmid_partview.cpp:79
+msgctxt "@info:tooltip player button"
+msgid "Time position"
+msgstr "Posició del temps"
+
+#: src/kmid_partview.cpp:91
+msgctxt "@info:whatsthis"
+msgid "Volume factor control"
+msgstr "Control del factor de volum"
+
+#: src/kmid_partview.cpp:92
+msgctxt "@info:tooltip player control"
+msgid "Volume factor"
+msgstr "Factor de volum"
+
+#: src/kmid_partview.cpp:106
+msgctxt "@info:whatsthis"
+msgid "Pitch transpose control"
+msgstr "Control de la transposició de to"
+
+#: src/kmid_partview.cpp:107
+msgctxt "@info:tooltip player control"
+msgid "Pitch transpose"
+msgstr "Transposició de to"
+
+#: src/kmid_partview.cpp:121
+msgctxt "@info:whatsthis"
+msgid "Speed factor reset"
+msgstr "Reinicialització del factor de velocitat"
+
+#: src/kmid_partview.cpp:122
+msgctxt "@info:tooltip player button"
+msgid "Speed reset"
+msgstr "Reinicialitza la velocitat"
+
+#: src/kmid_partview.cpp:129
+msgctxt "@info:whatsthis"
+msgid "Speed factor control"
+msgstr "Control del factor de velocitat"
+
+#: src/kmid_partview.cpp:130
+msgctxt "@info:tooltip player control"
+msgid "Speed factor"
+msgstr "Factor de velocitat"
+
+#: examples/kmidtest/kmidtest.cpp:51
+msgid "Could not find KMidPart!"
+msgstr "No s'ha pogut trobar la KMidPart"
+
+#: examples/kmidtest/kmidtest.cpp:81
+msgid "A KDE KPart Application"
+msgstr "Una aplicació KPart del KDE"
+
+#: examples/kmidtest/kmidtest.cpp:87
+msgid "KMidTest"
+msgstr "KMidTest"
+
+#: examples/kmidtest/kmidtest.cpp:89
+msgid "(C) 2010 Pedro Lopez-Cabanillas"
+msgstr "(C) 2010 Pedro Lopez-Cabanillas"
+
+#: examples/kmidtest/kmidtest.cpp:95
+msgid "Song to open"
+msgstr "Cançó a obrir"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sebastià Pla i Sanz,Josep Ma. Ferrer"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sps@sastia.com,txemaq@gmail.com"
+
+#. i18n: file: alsa/prefs_progs.ui:30
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_exec_fluid)
+#. i18n: file: library/kmid.kcfg:71
+#. i18n: ectx: label, entry (exec_fluid), group (Settings)
+#: rc.cpp:6 rc.cpp:193
+msgid "Run FluidSynth at startup"
+msgstr "Executa el FluidSynth en iniciar"
+
+#. i18n: file: alsa/prefs_progs.ui:37
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: alsa/prefs_progs.ui:204
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:9 rc.cpp:52
+msgid "Command:"
+msgstr "Ordre:"
+
+#. i18n: file: alsa/prefs_progs.ui:47
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_cmd_fluid)
+#. i18n: file: alsa/prefs_progs.ui:214
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_cmd_timidity)
+#: rc.cpp:12 rc.cpp:55
+msgid "application/x-executable"
+msgstr "application/x-executable"
+
+#. i18n: file: alsa/prefs_progs.ui:54
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: file: alsa/prefs_progs.ui:228
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: rc.cpp:15 rc.cpp:61
+msgid "Audio Output:"
+msgstr "Sortida d'àudio:"
+
+#. i18n: file: alsa/prefs_progs.ui:68
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:242
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:18 rc.cpp:64
+msgid "alsa"
+msgstr "alsa"
+
+#. i18n: file: alsa/prefs_progs.ui:73
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:247
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:21 rc.cpp:67
+msgid "pulseaudio"
+msgstr "pulseaudio"
+
+#. i18n: file: alsa/prefs_progs.ui:78
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:252
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:24 rc.cpp:70
+msgid "oss"
+msgstr "oss"
+
+#. i18n: file: alsa/prefs_progs.ui:83
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:257
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:27 rc.cpp:73
+msgid "jack"
+msgstr "jack"
+
+#. i18n: file: alsa/prefs_progs.ui:91
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: mac/prefs_synth.ui:27
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:30 rc.cpp:247
+msgid "Sound Font:"
+msgstr "Font del so:"
+
+#. i18n: file: alsa/prefs_progs.ui:104
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_sf2_fluid)
+#: rc.cpp:33
+msgid "audio/x-soundfont"
+msgstr "audio/x-soundfont"
+
+#. i18n: file: alsa/prefs_progs.ui:111
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#. i18n: file: alsa/prefs_progs.ui:311
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:36 rc.cpp:82
+msgid "Arguments:"
+msgstr "Arguments:"
+
+#. i18n: file: alsa/prefs_progs.ui:134
+#. i18n: ectx: property (text), widget (KTitleWidget, label_fluid_available)
+#. i18n: file: alsa/prefs_progs.ui:221
+#. i18n: ectx: property (text), widget (KTitleWidget, label_timidity_available)
+#: rc.cpp:39 rc.cpp:58
+msgid "Not yet tested"
+msgstr "Encara no s'ha provat"
+
+#. i18n: file: alsa/prefs_progs.ui:141
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: file: alsa/prefs_progs.ui:265
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: rc.cpp:42 rc.cpp:76
+msgid "Audio Device:"
+msgstr "Dispositiu d'àudio:"
+
+#. i18n: file: alsa/prefs_progs.ui:151
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: file: alsa/prefs_progs.ui:288
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: rc.cpp:45 rc.cpp:79
+msgid "Sample Rate:"
+msgstr "Freqüència de mostreig:"
+
+#. i18n: file: alsa/prefs_progs.ui:197
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_exec_timidity)
+#. i18n: file: library/kmid.kcfg:106
+#. i18n: ectx: label, entry (exec_timidity), group (Settings)
+#: rc.cpp:49 rc.cpp:214
+msgid "Run TiMidity++ at startup"
+msgstr "Executa el TiMidity++ en iniciar"
+
+#. i18n: file: src/prefs_lyrics.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:85
+msgid "Font face:"
+msgstr "Família del tipus de lletra:"
+
+#. i18n: file: src/prefs_lyrics.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:88
+msgid "Font color:"
+msgstr "Color del tipus de lletra:"
+
+#. i18n: file: src/prefs_lyrics.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:91
+msgid "Font size:"
+msgstr "Mida del tipus de lletra:"
+
+#. i18n: file: src/prefs_midi.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_backend)
+#: rc.cpp:94
+msgid "MIDI Backend:"
+msgstr "Dorsal de MIDI:"
+
+#. i18n: file: src/prefs_midi.ui:30
+#. i18n: ectx: property (text), widget (QLabel, label_connection)
+#: rc.cpp:97
+msgid "Output MIDI Connection:"
+msgstr "Connexió MIDI de sortida:"
+
+#. i18n: file: src/prefs_midi.ui:40
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_advanced_ports)
+#: rc.cpp:100
+msgid "Show advanced MIDI ports"
+msgstr "Mostra els ports avançats del MIDI"
+
+#. i18n: file: src/prefs_midi.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_mapper)
+#: rc.cpp:103
+msgid "MIDI mapper file:"
+msgstr "Fitxer de mapatge MIDI:"
+
+#. i18n: file: src/prefs_midi.ui:63
+#. i18n: ectx: property (text), widget (QLabel, label_resetmode)
+#: rc.cpp:106
+msgid "Reset Mode:"
+msgstr "Mode de reinici:"
+
+#. i18n: file: src/prefs_midi.ui:71
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:109
+msgid "Do not send reset messages"
+msgstr "No enviïs missatges de reinici"
+
+#. i18n: file: src/prefs_midi.ui:76
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:112
+msgid "General MIDI"
+msgstr "MIDI general"
+
+#. i18n: file: src/prefs_midi.ui:81
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:115
+msgid "Roland GS"
+msgstr "Roland GS"
+
+#. i18n: file: src/prefs_midi.ui:86
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:118
+msgid "Yamaha XG"
+msgstr "Yamaha XG"
+
+#. i18n: file: src/prefs_midi.ui:91
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:121
+msgid "System Exclusive File"
+msgstr "Fitxer exclusiu del sistema"
+
+#. i18n: file: src/prefs_midi.ui:102
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_sysex_file)
+#: rc.cpp:124
+msgid "*.syx|System Exclusive Files (*.syx)"
+msgstr "*.syx|Fitxers exclusius del sistema (*.syx)"
+
+#. i18n: file: src/kmidui.rc:8
+#. i18n: ectx: Menu (song)
+#: rc.cpp:127
+msgid "&Song"
+msgstr "&Cançó"
+
+#. i18n: file: src/kmidui.rc:18
+#. i18n: ectx: Menu (song_settings)
+#: rc.cpp:130
+msgid "S&ong Settings"
+msgstr "Arranjaments de &cançó"
+
+#. i18n: file: src/kmidui.rc:25
+#. i18n: ectx: Menu (playlist)
+#: rc.cpp:133
+msgid "&Playlist"
+msgstr "Llista de re&producció"
+
+#. i18n: file: src/kmidui.rc:34
+#. i18n: ectx: Menu (view)
+#. i18n: file: src/kmid_part.rc:4
+#. i18n: ectx: Menu (view)
+#: rc.cpp:136 rc.cpp:142
+msgid "&View"
+msgstr "&Vista"
+
+#. i18n: file: src/kmidui.rc:45
+#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: examples/kmidtest/kmidtestui.rc:11
+#. i18n: ectx: ToolBar (mainToolBar)
+#: rc.cpp:139 rc.cpp:148
+msgid "Main Toolbar"
+msgstr "Barra d'eines principal"
+
+#. i18n: file: examples/kmidtest/kmidtestui.rc:4
+#. i18n: ectx: Menu (file)
+#: rc.cpp:145
+msgid "File"
+msgstr "Fitxer"
+
+#. i18n: file: library/kmid.kcfg:11
+#. i18n: ectx: label, entry (font), group (Settings)
+#: rc.cpp:151
+msgid "The font used to display the lyrics."
+msgstr "El tipus de lletra usat per mostrar la lletra de les cançons."
+
+#. i18n: file: library/kmid.kcfg:15
+#. i18n: ectx: label, entry (size), group (Settings)
+#: rc.cpp:154
+msgid "Size of the lyrics font"
+msgstr "Mida del tipus de lletra de la lletra de les cançons"
+
+#. i18n: file: library/kmid.kcfg:19
+#. i18n: ectx: label, entry (color), group (Settings)
+#: rc.cpp:157
+msgid "Color of the lyrics text, after being played"
+msgstr "Color del text de la lletra, després de la reproducció"
+
+#. i18n: file: library/kmid.kcfg:23
+#. i18n: ectx: label, entry (encoding), group (Settings)
+#: rc.cpp:160
+msgid "Initial lyrics text encoding"
+msgstr "Codificació inicial del text de la lletra"
+
+#. i18n: file: library/kmid.kcfg:26
+#. i18n: ectx: label, entry (midi_backend), group (Settings)
+#: rc.cpp:163
+msgid "MIDI backend."
+msgstr "Dorsal de MIDI."
+
+#. i18n: file: library/kmid.kcfg:29
+#. i18n: ectx: label, entry (output_connection), group (Settings)
+#: rc.cpp:166
+msgid "MIDI port connection."
+msgstr "Connexió al port del MIDI."
+
+#. i18n: file: library/kmid.kcfg:32
+#. i18n: ectx: label, entry (midi_mapper), group (Settings)
+#: rc.cpp:169
+msgid "MIDI mapper file."
+msgstr "Fitxer de mapatge del MIDI."
+
+#. i18n: file: library/kmid.kcfg:36
+#. i18n: ectx: label, entry (player_autostart), group (Settings)
+#: rc.cpp:172
+msgid "Start playing right after loading a song."
+msgstr "Comença a reproduir tot just després de carregar la cançó."
+
+#. i18n: file: library/kmid.kcfg:40
+#. i18n: ectx: label, entry (player_loop), group (Settings)
+#: rc.cpp:175
+msgid "Loop the play list."
+msgstr "Repeteix la llista de reproducció."
+
+#. i18n: file: library/kmid.kcfg:44
+#. i18n: ectx: label, entry (playlist_shuffle), group (Settings)
+#: rc.cpp:178
+msgid "Shuffle the play list."
+msgstr "Barreja la llista de reproducció."
+
+#. i18n: file: library/kmid.kcfg:48
+#. i18n: ectx: label, entry (reset_mode), group (Settings)
+#: rc.cpp:181
+msgid "MIDI reset message mode."
+msgstr "Mode de missatge de reinici del MIDI."
+
+#. i18n: file: library/kmid.kcfg:59
+#. i18n: ectx: label, entry (sysex_file), group (Settings)
+#: rc.cpp:184
+msgid "System Exclusive MIDI file for reset message."
+msgstr "Fitxer MIDI exclusiu del sistema per a missatge de reinici."
+
+#. i18n: file: library/kmid.kcfg:62
+#. i18n: ectx: label, entry (advanced_ports), group (Settings)
+#: rc.cpp:187
+msgid "Show advanced MIDI ports."
+msgstr "Mostra els ports avançats del MIDI."
+
+#. i18n: file: library/kmid.kcfg:66
+#. i18n: ectx: label, entry (auto_song_settings), group (Settings)
+#: rc.cpp:190
+msgid "Load and save automatically the song settings."
+msgstr "Carrega i desa automàticament l'arranjament de la cançó."
+
+#. i18n: file: library/kmid.kcfg:75
+#. i18n: ectx: label, entry (cmd_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:110
+#. i18n: ectx: label, entry (cmd_timidity), group (Settings)
+#: rc.cpp:196 rc.cpp:217
+msgid "Command"
+msgstr "Ordre"
+
+#. i18n: file: library/kmid.kcfg:79
+#. i18n: ectx: label, entry (audio_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:114
+#. i18n: ectx: label, entry (audio_timidity), group (Settings)
+#: rc.cpp:199 rc.cpp:220
+msgid "Audio Output"
+msgstr "Sortida d'àudio"
+
+#. i18n: file: library/kmid.kcfg:89
+#. i18n: ectx: label, entry (audiodev_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:124
+#. i18n: ectx: label, entry (audiodev_timidity), group (Settings)
+#: rc.cpp:202 rc.cpp:223
+msgid "Audio Device"
+msgstr "Dispositiu d'àudio"
+
+#. i18n: file: library/kmid.kcfg:93
+#. i18n: ectx: label, entry (rate_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:128
+#. i18n: ectx: label, entry (rate_timidity), group (Settings)
+#: rc.cpp:205 rc.cpp:226
+msgid "Sample Rate"
+msgstr "Freqüència de mostreig"
+
+#. i18n: file: library/kmid.kcfg:97
+#. i18n: ectx: label, entry (sf2_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:145
+#. i18n: ectx: label, entry (soundfont_dls), group (Settings)
+#: rc.cpp:208 rc.cpp:238
+msgid "Sound Font"
+msgstr "Font del so"
+
+#. i18n: file: library/kmid.kcfg:101
+#. i18n: ectx: label, entry (args_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:132
+#. i18n: ectx: label, entry (args_timidity), group (Settings)
+#: rc.cpp:211 rc.cpp:229
+msgid "Arguments"
+msgstr "Arguments"
+
+#. i18n: file: library/kmid.kcfg:137
+#. i18n: ectx: label, entry (exec_dls), group (Settings)
+#. i18n: file: mac/prefs_synth.ui:20
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_exec_dls)
+#: rc.cpp:232 rc.cpp:244
+msgid "Enable DLS Synth at startup"
+msgstr "Activa el sintetitzador DLS en iniciar"
+
+#. i18n: file: library/kmid.kcfg:141
+#. i18n: ectx: label, entry (default_dls), group (Settings)
+#. i18n: file: mac/prefs_synth.ui:53
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_default_dls)
+#: rc.cpp:235 rc.cpp:251
+msgid "Default Apple DLS Sound Set"
+msgstr "Conjunt de sons DLS d'Apple per defecte"
+
+#. i18n: file: library/kmid.kcfg:149
+#. i18n: ectx: label, entry (reverb_dls), group (Settings)
+#. i18n: file: mac/prefs_synth.ui:60
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_reverb_dls)
+#: rc.cpp:241 rc.cpp:254
+msgid "Use Internal Reverb"
+msgstr "Utilitza la reverberació interna"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "FluidSynth has returned the following messages when launched with the "
+#~ "provided arguments."
+#~ msgstr ""
+#~ "El FluidSynth ha retornat els següents missatges quan s'ha executat amb "
+#~ "els arguments assignats."
+
+#~ msgctxt "@title:window"
+#~ msgid "FluidSynth messages"
+#~ msgstr "Missatges del FluidSynth"
+
+#~ msgid "kmid"
+#~ msgstr "kmid"
+
+#~ msgid "Configure Channel View"
+#~ msgstr "Configura la vista de canals"
+
+#~ msgid "Choose Look Mode"
+#~ msgstr "Escolliu el mode d'aparença"
+
+#~ msgid "3D look"
+#~ msgstr "Aparença 3D"
+
+#~ msgid "3D - filled"
+#~ msgstr "3d - farcit"
+
+#~ msgid "Channel View"
+#~ msgstr "Vista de canals"
+
+#~ msgid "Collections Manager"
+#~ msgstr "Gestor de col·leccions"
+
+#~ msgid "Available collections:"
+#~ msgstr "Col·leccions disponibles:"
+
+#~ msgid "Songs in selected collection:"
+#~ msgstr "Cançons de la col·lecció seleccionada:"
+
+#~ msgid "&New..."
+#~ msgstr "&Nou..."
+
+#~ msgid "&Copy..."
+#~ msgstr "&Copia..."
+
+#~ msgid "Delete"
+#~ msgstr "Esborra"
+
+#~ msgid "&Add..."
+#~ msgstr "&Afegeix..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Elimina"
+
+#~ msgid "New Collection"
+#~ msgstr "Nova col·lecció"
+
+#~ msgid "Enter the name of the new collection:"
+#~ msgstr "Introduïu el nom de la nova col·lecció:"
+
+#~ msgid "The name '%1' is already used"
+#~ msgstr "El nom '%1' ja està usat"
+
+#~ msgid "Copy Collection"
+#~ msgstr "Copia la col·lecció"
+
+#~ msgid "Enter the name of the copy collection:"
+#~ msgstr "Introduïu el nom de la col·lecció copiada:"
+
+#~ msgid "Change Collection Name"
+#~ msgstr "Canvia el nom de la col·lecció"
+
+#~ msgid "Enter the name of the selected collection:"
+#~ msgstr "Introduïu el nom de la col·lecció seleccionada:"
+
+#~ msgid "Default"
+#~ msgstr "Omissió"
+
+#~ msgid "The file %1 does not exist or cannot be opened."
+#~ msgstr "El fitxer %1 no existeix o no ha pogut ser obert."
+
+#~ msgid "The file %1 is not a MIDI file."
+#~ msgstr "El fitxer %1 no és un fitxer MIDI."
+
+#~ msgid ""
+#~ "Ticks per quarter note is negative. Please send this file to larrosa@kde."
+#~ "org"
+#~ msgstr ""
+#~ "El temps per quart de nota és negatiu. Si us plau, envieu aquest fitxer a "
+#~ "larrosa@kde.org"
+
+#~ msgid "Not enough memory."
+#~ msgstr "No hi ha prou memòria."
+
+#~ msgid "This file is corrupted or not well built."
+#~ msgstr "Aquest fitxer és corrupte o està mal construït."
+
+#~ msgid "Unknown error message"
+#~ msgstr "Missatge d'error desconegut"
+
+#~ msgid "You must load a file before playing it."
+#~ msgstr "Heu de carregar un fitxer abans de reproduir-lo."
+
+#~ msgid "A song is already being played."
+#~ msgstr "Ja hi ha una cançó en reproducció."
+
+#~ msgid ""
+#~ "Could not open /dev/sequencer.\n"
+#~ "Probably there is another program using it."
+#~ msgstr ""
+#~ "No s'ha pogut obrir /dev/sequencer.\n"
+#~ "Probablement hi ha un altre programa emprant-lo."
+
+#~ msgid "&Stop"
+#~ msgstr "A&tura"
+
+#~ msgid "&Loop"
+#~ msgstr "Repetei&x"
+
+#~ msgid "&Organize..."
+#~ msgstr "&Organitza..."
+
+#~ msgid "In Order"
+#~ msgstr "En ordre"
+
+#~ msgid "Play Order"
+#~ msgstr "Ordre de reproducció"
+
+#~ msgid "&MT-32"
+#~ msgstr "&MT-32"
+
+#~ msgid "File Type"
+#~ msgstr "Tipus de fitxer"
+
+#~ msgid "&Text Events"
+#~ msgstr "Esdeveniments de &text"
+
+#~ msgid "Display Events"
+#~ msgstr "Esdeveniments de pantalla"
+
+#~ msgid "Automatic Text Chooser"
+#~ msgstr "Selector de text automàtic"
+
+#~ msgid "Hide &Volume Bar"
+#~ msgstr "Oculta la barra de &volum"
+
+#~ msgid "Channel View &Options..."
+#~ msgstr "&Opcions de la vista de canals..."
+
+#~ msgid "&Font Change..."
+#~ msgstr "Canvi de &tipus de lletra..."
+
+#~ msgid "MIDI &Setup..."
+#~ msgstr "&Configuració de MIDI..."
+
+#~ msgid "Only local files are currently supported."
+#~ msgstr "Actualment només es permeten fitxers locals."
+
+#~ msgid ""
+#~ "Could not open /dev/sequencer to get some info.\n"
+#~ "Probably there is another program using it."
+#~ msgstr ""
+#~ "No s'ha pogut obrir /dev/sequencer per aconseguir informació.\n"
+#~ "Probablement hi ha un altre programa emprant-lo."
+
+#~ msgid ""
+#~ "File %1 already exists\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "El fitxer %1 ja existeix.\n"
+#~ "Voleu substituir-lo?"
+
+#~ msgid "Overwrite"
+#~ msgstr "Sobreescriu"
+
+#~ msgid "(c) 1997,98,99,2000, Antonio Larrosa Jimenez"
+#~ msgstr "(c) 1997,98,99,2000, Antonio Larrosa Jimenez"
+
+#~ msgid "Original Developer/Maintainer"
+#~ msgstr "Desenvolupador/mantenidor original"
+
+#~ msgid "Backward"
+#~ msgstr "Enrere"
+
+#~ msgid "File to open"
+#~ msgstr "Fitxer a obrir"
+
+#~ msgid "Configure MIDI Devices"
+#~ msgstr "Configuració dels dispositius MIDI"
+
+#~ msgid "Select the MIDI device you want to use:"
+#~ msgstr "Seleccioneu el dispositiu MIDI que voleu emprar:"
+
+#~ msgid "Use the MIDI map:"
+#~ msgstr "Usa el mapa MIDI:"
+
+#~ msgid "None"
+#~ msgstr "Cap"
+
+#~ msgid "Browse..."
+#~ msgstr "Navega..."
+
+#~ msgid "&Collections"
+#~ msgstr "Co&l·leccions"
+
+#~ msgid "Temporary Collection"
+#~ msgstr "Col·lecció temporal"

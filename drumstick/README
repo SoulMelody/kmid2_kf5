@@ -1,0 +1,7 @@
+Drumstick is a C++ wrapper around the ALSA library sequencer interface, 
+using Qt4 objects, idioms and style, it was formerly named 'aseqmm'.
+
+This is a local copy, in case the standalone package isn't found.
+The full sources, examples and documentation can be found here:
+http://sourceforge.net/projects/drumstick/
+http://drumstick.sourceforge.net

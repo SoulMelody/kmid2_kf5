@@ -1,0 +1,2021 @@
+# translation of kmid.po to 简体中文
+# Copyright (C) 2002, 2008 Free Software Foundation, Inc.
+#
+# Wang Jian <lark@linux.ustc.edu.cn>, 1998.
+# Liu Songhe <jackliu9999@263.net>, 2002.
+# Xiong Jiang <jxiong@offtopic.org>, 2002.
+# Ni Hui <shuizhuyuanluo@126.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmid\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-08-06 05:24+0200\n"
+"PO-Revision-Date: 2010-08-11 14:42+0800\n"
+"Last-Translator: Rui Fan <vanferry@gmail.com>\n"
+"Language-Team: 简体中文 <kde-china@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: alsa/alsabackend.cpp:78
+#, kde-format
+msgctxt "@info"
+msgid "Fatal error from the ALSA sequencer backend. This usually happens when the kernel does not have ALSA support, the device node (/dev/snd/seq) does not exist, or the kernel module (snd_seq) is not loaded. Please check your ALSA/MIDI configuration. Returned error was: %1"
+msgstr "ALSA 音序器后端模块发生严重错误。此错误通常是由于内核未包括 ALSA 支持、设备节点(/dev/snd/seq)不存在，或内核模块 snd_seq 未正常加载而造成，请检查 ALSA/MIDI 的设置。错误信息是: %1"
+
+#: alsa/alsabackend.cpp:84
+msgctxt "@title:window"
+msgid "ALSA Sequencer Backend Error"
+msgstr "ALSA 音序器后端模块错误"
+
+#: alsa/alsabackend.cpp:209
+#: alsa/alsabackend.cpp:223
+msgctxt "@info"
+msgid "Not found"
+msgstr "未找到"
+
+#: alsa/alsabackend.cpp:210
+#: alsa/alsabackend.cpp:224
+#, kde-format
+msgctxt "@info"
+msgid "Found version: %1"
+msgstr "找到版本：%1"
+
+#: src/playlistdialog.cpp:29
+msgctxt "@title:window"
+msgid "Manage Playlist"
+msgstr "管理播放列表"
+
+#: src/main.cpp:29
+msgid "A KDE 4 MIDI/Karaoke player"
+msgstr "KDE4 下的 MIDI/卡拉OK 文件播放器"
+
+#: src/main.cpp:35
+msgid "KMid"
+msgstr "KMid"
+
+#: src/main.cpp:37
+#: examples/kmidtest/kmidtest.cpp:91
+msgid "Pedro Lopez-Cabanillas"
+msgstr "Pedro Lopez-Cabanillas"
+
+#: src/main.cpp:37
+msgid "Maintainer"
+msgstr "维护者"
+
+#: src/main.cpp:39
+msgid "Antonio Larrosa Jimenez"
+msgstr "Antonio Larrosa Jimenez"
+
+#: src/main.cpp:39
+msgid "Author"
+msgstr "作者"
+
+#: src/main.cpp:43
+msgid "Song(s) to open"
+msgstr "要打开的歌曲"
+
+#: src/kmid2.cpp:169
+#: src/kmid_part.cpp:211
+msgctxt "@info"
+msgid "No MIDI backend loaded."
+msgstr "未加载任何 MIDI 后端模块。"
+
+#: src/kmid2.cpp:170
+#: src/kmid_part.cpp:212
+msgctxt "@title:window"
+msgid "Fatal"
+msgstr "严重的"
+
+#: src/kmid2.cpp:250
+msgctxt "@info:whatsthis"
+msgid "Exit the application"
+msgstr "退出程序"
+
+#: src/kmid2.cpp:252
+msgctxt "@info:whatsthis"
+msgid "Open a file from disk"
+msgstr "从磁盘打开一个文件"
+
+#: src/kmid2.cpp:254
+msgctxt "@info:whatsthis"
+msgid "Configure the program settings"
+msgstr "配置应用程序"
+
+#: src/kmid2.cpp:256
+msgctxt "@info:whatsthis"
+msgid "Print the lyrics"
+msgstr "打印歌词"
+
+#: src/kmid2.cpp:261
+msgctxt "@action:inmenu"
+msgid "Save Lyrics..."
+msgstr "保存歌词..."
+
+#: src/kmid2.cpp:267
+#: src/kmid_part.cpp:168
+msgctxt "@action player play"
+msgid "Play"
+msgstr "播放"
+
+#: src/kmid2.cpp:270
+#: src/kmid_part.cpp:171
+msgctxt "@info:whatsthis"
+msgid "Start playback of the current session"
+msgstr "开始播放"
+
+#: src/kmid2.cpp:276
+#: src/kmid_part.cpp:177
+msgctxt "@action player pause"
+msgid "Pause"
+msgstr "暂停"
+
+#: src/kmid2.cpp:278
+#: src/kmid_part.cpp:179
+msgctxt "@info:whatsthis"
+msgid "Pause the playback"
+msgstr "暂停播放"
+
+#: src/kmid2.cpp:284
+msgctxt "@action player next song"
+msgid "Next song"
+msgstr "下一首歌曲"
+
+#: src/kmid2.cpp:287
+msgctxt "@info:whatsthis"
+msgid "Next song"
+msgstr "下一首歌曲"
+
+#: src/kmid2.cpp:293
+msgctxt "@action player previous song"
+msgid "Previous song"
+msgstr "上一首歌曲"
+
+#: src/kmid2.cpp:296
+msgctxt "@info:whatsthis"
+msgid "Previous song"
+msgstr "上一首歌曲"
+
+#: src/kmid2.cpp:302
+msgctxt "@action player skip forward"
+msgid "Forward"
+msgstr "前进"
+
+#: src/kmid2.cpp:304
+msgctxt "@info:whatsthis"
+msgid "Player seek forward"
+msgstr "向前跳"
+
+#: src/kmid2.cpp:310
+msgctxt "@action player skip backward"
+msgid "Rewind"
+msgstr "后退"
+
+#: src/kmid2.cpp:312
+msgctxt "@info:whatsthis"
+msgid "Player seek backward"
+msgstr "向后跳"
+
+#: src/kmid2.cpp:318
+#: src/kmid_part.cpp:185
+msgctxt "@action player stop"
+msgid "Stop"
+msgstr "停止"
+
+#: src/kmid2.cpp:321
+#: src/kmid_part.cpp:188
+msgctxt "@info:whatsthis"
+msgid "Stop playback or recording"
+msgstr "停止播放或录音"
+
+#: src/kmid2.cpp:327
+msgctxt "@action:inmenu"
+msgid "File info..."
+msgstr "文件信息..."
+
+#: src/kmid2.cpp:333
+msgctxt "@action playlist repeat"
+msgid "Repeat"
+msgstr "循环方式"
+
+#: src/kmid2.cpp:339
+msgctxt "@action playlist shuffle"
+msgid "Shuffle"
+msgstr "乱序方式"
+
+#: src/kmid2.cpp:346
+msgctxt "@action player auto-start"
+msgid "Auto-Start"
+msgstr "自动播放"
+
+#: src/kmid2.cpp:351
+msgctxt "@action"
+msgid "Auto-Add to Playlist"
+msgstr "自动添加到播放列表中"
+
+#: src/kmid2.cpp:355
+msgctxt "@action"
+msgid "Load Playlist..."
+msgstr "载入播放列表..."
+
+#: src/kmid2.cpp:361
+msgctxt "@action"
+msgid "Save Playlist..."
+msgstr "保存播放列表..."
+
+#: src/kmid2.cpp:367
+msgctxt "@action"
+msgid "Edit Playlist..."
+msgstr "编辑播放列表..."
+
+#: src/kmid2.cpp:373
+msgctxt "@action Pianola"
+msgid "Player Piano"
+msgstr "虚拟钢琴"
+
+#: src/kmid2.cpp:374
+msgctxt "@info:whatsthis Pianola"
+msgid "Show or hide the player piano window"
+msgstr "显示或隐藏钢琴窗口"
+
+#: src/kmid2.cpp:379
+msgctxt "@action"
+msgid "Channels"
+msgstr "MIDI 通道"
+
+#: src/kmid2.cpp:380
+msgctxt "@info:whatsthis"
+msgid "Show or hide the channels window"
+msgstr "显示或隐藏 MIDI 通道窗口"
+
+#: src/kmid2.cpp:385
+msgctxt "@action load song settings"
+msgid "Load"
+msgstr "加载"
+
+#: src/kmid2.cpp:387
+msgctxt "@info:whatsthis"
+msgid "Load the stored settings for the current song"
+msgstr "加载当前歌曲已保存的设置"
+
+#: src/kmid2.cpp:392
+msgctxt "@action save song settings"
+msgid "Save"
+msgstr "保存"
+
+#: src/kmid2.cpp:394
+msgctxt "@info:whatsthis"
+msgid "Save the settings of the current song"
+msgstr "保存当前歌曲的设置"
+
+#: src/kmid2.cpp:399
+msgctxt "@action auto load/save song settings"
+msgid "Automatic"
+msgstr "自动"
+
+#: src/kmid2.cpp:400
+msgctxt "@info:whatsthis"
+msgid "Automatically load and save song settings"
+msgstr "自动加载和保存歌曲设置"
+
+#: src/kmid2.cpp:409
+msgctxt "@title:window"
+msgid "Open MIDI/Karaoke files"
+msgstr "打开 MIDI/卡拉OK 文件"
+
+#: src/kmid2.cpp:547
+msgctxt "@info:status player playing"
+msgid "playing"
+msgstr "播放中"
+
+#: src/kmid2.cpp:550
+msgctxt "@info:status player paused"
+msgid "paused"
+msgstr "已暂停"
+
+#: src/kmid2.cpp:553
+msgctxt "@info:status player stopped"
+msgid "stopped"
+msgstr "已停止"
+
+#: src/kmid2.cpp:557
+msgctxt "@info:status player loading"
+msgid "loading"
+msgstr "加载中"
+
+#: src/kmid2.cpp:560
+msgctxt "@info:status player invalid status"
+msgid "not ready"
+msgstr "未就绪"
+
+#: src/kmid2.cpp:570
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> [%2]"
+msgstr "<filename>%1</filename> [%2]"
+
+#: src/kmid2.cpp:792
+msgctxt "@title:group"
+msgid "Lyrics"
+msgstr "歌词"
+
+#: src/kmid2.cpp:793
+msgctxt "@title:group"
+msgid "MIDI"
+msgstr "MIDI"
+
+#: src/kmid2.cpp:797
+msgctxt "@title:group"
+msgid "Soft Synths"
+msgstr "软音源"
+
+#: src/kmid2.cpp:836
+msgctxt "@info"
+msgid "The new MIDI backend will take effect after restarting the program."
+msgstr "新 MIDI 后端模块将在程序重新运行后生效。"
+
+#: src/kmid2.cpp:838
+msgctxt "@title:window"
+msgid "MIDI Backend Changed"
+msgstr "MIDI 后端模块已更改"
+
+#: src/kmid2.cpp:937
+msgctxt "@info"
+msgid "No file loaded"
+msgstr "未加载文件"
+
+#: src/kmid2.cpp:939
+#, kde-format
+msgctxt "@info"
+msgid "File: <filename>%1</filename><nl/>"
+msgstr "文件：<filename>%1</filename><nl/>"
+
+#: src/kmid2.cpp:941
+#: src/kmid2.cpp:945
+#: src/kmid2.cpp:949
+#: src/kmid2.cpp:953
+#: src/kmid2.cpp:957
+#: src/kmid2.cpp:961
+#: src/kmid2.cpp:965
+#: src/kmid2.cpp:969
+msgctxt "@info"
+msgid "<nl/>"
+msgstr "<nl/>"
+
+#: src/kmid2.cpp:943
+#, kde-format
+msgctxt "@info"
+msgid "Copyright: <emphasis>%1</emphasis><nl/>"
+msgstr "版权所有：<emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:947
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke type: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke 类型: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:951
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke version: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke 版本：<emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:955
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke info: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke 信息：<emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:959
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke language: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke 语言：<emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:963
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke title: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke 标题：<emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:967
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke warnings: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke 警告信息：<emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:970
+msgctxt "@title:window"
+msgid "Sequence Information"
+msgstr "音序器信息"
+
+#: src/kmid2.cpp:980
+msgctxt "@title:window"
+msgid "Save lyrics to file"
+msgstr "歌词保存为文件"
+
+#: src/kmid2.cpp:1028
+#: src/kmid2.cpp:1079
+msgctxt "@title:window"
+msgid "MIDI Player connection"
+msgstr "MIDI 播放器库连接"
+
+#: src/kmid2.cpp:1038
+msgctxt "@info"
+msgid "You need to select one MIDI port if you want to be able to listen sounds. This MIDI port may be a software synthesizer like Timidity++ or FluidSynth, or an external MIDI device, or a hardware synthesizer provided by your sound card. This setting can be changed later, using the Settings->Configure KMid->MIDI dialog. You can find more information in the <link url='help:/kmid/general-usage.html#using-midi'>online help documents</link><nl/>Please select one MIDI port now:"
+msgstr "必须选择一个 MIDI 端口才能发声，MIDI 端口可以是 Timidity++ 或 FluidSynth 这样的软件合成器、一台外置的 MIDI 设备，或是声卡上的硬件合成器。该设置可通过“设置->配置 KMid”中的 MIDI 对话框随时更改。更多信息见：<link url='help:/kmid/general-usage.html#using-midi'>在线帮助文档</link><nl/>。现在请选择一个 MIDI 端口："
+
+#: src/kmid2.cpp:1071
+msgctxt "@info"
+msgid "There are no available MIDI ports in your system. You can specify a software synthesizer, such as TiMidity++ or FluidSynth, to be launched automatically when KMid starts. This option is located in the dialog Settings->Configure KMid, programs category. You can find more information in the <link url='help:/kmid/general-usage.html#using-midi'>online help documents</link>."
+msgstr "您的系统中没有任何可用的 MIDI 端口。您可以指定一个软件合成器，如 TiMidity++ 或 FluidSynth，让它在 KMid 启动时自动加载。该选项位于“设置->配置 KMid”对话框里的程序类目。更多信息见：<link url='help:/kmid/general-usage.html#using-midi'>在线帮助文档</link>。"
+
+#: src/kmid2.cpp:1114
+msgctxt "@title:window"
+msgid "Open playlist from file"
+msgstr "从文件打开播放列表"
+
+#: src/kmid2.cpp:1123
+msgctxt "@title:window"
+msgid "Save playlist to file"
+msgstr "播放列表保存为文件"
+
+#: src/kmid2.cpp:1217
+#: src/kmid2.cpp:1261
+msgctxt "@title:window"
+msgid "Volume and Pitch"
+msgstr "音量与音高"
+
+#: src/kmid2.cpp:1226
+msgctxt "@label:slider Sound master volume"
+msgid "Vol."
+msgstr "音量"
+
+#: src/kmid2.cpp:1230
+msgctxt "@label:slider Musical tone, note height (transpose)"
+msgid "Pitch"
+msgstr "音高"
+
+#: src/kmid2.cpp:1240
+msgctxt "@info:whatsthis"
+msgid "MIDI master volume control"
+msgstr "MIDI 主音量"
+
+#: src/kmid2.cpp:1252
+msgctxt "@info:whatsthis"
+msgid "Note height transposition"
+msgstr "音高移调"
+
+#: src/kmid2.cpp:1263
+msgctxt "@action:inmenu"
+msgid "Show or hide the volume and pitch controls"
+msgstr "显示或隐藏音量和音高控制"
+
+#: src/kmid2.cpp:1271
+#: src/kmid2.cpp:1296
+msgctxt "@title:window"
+msgid "Time Position"
+msgstr "时间位置"
+
+#: src/kmid2.cpp:1282
+#: src/kmid_partview.cpp:78
+msgctxt "@info:whatsthis"
+msgid "Time position control"
+msgstr "时间位置控制"
+
+#: src/kmid2.cpp:1298
+msgctxt "@action:inmenu"
+msgid "Show or hide the time position controls"
+msgstr "显示或隐藏时间位置控制器"
+
+#: src/kmid2.cpp:1303
+#: src/kmid2.cpp:1315
+msgctxt "@title:window"
+msgid "Text Encoding"
+msgstr "文字编码"
+
+#: src/kmid2.cpp:1307
+msgctxt "@info:whatsthis"
+msgid "Character encoding for lyrics and other text"
+msgstr "歌词或其他文字的编码"
+
+#: src/kmid2.cpp:1308
+msgctxt "@item:inlistbox Default MIDI text encoding"
+msgid "Default ( ASCII )"
+msgstr "默认(ASCII)"
+
+#: src/kmid2.cpp:1317
+msgctxt "@action:inmenu"
+msgid "Show or hide the character encoding control"
+msgstr "显示或隐藏字符编码控制"
+
+#: src/kmid2.cpp:1322
+#: src/kmid2.cpp:1377
+msgctxt "@title:window"
+msgid "Rhythm"
+msgstr "节奏"
+
+#: src/kmid2.cpp:1329
+msgctxt "@label"
+msgid "Tempo:"
+msgstr "速度："
+
+#: src/kmid2.cpp:1336
+msgctxt "@label:slider bpm=beats per minute"
+msgid "120.0 bpm"
+msgstr "120.0 拍/分钟(bpm)"
+
+#: src/kmid2.cpp:1337
+msgctxt "@info:whatsthis"
+msgid "Tempo, or song speed in beats per minute"
+msgstr "速度，或单位为拍/分钟的歌曲速度"
+
+#: src/kmid2.cpp:1347
+msgctxt "@info:whatsthis"
+msgid "Tempo (song speed) control, between 50% and 200%"
+msgstr "速度控制，范围从50%到200%"
+
+#: src/kmid2.cpp:1352
+msgctxt "@action:button"
+msgid "100%"
+msgstr "100%"
+
+#: src/kmid2.cpp:1353
+msgctxt "@info:whatsthis"
+msgid "Reset the song tempo (song speed) to 100%"
+msgstr "重置速度为100%"
+
+#: src/kmid2.cpp:1357
+msgctxt "@label"
+msgid "Metronome:"
+msgstr "节拍器："
+
+#: src/kmid2.cpp:1365
+msgctxt "@info:whatsthis"
+msgid "Time position in measures:beats"
+msgstr "时间位置(单位是小节:拍)"
+
+#: src/kmid2.cpp:1370
+msgctxt "@info:whatsthis"
+msgid "Visual metronome"
+msgstr "可视化的节拍器"
+
+#: src/kmid2.cpp:1379
+msgctxt "@action:inmenu"
+msgid "Show or hide the rhythm controls"
+msgstr "显示或隐藏节奏控制器"
+
+#: src/kmid2.cpp:1387
+msgctxt "@info:whatsthis"
+msgid "Song lyrics, or some other text"
+msgstr "歌词或其它文字"
+
+#: src/kmid2.cpp:1410
+msgctxt "@label"
+msgid "Sample Songs"
+msgstr "示例歌曲"
+
+#: src/kmid2.cpp:1421
+msgctxt "@label"
+msgid "System Songs"
+msgstr "系统歌曲"
+
+#: src/kmid2.cpp:1514
+#: src/kmid_part.cpp:340
+#, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Failed to run %1 with the provided arguments.<nl/>Returned messages:<nl/>%"
+#| "2"
+msgctxt "@info"
+msgid "Failed to run %2 with the provided arguments.<nl/>Returned message:<nl/>%3"
+msgid_plural "Failed to run %2 with the provided arguments.<nl/>Returned messages:<nl/>%3"
+msgstr[0] "以提供的参数运行 %2 失败。<nl/>返回信息：<nl/>%3"
+
+#: src/kmid2.cpp:1520
+#: src/kmid_part.cpp:346
+#, kde-format
+msgctxt "@title:window"
+msgid "%1 startup failed"
+msgstr "%1 启动失败"
+
+#: src/kmid2.cpp:1542
+#: src/kmid_part.cpp:323
+#, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "%1 has returned the following messages when launched with the provided "
+#| "arguments."
+msgctxt "@info"
+msgid "%2 has returned the following message when launched with the provided arguments."
+msgid_plural "%2 has returned the following messages when launched with the provided arguments."
+msgstr[0] "%2 在已提供的参数运行时返回下列信息。"
+
+#: src/kmid2.cpp:1549
+#: src/kmid_part.cpp:330
+#, kde-format
+#| msgctxt "@title:window"
+#| msgid "%1 messages"
+msgctxt "@title:window"
+msgid "%2 message"
+msgid_plural "%2 messages"
+msgstr[0] "%2 信息"
+
+#: src/pianola.cpp:39
+msgctxt "@title:window"
+msgid "Player Piano"
+msgstr "虚拟钢琴"
+
+#: src/pianola.cpp:45
+msgctxt "@title:menu"
+msgid "MIDI Channels"
+msgstr "MIDI 通道"
+
+#: src/pianola.cpp:47
+msgctxt "@action:inmenu"
+msgid "Show all channels"
+msgstr "显示所有通道"
+
+#: src/pianola.cpp:51
+msgctxt "@action:inmenu"
+msgid "Hide all channels"
+msgstr "隐藏所有通道"
+
+#: src/pianola.cpp:82
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "Channel %1"
+msgstr "通道 %1"
+
+#: src/instrumentset.cpp:35
+msgctxt "@item:inlistbox"
+msgid "Acoustic Grand Piano"
+msgstr "原声大钢琴"
+
+#: src/instrumentset.cpp:36
+msgctxt "@item:inlistbox"
+msgid "Bright Acoustic Piano"
+msgstr "亮音钢琴"
+
+#: src/instrumentset.cpp:37
+msgctxt "@item:inlistbox"
+msgid "Electric Grand Piano"
+msgstr "电子大钢琴"
+
+#: src/instrumentset.cpp:38
+msgctxt "@item:inlistbox"
+msgid "Honky-Tonk"
+msgstr "爵士钢琴"
+
+#: src/instrumentset.cpp:39
+msgctxt "@item:inlistbox"
+msgid "Rhodes Piano"
+msgstr "罗得斯钢琴"
+
+#: src/instrumentset.cpp:40
+msgctxt "@item:inlistbox"
+msgid "Chorused Piano"
+msgstr "和声钢琴"
+
+#: src/instrumentset.cpp:41
+msgctxt "@item:inlistbox"
+msgid "Harpsichord"
+msgstr "大键琴"
+
+#: src/instrumentset.cpp:42
+msgctxt "@item:inlistbox"
+msgid "Clavinet"
+msgstr "电子击弦古钢琴"
+
+#: src/instrumentset.cpp:43
+msgctxt "@item:inlistbox"
+msgid "Celesta"
+msgstr "钢片琴"
+
+#: src/instrumentset.cpp:44
+msgctxt "@item:inlistbox"
+msgid "Glockenspiel"
+msgstr "钟琴"
+
+#: src/instrumentset.cpp:45
+msgctxt "@item:inlistbox"
+msgid "Music Box"
+msgstr "八音盒"
+
+#: src/instrumentset.cpp:46
+msgctxt "@item:inlistbox"
+msgid "Vibraphone"
+msgstr "颤音琴"
+
+#: src/instrumentset.cpp:47
+msgctxt "@item:inlistbox"
+msgid "Marimba"
+msgstr "马林巴木琴"
+
+#: src/instrumentset.cpp:48
+msgctxt "@item:inlistbox"
+msgid "Xylophone"
+msgstr "木琴"
+
+#: src/instrumentset.cpp:49
+msgctxt "@item:inlistbox"
+msgid "Tubular Bells"
+msgstr "管钟"
+
+#: src/instrumentset.cpp:50
+msgctxt "@item:inlistbox"
+msgid "Dulcimer"
+msgstr "扬琴"
+
+#: src/instrumentset.cpp:51
+msgctxt "@item:inlistbox"
+msgid "Hammond Organ"
+msgstr "哈蒙德风琴"
+
+#: src/instrumentset.cpp:52
+msgctxt "@item:inlistbox"
+msgid "Percussive Organ"
+msgstr "击音管风琴"
+
+#: src/instrumentset.cpp:53
+msgctxt "@item:inlistbox"
+msgid "Rock Organ"
+msgstr "摇滚风琴"
+
+#: src/instrumentset.cpp:54
+msgctxt "@item:inlistbox"
+msgid "Church Organ"
+msgstr "教堂管风琴"
+
+#: src/instrumentset.cpp:55
+msgctxt "@item:inlistbox"
+msgid "Reed Organ"
+msgstr "簧片风琴"
+
+#: src/instrumentset.cpp:56
+msgctxt "@item:inlistbox"
+msgid "Accordion"
+msgstr "手风琴"
+
+#: src/instrumentset.cpp:57
+msgctxt "@item:inlistbox"
+msgid "Harmonica"
+msgstr "口琴"
+
+#: src/instrumentset.cpp:58
+msgctxt "@item:inlistbox"
+msgid "Tango Accordion"
+msgstr "探戈手风琴"
+
+#: src/instrumentset.cpp:59
+msgctxt "@item:inlistbox"
+msgid "Acoustic Guitar (Nylon)"
+msgstr "声学吉它(尼龙弦)"
+
+#: src/instrumentset.cpp:60
+msgctxt "@item:inlistbox"
+msgid "Acoustic Guitar (Steel)"
+msgstr "声学吉它(钢弦)"
+
+#: src/instrumentset.cpp:61
+msgctxt "@item:inlistbox"
+msgid "Electric Guitar (Jazz)"
+msgstr "电吉它(爵士)"
+
+#: src/instrumentset.cpp:62
+msgctxt "@item:inlistbox"
+msgid "Electric Guitar (Clean)"
+msgstr "电吉它(纯音)"
+
+#: src/instrumentset.cpp:63
+msgctxt "@item:inlistbox"
+msgid "Electric Guitar (Muted)"
+msgstr "电子吉它(闷音)"
+
+#: src/instrumentset.cpp:64
+msgctxt "@item:inlistbox"
+msgid "Overdriven Guitar"
+msgstr "激励吉他"
+
+#: src/instrumentset.cpp:65
+msgctxt "@item:inlistbox"
+msgid "Distortion Guitar"
+msgstr "失真吉它"
+
+#: src/instrumentset.cpp:66
+msgctxt "@item:inlistbox"
+msgid "Guitar Harmonics"
+msgstr "吉它泛音"
+
+#: src/instrumentset.cpp:67
+msgctxt "@item:inlistbox"
+msgid "Acoustic Bass"
+msgstr "原声贝司"
+
+#: src/instrumentset.cpp:68
+msgctxt "@item:inlistbox"
+msgid "Electric Bass (Finger)"
+msgstr "电子贝司(指弹)"
+
+#: src/instrumentset.cpp:69
+msgctxt "@item:inlistbox"
+msgid "Electric Bass (Pick)"
+msgstr "电子贝司(拔片)"
+
+#: src/instrumentset.cpp:70
+msgctxt "@item:inlistbox"
+msgid "Fretless Bass"
+msgstr "无品贝司"
+
+#: src/instrumentset.cpp:71
+msgctxt "@item:inlistbox"
+msgid "Slap Bass 1"
+msgstr "打弦贝司 1"
+
+#: src/instrumentset.cpp:72
+msgctxt "@item:inlistbox"
+msgid "Slap Bass 2"
+msgstr "打弦贝司 2"
+
+#: src/instrumentset.cpp:73
+msgctxt "@item:inlistbox"
+msgid "Synth Bass 1"
+msgstr "合成贝司 1"
+
+#: src/instrumentset.cpp:74
+msgctxt "@item:inlistbox"
+msgid "Synth Bass 2"
+msgstr "合成贝司 2"
+
+#: src/instrumentset.cpp:75
+msgctxt "@item:inlistbox"
+msgid "Violin"
+msgstr "小提琴"
+
+#: src/instrumentset.cpp:76
+msgctxt "@item:inlistbox"
+msgid "Viola"
+msgstr "中提琴"
+
+#: src/instrumentset.cpp:77
+msgctxt "@item:inlistbox"
+msgid "Cello"
+msgstr "大提琴"
+
+#: src/instrumentset.cpp:78
+msgctxt "@item:inlistbox"
+msgid "Contrabass"
+msgstr "低音大提琴"
+
+#: src/instrumentset.cpp:79
+msgctxt "@item:inlistbox"
+msgid "Tremolo Strings"
+msgstr "震音弦乐"
+
+#: src/instrumentset.cpp:80
+msgctxt "@item:inlistbox"
+msgid "Pizzicato Strings"
+msgstr "拨奏弦乐"
+
+#: src/instrumentset.cpp:81
+msgctxt "@item:inlistbox"
+msgid "Orchestral Harp"
+msgstr "管弦乐竖琴"
+
+#: src/instrumentset.cpp:82
+msgctxt "@item:inlistbox"
+msgid "Timpani"
+msgstr "定音鼓"
+
+#: src/instrumentset.cpp:83
+msgctxt "@item:inlistbox"
+msgid "String Ensemble 1"
+msgstr "弦乐合奏 1"
+
+#: src/instrumentset.cpp:84
+msgctxt "@item:inlistbox"
+msgid "String Ensemble 2"
+msgstr "弦乐合奏 2"
+
+#: src/instrumentset.cpp:85
+msgctxt "@item:inlistbox"
+msgid "Synth Strings 1"
+msgstr "合成弦乐组 1"
+
+#: src/instrumentset.cpp:86
+msgctxt "@item:inlistbox"
+msgid "Synth Strings 2"
+msgstr "合成弦乐组 2"
+
+#: src/instrumentset.cpp:87
+msgctxt "@item:inlistbox"
+msgid "Choir Aahs"
+msgstr "唱诗班啊声"
+
+#: src/instrumentset.cpp:88
+msgctxt "@item:inlistbox"
+msgid "Voice Oohs"
+msgstr "语音哦声"
+
+#: src/instrumentset.cpp:89
+msgctxt "@item:inlistbox"
+msgid "Synth Voice"
+msgstr "合成人声"
+
+#: src/instrumentset.cpp:90
+msgctxt "@item:inlistbox blow, stroke, impact"
+msgid "Orchestra Hit"
+msgstr "管弦乐齐奏"
+
+#: src/instrumentset.cpp:91
+msgctxt "@item:inlistbox"
+msgid "Trumpet"
+msgstr "小号"
+
+#: src/instrumentset.cpp:92
+msgctxt "@item:inlistbox"
+msgid "Trombone"
+msgstr "长号"
+
+#: src/instrumentset.cpp:93
+msgctxt "@item:inlistbox"
+msgid "Tuba"
+msgstr "大号"
+
+#: src/instrumentset.cpp:94
+msgctxt "@item:inlistbox"
+msgid "Muted Trumpet"
+msgstr "小号加弱音器"
+
+#: src/instrumentset.cpp:95
+msgctxt "@item:inlistbox"
+msgid "French Horn"
+msgstr "法国号"
+
+#: src/instrumentset.cpp:96
+msgctxt "@item:inlistbox"
+msgid "Brass Section"
+msgstr "铜管组"
+
+#: src/instrumentset.cpp:97
+msgctxt "@item:inlistbox"
+msgid "Synth Brass 1"
+msgstr "合成铜管 1"
+
+#: src/instrumentset.cpp:98
+msgctxt "@item:inlistbox"
+msgid "Synth Brass 2"
+msgstr "合成铜管 2"
+
+#: src/instrumentset.cpp:99
+msgctxt "@item:inlistbox"
+msgid "Soprano Sax"
+msgstr "高音萨克斯"
+
+#: src/instrumentset.cpp:100
+msgctxt "@item:inlistbox"
+msgid "Alto Sax"
+msgstr "中音萨克斯"
+
+#: src/instrumentset.cpp:101
+msgctxt "@item:inlistbox"
+msgid "Tenor Sax"
+msgstr "次中音萨克斯"
+
+#: src/instrumentset.cpp:102
+msgctxt "@item:inlistbox"
+msgid "Baritone Sax"
+msgstr "低音萨克斯"
+
+#: src/instrumentset.cpp:103
+msgctxt "@item:inlistbox"
+msgid "Oboe"
+msgstr "双簧管"
+
+#: src/instrumentset.cpp:104
+msgctxt "@item:inlistbox"
+msgid "English Horn"
+msgstr "英国管"
+
+#: src/instrumentset.cpp:105
+msgctxt "@item:inlistbox"
+msgid "Bassoon"
+msgstr "大管"
+
+#: src/instrumentset.cpp:106
+msgctxt "@item:inlistbox"
+msgid "Clarinet"
+msgstr "单簧管"
+
+#: src/instrumentset.cpp:107
+msgctxt "@item:inlistbox"
+msgid "Piccolo"
+msgstr "短笛"
+
+#: src/instrumentset.cpp:108
+msgctxt "@item:inlistbox"
+msgid "Flute"
+msgstr "长笛"
+
+#: src/instrumentset.cpp:109
+msgctxt "@item:inlistbox woodwind musical instrument. http://en.wikipedia.org/wiki/Recorder"
+msgid "Recorder"
+msgstr "竖笛"
+
+#: src/instrumentset.cpp:110
+msgctxt "@item:inlistbox"
+msgid "Pan Flute"
+msgstr "牧笛"
+
+#: src/instrumentset.cpp:111
+msgctxt "@item:inlistbox"
+msgid "Blown Bottle"
+msgstr "瓶笛"
+
+#: src/instrumentset.cpp:112
+msgctxt "@item:inlistbox"
+msgid "Shakuhachi"
+msgstr "尺八笛"
+
+#: src/instrumentset.cpp:113
+msgctxt "@item:inlistbox"
+msgid "Whistle"
+msgstr "口哨"
+
+#: src/instrumentset.cpp:114
+msgctxt "@item:inlistbox"
+msgid "Ocarina"
+msgstr "陶笛"
+
+#: src/instrumentset.cpp:115
+msgctxt "@item:inlistbox"
+msgid "Lead 1 - Square Wave"
+msgstr "领奏 1 - 方波"
+
+#: src/instrumentset.cpp:116
+msgctxt "@item:inlistbox"
+msgid "Lead 2 - Saw Tooth"
+msgstr "领奏 2 - 锯齿"
+
+#: src/instrumentset.cpp:117
+msgctxt "@item:inlistbox"
+msgid "Lead 3 - Calliope"
+msgstr "领奏 3 - 汽笛风琴"
+
+#: src/instrumentset.cpp:118
+msgctxt "@item:inlistbox"
+msgid "Lead 4 - Chiflead"
+msgstr "领奏 4 - Chiflead"
+
+#: src/instrumentset.cpp:119
+msgctxt "@item:inlistbox"
+msgid "Lead 5 - Charang"
+msgstr "领奏 5 - Charang"
+
+#: src/instrumentset.cpp:120
+msgctxt "@item:inlistbox"
+msgid "Lead 6 - Voice"
+msgstr "领奏 6 - 人声"
+
+#: src/instrumentset.cpp:121
+msgctxt "@item:inlistbox"
+msgid "Lead 7 - Fifths"
+msgstr "领奏 7 - 五度"
+
+#: src/instrumentset.cpp:122
+msgctxt "@item:inlistbox"
+msgid "Lead 8 - Bass+Lead"
+msgstr "领奏 8 - 贝司+领奏"
+
+#: src/instrumentset.cpp:123
+msgctxt "@item:inlistbox"
+msgid "Pad 1 - New Age"
+msgstr "背景 1 - 新时代"
+
+#: src/instrumentset.cpp:124
+msgctxt "@item:inlistbox"
+msgid "Pad 2 - Warm"
+msgstr "背景 2 - 温暖的"
+
+#: src/instrumentset.cpp:125
+msgctxt "@item:inlistbox"
+msgid "Pad 3 - Polysynth"
+msgstr "背景 3 - 复合合成"
+
+#: src/instrumentset.cpp:126
+msgctxt "@item:inlistbox"
+msgid "Pad 4 - Choir"
+msgstr "背景 4 - 唱诗班"
+
+#: src/instrumentset.cpp:127
+msgctxt "@item:inlistbox"
+msgid "Pad 5 - Bow"
+msgstr "背景 5 - 弓弦音色"
+
+#: src/instrumentset.cpp:128
+msgctxt "@item:inlistbox"
+msgid "Pad 6 - Metallic"
+msgstr "背景 6 - 金属风"
+
+#: src/instrumentset.cpp:129
+msgctxt "@item:inlistbox"
+msgid "Pad 7 - Halo"
+msgstr "背景 7 - 问候"
+
+#: src/instrumentset.cpp:130
+msgctxt "@item:inlistbox"
+msgid "Pad 8 - Sweep"
+msgstr "背景 8 - 宽阔场景"
+
+#: src/instrumentset.cpp:131
+msgctxt "@item:inlistbox"
+msgid "FX 1 - Rain"
+msgstr "效果 1 - 下雨"
+
+#: src/instrumentset.cpp:132
+msgctxt "@item:inlistbox"
+msgid "FX 2 - Soundtrack"
+msgstr "效果 2 - 音轨"
+
+#: src/instrumentset.cpp:133
+msgctxt "@item:inlistbox"
+msgid "FX 3 - Crystal"
+msgstr "效果 3 - 水晶"
+
+#: src/instrumentset.cpp:134
+msgctxt "@item:inlistbox"
+msgid "FX 4 - Atmosphere"
+msgstr "效果 4 - 气氛"
+
+#: src/instrumentset.cpp:135
+msgctxt "@item:inlistbox"
+msgid "FX 5 - Brightness"
+msgstr "效果 5 - 明亮"
+
+#: src/instrumentset.cpp:136
+msgctxt "@item:inlistbox"
+msgid "FX 6 - Goblins"
+msgstr "效果 6 - 活跃"
+
+#: src/instrumentset.cpp:137
+msgctxt "@item:inlistbox"
+msgid "FX 7 - Echoes"
+msgstr "效果 7 - 回声"
+
+#: src/instrumentset.cpp:138
+msgctxt "@item:inlistbox"
+msgid "FX 8 - Sci-fi"
+msgstr "效果 8 - 科幻"
+
+#: src/instrumentset.cpp:139
+msgctxt "@item:inlistbox"
+msgid "Sitar"
+msgstr "锡塔"
+
+#: src/instrumentset.cpp:140
+msgctxt "@item:inlistbox"
+msgid "Banjo"
+msgstr "班卓"
+
+#: src/instrumentset.cpp:141
+msgctxt "@item:inlistbox"
+msgid "Shamisen"
+msgstr "三味线"
+
+#: src/instrumentset.cpp:142
+msgctxt "@item:inlistbox"
+msgid "Koto"
+msgstr "日本筝"
+
+#: src/instrumentset.cpp:143
+msgctxt "@item:inlistbox"
+msgid "Kalimba"
+msgstr "卡林巴"
+
+#: src/instrumentset.cpp:144
+msgctxt "@item:inlistbox"
+msgid "Bagpipe"
+msgstr "风笛"
+
+#: src/instrumentset.cpp:145
+msgctxt "@item:inlistbox"
+msgid "Fiddle"
+msgstr "小提琴"
+
+#: src/instrumentset.cpp:146
+msgctxt "@item:inlistbox"
+msgid "Shannai"
+msgstr "山奈"
+
+#: src/instrumentset.cpp:147
+msgctxt "@item:inlistbox"
+msgid "Tinkle Bell"
+msgstr "铃铛"
+
+#: src/instrumentset.cpp:148
+msgctxt "@item:inlistbox"
+msgid "Agogo"
+msgstr "阿果果"
+
+#: src/instrumentset.cpp:149
+msgctxt "@item:inlistbox"
+msgid "Steel Drum"
+msgstr "钢鼓"
+
+#: src/instrumentset.cpp:150
+msgctxt "@item:inlistbox"
+msgid "Wood Block"
+msgstr "梆子"
+
+#: src/instrumentset.cpp:151
+msgctxt "@item:inlistbox"
+msgid "Taiko Drum"
+msgstr "太叩鼓"
+
+#: src/instrumentset.cpp:152
+msgctxt "@item:inlistbox"
+msgid "Melodic Tom"
+msgstr "旋律性嗵嗵鼓"
+
+#: src/instrumentset.cpp:153
+msgctxt "@item:inlistbox"
+msgid "Synth Drum"
+msgstr "合成鼓"
+
+#: src/instrumentset.cpp:154
+msgctxt "@item:inlistbox"
+msgid "Reverse Cymbal"
+msgstr "反铙钹"
+
+#: src/instrumentset.cpp:155
+msgctxt "@item:inlistbox"
+msgid "Guitar Fret Noise"
+msgstr "吉它擦弦声"
+
+#: src/instrumentset.cpp:156
+msgctxt "@item:inlistbox"
+msgid "Breath Noise"
+msgstr "呼吸声"
+
+#: src/instrumentset.cpp:157
+msgctxt "@item:inlistbox"
+msgid "Seashore"
+msgstr "海浪声"
+
+#: src/instrumentset.cpp:158
+msgctxt "@item:inlistbox"
+msgid "Bird Tweet"
+msgstr "鸟鸣"
+
+#: src/instrumentset.cpp:159
+msgctxt "@item:inlistbox"
+msgid "Telephone"
+msgstr "电话铃声"
+
+#: src/instrumentset.cpp:160
+msgctxt "@item:inlistbox"
+msgid "Helicopter"
+msgstr "直升飞机声"
+
+#: src/instrumentset.cpp:161
+msgctxt "@item:inlistbox"
+msgid "Applause"
+msgstr "掌声"
+
+#: src/instrumentset.cpp:162
+msgctxt "@item:inlistbox"
+msgid "Gunshot"
+msgstr "枪声"
+
+#: src/instrumentset.cpp:166
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Percussion %1"
+msgstr "打击乐器 %1"
+
+#: src/channels.cpp:42
+msgctxt "@title:window"
+msgid "MIDI Channels"
+msgstr "MIDI通道"
+
+#: src/channels.cpp:54
+msgctxt "MIDI channel number"
+msgid "Channel"
+msgstr "通道"
+
+#: src/channels.cpp:57
+msgctxt "Sound muting"
+msgid "Mute"
+msgstr "静音"
+
+#: src/channels.cpp:60
+msgctxt "Soloist channel"
+msgid "Solo"
+msgstr "独奏"
+
+#: src/channels.cpp:63
+msgctxt "Channel volume level"
+msgid "Level"
+msgstr "音量"
+
+#: src/channels.cpp:66
+msgctxt "Instrument locked"
+msgid "Lock"
+msgstr "锁定"
+
+#: src/channels.cpp:69
+msgctxt "MIDI program/patch, predefined instrument"
+msgid "Patch (sound setting)"
+msgstr "音色"
+
+#: src/kmid_part.cpp:434
+#| msgid "KMid"
+msgctxt "@title"
+msgid "KMidPart"
+msgstr "KMidPart"
+
+#: src/kmid_part.cpp:435
+#| msgid "Pedro Lopez-Cabanillas"
+msgctxt "@info:credit"
+msgid "Pedro Lopez-Cabanillas"
+msgstr "Pedro Lopez-Cabanillas "
+
+#: src/kmid_part.cpp:436
+#| msgid "Maintainer"
+msgctxt "@info:credit"
+msgid "Maintainer"
+msgstr "维护者"
+
+#: src/kmid_partview.cpp:60
+#| msgctxt "@info:whatsthis"
+#| msgid "Time position control"
+msgctxt "@info:whatsthis"
+msgid "Player play/stop control"
+msgstr "播放器 播放/停止 控制"
+
+#: src/kmid_partview.cpp:61
+#| msgctxt "@action player play"
+#| msgid "Play"
+msgctxt "@info:tooltip player button"
+msgid "Play/Stop"
+msgstr "播放/停止"
+
+#: src/kmid_partview.cpp:68
+#| msgctxt "@action Pianola"
+#| msgid "Player Piano"
+msgctxt "@info:whatsthis"
+msgid "Player pause control"
+msgstr "播放器 暂停 控制"
+
+#: src/kmid_partview.cpp:69
+#| msgctxt "@action player pause"
+#| msgid "Pause"
+msgctxt "@info:tooltip player button"
+msgid "Pause"
+msgstr "暂停"
+
+#: src/kmid_partview.cpp:79
+#| msgctxt "@title:window"
+#| msgid "Time Position"
+msgctxt "@info:tooltip player button"
+msgid "Time position"
+msgstr "时间位置"
+
+#: src/kmid_partview.cpp:91
+#| msgctxt "@info:whatsthis"
+#| msgid "Time position control"
+msgctxt "@info:whatsthis"
+msgid "Volume factor control"
+msgstr "音量因子控制"
+
+#: src/kmid_partview.cpp:92
+#| msgid "Show &Volume Bar"
+msgctxt "@info:tooltip player control"
+msgid "Volume factor"
+msgstr "音量因子"
+
+#: src/kmid_partview.cpp:106
+msgctxt "@info:whatsthis"
+msgid "Pitch transpose control"
+msgstr "移调控制"
+
+#: src/kmid_partview.cpp:107
+msgctxt "@info:tooltip player control"
+msgid "Pitch transpose"
+msgstr "移调"
+
+#: src/kmid_partview.cpp:121
+msgctxt "@info:whatsthis"
+msgid "Speed factor reset"
+msgstr "重置速度因子"
+
+#: src/kmid_partview.cpp:122
+msgctxt "@info:tooltip player button"
+msgid "Speed reset"
+msgstr "重置速度"
+
+#: src/kmid_partview.cpp:129
+msgctxt "@info:whatsthis"
+msgid "Speed factor control"
+msgstr "速度因子控制"
+
+#: src/kmid_partview.cpp:130
+msgctxt "@info:tooltip player control"
+msgid "Speed factor"
+msgstr "速度因子"
+
+#: examples/kmidtest/kmidtest.cpp:51
+msgid "Could not find KMidPart!"
+msgstr "找不到 KMidPart!"
+
+#: examples/kmidtest/kmidtest.cpp:81
+#| msgctxt "@info:whatsthis"
+#| msgid "Exit the application"
+msgid "A KDE KPart Application"
+msgstr "KDE KPart 应用程序"
+
+#: examples/kmidtest/kmidtest.cpp:87
+#| msgid "KMid"
+msgid "KMidTest"
+msgstr "KMidTest"
+
+#: examples/kmidtest/kmidtest.cpp:89
+#| msgid "Pedro Lopez-Cabanillas"
+msgid "(C) 2010 Pedro Lopez-Cabanillas"
+msgstr "(C) 2010 Pedro Lopez-Cabanillas"
+
+#: examples/kmidtest/kmidtest.cpp:95
+#| msgid "Song(s) to open"
+msgid "Song to open"
+msgstr "要打开的歌曲"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KDE 中国"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-china@kde.org"
+
+#. i18n: file: alsa/prefs_progs.ui:30
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_exec_fluid)
+#. i18n: file: library/kmid.kcfg:71
+#. i18n: ectx: label, entry (exec_fluid), group (Settings)
+#: rc.cpp:6
+#: rc.cpp:193
+msgid "Run FluidSynth at startup"
+msgstr "启动时运行 FluidSynth"
+
+#. i18n: file: alsa/prefs_progs.ui:37
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: alsa/prefs_progs.ui:204
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:9
+#: rc.cpp:52
+msgid "Command:"
+msgstr "命令："
+
+#. i18n: file: alsa/prefs_progs.ui:47
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_cmd_fluid)
+#. i18n: file: alsa/prefs_progs.ui:214
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_cmd_timidity)
+#: rc.cpp:12
+#: rc.cpp:55
+msgid "application/x-executable"
+msgstr "application/x-executable"
+
+#. i18n: file: alsa/prefs_progs.ui:54
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: file: alsa/prefs_progs.ui:228
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: rc.cpp:15
+#: rc.cpp:61
+msgid "Audio Output:"
+msgstr "音频输出："
+
+#. i18n: file: alsa/prefs_progs.ui:68
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:242
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:18
+#: rc.cpp:64
+msgid "alsa"
+msgstr "alsa"
+
+#. i18n: file: alsa/prefs_progs.ui:73
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:247
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:21
+#: rc.cpp:67
+msgid "pulseaudio"
+msgstr "pulseaudio"
+
+#. i18n: file: alsa/prefs_progs.ui:78
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:252
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:24
+#: rc.cpp:70
+msgid "oss"
+msgstr "oss"
+
+#. i18n: file: alsa/prefs_progs.ui:83
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:257
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:27
+#: rc.cpp:73
+msgid "jack"
+msgstr "jack"
+
+#. i18n: file: alsa/prefs_progs.ui:91
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: mac/prefs_synth.ui:27
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:30
+#: rc.cpp:247
+msgid "Sound Font:"
+msgstr "音色库(SoundFont)："
+
+#. i18n: file: alsa/prefs_progs.ui:104
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_sf2_fluid)
+#: rc.cpp:33
+msgid "audio/x-soundfont"
+msgstr "audio/x-soundfont"
+
+#. i18n: file: alsa/prefs_progs.ui:111
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#. i18n: file: alsa/prefs_progs.ui:311
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:36
+#: rc.cpp:82
+msgid "Arguments:"
+msgstr "参数："
+
+#. i18n: file: alsa/prefs_progs.ui:134
+#. i18n: ectx: property (text), widget (KTitleWidget, label_fluid_available)
+#. i18n: file: alsa/prefs_progs.ui:221
+#. i18n: ectx: property (text), widget (KTitleWidget, label_timidity_available)
+#: rc.cpp:39
+#: rc.cpp:58
+msgid "Not yet tested"
+msgstr "未测试"
+
+#. i18n: file: alsa/prefs_progs.ui:141
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: file: alsa/prefs_progs.ui:265
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: rc.cpp:42
+#: rc.cpp:76
+msgid "Audio Device:"
+msgstr "音频设备："
+
+#. i18n: file: alsa/prefs_progs.ui:151
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: file: alsa/prefs_progs.ui:288
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: rc.cpp:45
+#: rc.cpp:79
+msgid "Sample Rate:"
+msgstr "采样率："
+
+#. i18n: file: alsa/prefs_progs.ui:197
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_exec_timidity)
+#. i18n: file: library/kmid.kcfg:106
+#. i18n: ectx: label, entry (exec_timidity), group (Settings)
+#: rc.cpp:49
+#: rc.cpp:214
+msgid "Run TiMidity++ at startup"
+msgstr "启动时运行 TiMidity++"
+
+#. i18n: file: src/prefs_lyrics.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:85
+msgid "Font face:"
+msgstr "字体名称："
+
+#. i18n: file: src/prefs_lyrics.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:88
+msgid "Font color:"
+msgstr "字体颜色："
+
+#. i18n: file: src/prefs_lyrics.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:91
+msgid "Font size:"
+msgstr "字体大小："
+
+#. i18n: file: src/prefs_midi.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_backend)
+#: rc.cpp:94
+msgid "MIDI Backend:"
+msgstr "MIDI 后端模块："
+
+#. i18n: file: src/prefs_midi.ui:30
+#. i18n: ectx: property (text), widget (QLabel, label_connection)
+#: rc.cpp:97
+msgid "Output MIDI Connection:"
+msgstr "MIDI 输出连接："
+
+#. i18n: file: src/prefs_midi.ui:40
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_advanced_ports)
+#: rc.cpp:100
+msgid "Show advanced MIDI ports"
+msgstr "显示高级 MIDI 端口"
+
+#. i18n: file: src/prefs_midi.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_mapper)
+#: rc.cpp:103
+msgid "MIDI mapper file:"
+msgstr "MIDI 映射文件："
+
+#. i18n: file: src/prefs_midi.ui:63
+#. i18n: ectx: property (text), widget (QLabel, label_resetmode)
+#: rc.cpp:106
+msgid "Reset Mode:"
+msgstr "重置模式："
+
+#. i18n: file: src/prefs_midi.ui:71
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:109
+msgid "Do not send reset messages"
+msgstr "不要发送重置消息"
+
+#. i18n: file: src/prefs_midi.ui:76
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:112
+msgid "General MIDI"
+msgstr "常规 MIDI"
+
+#. i18n: file: src/prefs_midi.ui:81
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:115
+msgid "Roland GS"
+msgstr "Roland GS"
+
+#. i18n: file: src/prefs_midi.ui:86
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:118
+msgid "Yamaha XG"
+msgstr "Yamaha XG"
+
+#. i18n: file: src/prefs_midi.ui:91
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:121
+msgid "System Exclusive File"
+msgstr "系统独有信息(System Exclusive)文件"
+
+#. i18n: file: src/prefs_midi.ui:102
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_sysex_file)
+#: rc.cpp:124
+msgid "*.syx|System Exclusive Files (*.syx)"
+msgstr "*.syx|系统独有信息(System Exclusive)文件(*.syx)"
+
+#. i18n: file: src/kmidui.rc:8
+#. i18n: ectx: Menu (song)
+#: rc.cpp:127
+msgid "&Song"
+msgstr "歌曲(&S)"
+
+#. i18n: file: src/kmidui.rc:18
+#. i18n: ectx: Menu (song_settings)
+#: rc.cpp:130
+msgid "S&ong Settings"
+msgstr "歌曲(&S)设置"
+
+#. i18n: file: src/kmidui.rc:25
+#. i18n: ectx: Menu (playlist)
+#: rc.cpp:133
+msgid "&Playlist"
+msgstr "播放列表(&P)"
+
+#. i18n: file: src/kmidui.rc:34
+#. i18n: ectx: Menu (view)
+#. i18n: file: src/kmid_part.rc:4
+#. i18n: ectx: Menu (view)
+#: rc.cpp:136
+#: rc.cpp:142
+msgid "&View"
+msgstr "查看(&V)"
+
+#. i18n: file: src/kmidui.rc:45
+#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: examples/kmidtest/kmidtestui.rc:11
+#. i18n: ectx: ToolBar (mainToolBar)
+#: rc.cpp:139
+#: rc.cpp:148
+msgid "Main Toolbar"
+msgstr "主工具栏"
+
+#. i18n: file: examples/kmidtest/kmidtestui.rc:4
+#. i18n: ectx: Menu (file)
+#: rc.cpp:145
+#| msgctxt "@item:inlistbox"
+#| msgid "Fiddle"
+msgid "File"
+msgstr "文件"
+
+#. i18n: file: library/kmid.kcfg:11
+#. i18n: ectx: label, entry (font), group (Settings)
+#: rc.cpp:151
+msgid "The font used to display the lyrics."
+msgstr "歌词字体。"
+
+#. i18n: file: library/kmid.kcfg:15
+#. i18n: ectx: label, entry (size), group (Settings)
+#: rc.cpp:154
+msgid "Size of the lyrics font"
+msgstr "歌词字号"
+
+#. i18n: file: library/kmid.kcfg:19
+#. i18n: ectx: label, entry (color), group (Settings)
+#: rc.cpp:157
+msgid "Color of the lyrics text, after being played"
+msgstr "播放过后的歌词用颜色标记"
+
+#. i18n: file: library/kmid.kcfg:23
+#. i18n: ectx: label, entry (encoding), group (Settings)
+#: rc.cpp:160
+msgid "Initial lyrics text encoding"
+msgstr "歌词编码初值"
+
+#. i18n: file: library/kmid.kcfg:26
+#. i18n: ectx: label, entry (midi_backend), group (Settings)
+#: rc.cpp:163
+msgid "MIDI backend."
+msgstr "MIDI 后端模块。"
+
+#. i18n: file: library/kmid.kcfg:29
+#. i18n: ectx: label, entry (output_connection), group (Settings)
+#: rc.cpp:166
+msgid "MIDI port connection."
+msgstr "MIDI 端口连接。"
+
+#. i18n: file: library/kmid.kcfg:32
+#. i18n: ectx: label, entry (midi_mapper), group (Settings)
+#: rc.cpp:169
+msgid "MIDI mapper file."
+msgstr "MIDI 映射文件。"
+
+#. i18n: file: library/kmid.kcfg:36
+#. i18n: ectx: label, entry (player_autostart), group (Settings)
+#: rc.cpp:172
+msgid "Start playing right after loading a song."
+msgstr "加载歌曲后立即播放。"
+
+#. i18n: file: library/kmid.kcfg:40
+#. i18n: ectx: label, entry (player_loop), group (Settings)
+#: rc.cpp:175
+msgid "Loop the play list."
+msgstr "循环播放列表。"
+
+#. i18n: file: library/kmid.kcfg:44
+#. i18n: ectx: label, entry (playlist_shuffle), group (Settings)
+#: rc.cpp:178
+msgid "Shuffle the play list."
+msgstr "随机播放列表。"
+
+#. i18n: file: library/kmid.kcfg:48
+#. i18n: ectx: label, entry (reset_mode), group (Settings)
+#: rc.cpp:181
+msgid "MIDI reset message mode."
+msgstr "MIDI 消息重置模式。"
+
+#. i18n: file: library/kmid.kcfg:59
+#. i18n: ectx: label, entry (sysex_file), group (Settings)
+#: rc.cpp:184
+msgid "System Exclusive MIDI file for reset message."
+msgstr "重置消息的系统独有信息(System Exclusive)文件。"
+
+#. i18n: file: library/kmid.kcfg:62
+#. i18n: ectx: label, entry (advanced_ports), group (Settings)
+#: rc.cpp:187
+msgid "Show advanced MIDI ports."
+msgstr "显示高级 MIDI 端口。"
+
+#. i18n: file: library/kmid.kcfg:66
+#. i18n: ectx: label, entry (auto_song_settings), group (Settings)
+#: rc.cpp:190
+msgid "Load and save automatically the song settings."
+msgstr "自动加载或保存歌曲设置。"
+
+#. i18n: file: library/kmid.kcfg:75
+#. i18n: ectx: label, entry (cmd_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:110
+#. i18n: ectx: label, entry (cmd_timidity), group (Settings)
+#: rc.cpp:196
+#: rc.cpp:217
+msgid "Command"
+msgstr "命令"
+
+#. i18n: file: library/kmid.kcfg:79
+#. i18n: ectx: label, entry (audio_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:114
+#. i18n: ectx: label, entry (audio_timidity), group (Settings)
+#: rc.cpp:199
+#: rc.cpp:220
+msgid "Audio Output"
+msgstr "音频输出"
+
+#. i18n: file: library/kmid.kcfg:89
+#. i18n: ectx: label, entry (audiodev_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:124
+#. i18n: ectx: label, entry (audiodev_timidity), group (Settings)
+#: rc.cpp:202
+#: rc.cpp:223
+msgid "Audio Device"
+msgstr "音频设备"
+
+#. i18n: file: library/kmid.kcfg:93
+#. i18n: ectx: label, entry (rate_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:128
+#. i18n: ectx: label, entry (rate_timidity), group (Settings)
+#: rc.cpp:205
+#: rc.cpp:226
+msgid "Sample Rate"
+msgstr "采样率"
+
+#. i18n: file: library/kmid.kcfg:97
+#. i18n: ectx: label, entry (sf2_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:145
+#. i18n: ectx: label, entry (soundfont_dls), group (Settings)
+#: rc.cpp:208
+#: rc.cpp:238
+msgid "Sound Font"
+msgstr "音色库(SoundFont)"
+
+#. i18n: file: library/kmid.kcfg:101
+#. i18n: ectx: label, entry (args_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:132
+#. i18n: ectx: label, entry (args_timidity), group (Settings)
+#: rc.cpp:211
+#: rc.cpp:229
+msgid "Arguments"
+msgstr "参数"
+
+#. i18n: file: library/kmid.kcfg:137
+#. i18n: ectx: label, entry (exec_dls), group (Settings)
+#. i18n: file: mac/prefs_synth.ui:20
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_exec_dls)
+#: rc.cpp:232
+#: rc.cpp:244
+msgid "Enable DLS Synth at startup"
+msgstr "启动时允许 DLS 合成器工作。"
+
+#. i18n: file: library/kmid.kcfg:141
+#. i18n: ectx: label, entry (default_dls), group (Settings)
+#. i18n: file: mac/prefs_synth.ui:53
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_default_dls)
+#: rc.cpp:235
+#: rc.cpp:251
+msgid "Default Apple DLS Sound Set"
+msgstr "默认的 Apple DLS 音色集"
+
+#. i18n: file: library/kmid.kcfg:149
+#. i18n: ectx: label, entry (reverb_dls), group (Settings)
+#. i18n: file: mac/prefs_synth.ui:60
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_reverb_dls)
+#: rc.cpp:241
+#: rc.cpp:254
+msgid "Use Internal Reverb"
+msgstr "使用内置的混响效果器"
+
+#~ msgid "Configure Channel View"
+#~ msgstr "配置通道视图"
+#~ msgid "Choose Look Mode"
+#~ msgstr "选择外观模式"
+#~ msgid "3D look"
+#~ msgstr "3D 外观"
+#~ msgid "3D - filled"
+#~ msgstr "3D - 填充"
+#~ msgid "Channel View"
+#~ msgstr "通道视图"
+#~ msgid "Collections Manager"
+#~ msgstr "收藏集管理器"
+#~ msgid "Available collections:"
+#~ msgstr "可用的收藏集："
+#~ msgid "Songs in selected collection:"
+#~ msgstr "选中的收藏集中的乐曲："
+#~ msgid "&New..."
+#~ msgstr "新建(&N)..."
+#~ msgid "&Copy..."
+#~ msgstr "复制(&C)..."
+#~ msgid "Delete"
+#~ msgstr "删除"
+#~ msgid "&Add..."
+#~ msgstr "添加(&A)..."
+#~ msgid "&Remove"
+#~ msgstr "删除(&R)"
+#~ msgid "New Collection"
+#~ msgstr "新建收藏集"
+#~ msgid "Enter the name of the new collection:"
+#~ msgstr "输入新收藏集的名称："
+#~ msgid "The name '%1' is already used"
+#~ msgstr "名称“%1”已经被使用"
+#~ msgid "Copy Collection"
+#~ msgstr "复制收藏集"
+#~ msgid "Enter the name of the copy collection:"
+#~ msgstr "输入复制的收藏集的名字："
+#~ msgid "Change Collection Name"
+#~ msgstr "改变收藏集的名称"
+#~ msgid "Enter the name of the selected collection:"
+#~ msgstr "输入选中的收藏集的名字："
+#~ msgid "Default"
+#~ msgstr "默认"
+#~ msgid "The file %1 does not exist or cannot be opened."
+#~ msgstr "文件 %1 不存在或不能打开。"
+#~ msgid "The file %1 is not a MIDI file."
+#~ msgstr "文件 %1 不是一个 MIDI 文件。"
+#~ msgid ""
+#~ "Ticks per quarter note is negative. Please send this file to larrosa@kde."
+#~ "org"
+#~ msgstr "四分音符时长为负数。请把这个文件发送给 larrosa@kde.org"
+#~ msgid "Not enough memory."
+#~ msgstr "内存不足。"
+#~ msgid "This file is corrupted or not well built."
+#~ msgstr "这个文件已损坏或者没有制作好。"
+#~ msgid "Unknown error message"
+#~ msgstr "未知的错误消息"
+#~ msgid "You must load a file before playing it."
+#~ msgstr "在播放一个文件之前您首先要载入它。"
+#~ msgid "A song is already being played."
+#~ msgstr "已经有一首歌曲正在播放。"
+#~ msgid ""
+#~ "Could not open /dev/sequencer.\n"
+#~ "Probably there is another program using it."
+#~ msgstr ""
+#~ "无法打开 /dev/sequencer。\n"
+#~ "也许另外一个程序正在使用它。"
+#~ msgid "&Stop"
+#~ msgstr "停止(&S)"
+#~ msgid "&Loop"
+#~ msgstr "循环(&L)"
+#~ msgid "&Organize..."
+#~ msgstr "调整顺序(&O)..."
+#~ msgid "In Order"
+#~ msgstr "顺序方式"
+#~ msgid "Play Order"
+#~ msgstr "播放顺序"
+#~ msgid "&MT-32"
+#~ msgstr "&MT-32"
+#~ msgid "File Type"
+#~ msgstr "文件类型"
+#~ msgid "&Text Events"
+#~ msgstr "文本事件(&T)"
+#~ msgid "Display Events"
+#~ msgstr "显示事件"
+#~ msgid "Automatic Text Chooser"
+#~ msgstr "自动文本选择器"
+#~ msgid "Hide &Volume Bar"
+#~ msgstr "隐藏音量滑块(&V)"
+#~ msgid "Channel View &Options..."
+#~ msgstr "通道视图选项(&O)..."
+#~ msgid "&Font Change..."
+#~ msgstr "改变字体(&F)..."
+#~ msgid "MIDI &Setup..."
+#~ msgstr "MIDI 设置(&S)..."
+#~ msgid "Only local files are currently supported."
+#~ msgstr "目前仅支持本地文件。"
+#~ msgid ""
+#~ "Could not open /dev/sequencer to get some info.\n"
+#~ "Probably there is another program using it."
+#~ msgstr ""
+#~ "无法打开 /dev/sequencer 来取得某些信息。\n"
+#~ "也许另外一个程序正在使用它。"
+#~ msgid ""
+#~ "File %1 already exists\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "文件 %1 已经存在\n"
+#~ "您要覆盖它吗？"
+#~ msgid "Overwrite"
+#~ msgstr "覆盖"
+#~ msgid "(c) 1997,98,99,2000, Antonio Larrosa Jimenez"
+#~ msgstr "(c) 1997,98,99,2000，Antonio Larrosa Jimenez"
+#~ msgid "Original Developer/Maintainer"
+#~ msgstr "最初的开发者/维护者"
+#~ msgid "Backward"
+#~ msgstr "后退"
+#~ msgid "File to open"
+#~ msgstr "要打开的文件"
+#~ msgid "Configure MIDI Devices"
+#~ msgstr "配置 MIDI 设备"
+#~ msgid "Select the MIDI device you want to use:"
+#~ msgstr "选择您要使用的 MIDI 设备："
+#~ msgid "Use the MIDI map:"
+#~ msgstr "使用 MIDI 映射表："
+#~ msgid "None"
+#~ msgstr "无"
+#~ msgid "Browse..."
+#~ msgstr "浏览..."
+#~ msgid "&Collections"
+#~ msgstr "收藏集(&C)"
+#~ msgid "Temporary Collection"
+#~ msgstr "临时收藏集"
+

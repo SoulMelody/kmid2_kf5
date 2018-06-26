@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>prefs_progs</class>
+ <widget class="QWidget" name="prefs_progs">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>421</width>
+    <height>304</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="KTabWidget" name="tabs">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabFS">
+      <attribute name="title">
+       <string notr="true">FluidSynth</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" colspan="2">
+        <widget class="QCheckBox" name="kcfg_exec_fluid">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Run FluidSynth at startup</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Command:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="KUrlRequester" name="kcfg_cmd_fluid">
+         <property name="filter">
+          <string>application/x-executable</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Audio Output:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="KComboBox" name="kcfg_audio_fluid">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>alsa</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>pulseaudio</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>oss</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>jack</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Sound Font:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="KUrlRequester" name="kcfg_sf2_fluid">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="filter">
+          <string>audio/x-soundfont</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Arguments:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="KLineEdit" name="kcfg_args_fluid">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="urlDropsEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="showClearButton" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="KTitleWidget" name="label_fluid_available">
+         <property name="text">
+          <string>Not yet tested</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Audio Device:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Sample Rate:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="KLineEdit" name="kcfg_audiodev_fluid">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="urlDropsEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="showClearButton" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="KLineEdit" name="kcfg_rate_fluid">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="urlDropsEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="showClearButton" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabTimidity">
+      <attribute name="title">
+       <string notr="true">TiMidity++</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0" colspan="2">
+        <widget class="QCheckBox" name="kcfg_exec_timidity">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Run TiMidity++ at startup</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Command:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="KUrlRequester" name="kcfg_cmd_timidity">
+         <property name="filter">
+          <string>application/x-executable</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="KTitleWidget" name="label_timidity_available">
+         <property name="text">
+          <string>Not yet tested</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Audio Output:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="KComboBox" name="kcfg_audio_timidity">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>alsa</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>pulseaudio</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>oss</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>jack</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Audio Device:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="KLineEdit" name="kcfg_audiodev_timidity">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="urlDropsEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="showClearButton" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Sample Rate:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="KLineEdit" name="kcfg_rate_timidity">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="urlDropsEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="showClearButton" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Arguments:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="KLineEdit" name="kcfg_args_timidity">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="urlDropsEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="showClearButton" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0" colspan="2">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KComboBox</class>
+   <extends>QComboBox</extends>
+   <header>kcombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>ktabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>KTitleWidget</class>
+   <extends>QWidget</extends>
+   <header>ktitlewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KUrlRequester</class>
+   <extends>QFrame</extends>
+   <header>kurlrequester.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>audiofluid</sender>
+   <signal>activated(QString)</signal>
+   <receiver>kcfg_audio_fluid</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>222</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>audiotimidity</sender>
+   <signal>activated(QString)</signal>
+   <receiver>kcfg_audio_timidity</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>250</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>161</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

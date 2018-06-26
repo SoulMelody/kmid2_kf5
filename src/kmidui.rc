@@ -1,0 +1,95 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="kmid" version="1">
+<MenuBar>
+    <Menu name="file">
+        <Action name="file_info"/>
+        <Action name="file_save_lyrics"/>
+    </Menu>
+    <Menu name="song"><text>&amp;Song</text>
+        <Action name="previous"/>
+        <Action name="backward"/>
+        <Action name="stop"/>
+        <Action name="play"/>
+        <Action name="pause"/>
+        <Action name="forward"/>
+        <Action name="next"/>
+        <Separator/>
+        <Action name="autostart"/>
+        <Menu name="song_settings"><text>S&amp;ong Settings</text>
+            <Action name="load_songsettings"/>
+            <Action name="save_songsettings"/>
+            <Separator/>
+            <Action name="auto_songsettings"/>
+        </Menu>
+    </Menu>
+    <Menu name="playlist"><text>&amp;Playlist</text>
+        <Action name="load_playlist"/>
+        <Action name="save_playlist"/>
+        <Action name="edit_playlist"/>
+        <Separator/>
+        <Action name="autoadd_playlist"/>
+        <Action name="shuffle"/>
+        <Action name="loop"/>
+    </Menu>
+    <Menu name="view"><text>&amp;View</text>
+        <Action name="show_volume_pitch"/>    
+        <Action name="show_rhythm"/>    
+        <Action name="show_position"/>    
+        <Action name="show_codecs"/>    
+        <Separator/>
+        <Action name="show_pianola"/>    
+        <Action name="show_channels"/>    
+    </Menu>
+</MenuBar>
+<ToolBar name="mainToolBar">
+    <text>Main Toolbar</text>
+    <Action name="file_open"/>
+    <Action name="file_quit"/>
+    <Separator/>
+    <Action name="previous"/>
+    <Action name="backward"/>
+    <Action name="stop"/>
+    <Action name="play"/>
+    <Action name="pause"/>
+    <Action name="forward"/>
+    <Action name="next"/>
+    <Separator/>
+    <Action name="options_configure" />
+</ToolBar>
+<State name="stopped_state">
+    <enable>
+        <Action name="play"/>
+        <Action name="backward"/>
+        <Action name="forward"/>
+        <Action name="options_configure"/>
+    </enable>
+    <disable>
+        <Action name="stop"/>
+        <Action name="pause"/>
+    </disable>
+</State>
+<State name="playing_state">
+    <enable>
+        <Action name="stop"/>
+        <Action name="pause"/>
+        <Action name="backward"/>
+        <Action name="forward"/>
+    </enable>
+    <disable>
+        <Action name="play"/>
+        <Action name="options_configure"/>
+    </disable>
+</State>
+<State name="disabled_state">
+    <disable>
+        <Action name="backward"/>
+        <Action name="play"/>
+        <Action name="pause"/>
+        <Action name="stop"/>
+        <Action name="forward"/>
+    </disable>
+    <enable>
+        <Action name="options_configure"/>
+    </enable>
+</State>
+</kpartgui>

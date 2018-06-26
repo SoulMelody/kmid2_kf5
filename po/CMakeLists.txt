@@ -1,0 +1,5 @@
+find_package(MSGFMT)
+if(MSGFMT_FOUND)
+    file(GLOB PO_FILES *.po)
+    add_translations(kmid ${PO_FILES})
+endif(MSGFMT_FOUND)

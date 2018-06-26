@@ -1,0 +1,110 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.kde.KMid">
+    <property name="autoStart" type="b" access="readwrite"/>
+    <property name="midiConnection" type="s" access="readwrite"/>
+    <property name="tempoFactor" type="d" access="readwrite"/>
+    <property name="volumeFactor" type="d" access="readwrite"/>
+    <property name="transpose" type="i" access="readwrite"/>
+    <property name="position" type="x" access="read"/>
+    <property name="length" type="x" access="read"/>
+    <property name="looping" type="b" access="readwrite">
+      <annotation name="org.qtproject.QtDBus.PropertyGetter" value="isLooping"/>
+    </property>
+    <property name="state" type="i" access="read"/>
+    <method name="songProperty">
+        <arg name="key" type="s" direction="in"/>
+        <arg name="result" type="v" direction="out"/>
+    </method>
+    <method name="channelProperty">
+        <arg name="channel" type="i" direction="in"/>
+        <arg name="key" type="s" direction="in"/>
+        <arg name="result" type="v" direction="out"/>
+    </method>
+    <method name="openUrl">
+      <arg name="file" type="s" direction="in"/>
+      <arg type="b" direction="out"/>
+    </method>
+    <method name="pause"/>
+    <method name="play"/>
+    <method name="stop"/>
+    <method name="seek">
+      <arg name="msec" type="x" direction="in"/>
+    </method>
+    <method name="reload"/>
+    <method name="metaData">
+        <arg name="key" type="s" direction="in"/>
+        <arg name="result" type="as" direction="out"/>
+    </method>
+    <method name="setMuted">
+        <arg name="channel" type="i" direction="in"/>
+        <arg name="muted" type="b" direction="in"/>
+    </method>
+    <method name="isMuted">
+        <arg name="channel" type="i" direction="in"/>
+        <arg name="muted" type="b" direction="out"/>
+    </method>
+    <method name="currentSource">
+        <arg name="source" type="s" direction="out"/>
+    </method>
+    <signal name="playerStateChanged">
+        <arg name="newState" type="i"/>
+    </signal>
+    <signal name="beat">
+        <arg name="bar" type="i"/>
+        <arg name="part" type="i"/>
+        <arg name="max" type="i"/>
+    </signal>
+    <signal name="tick">
+        <arg name="time" type="x"/>
+    </signal>
+    <signal name="playerFinished"/>
+    <signal name="sourceChanged">
+        <arg name="file" type="s"/>
+    </signal>
+    <signal name="tempoEvent">
+        <arg name="tempo" type="d"/>
+    </signal>
+    <signal name="timeSignatureEvent">
+        <arg name="num" type="i"/>
+        <arg name="den" type="i"/>
+    </signal>
+    <signal name="midiTextEvent">
+        <arg name="type" type="i"/>
+        <arg name="text" type="s"/>
+    </signal>
+    <signal name="midiNoteOnEvent">
+        <arg name="chan" type="i"/>
+        <arg name="note" type="i"/>
+        <arg name="vel" type="i"/>
+    </signal>
+    <signal name="midiNoteOffEvent">
+        <arg name="chan" type="i"/>
+        <arg name="note" type="i"/>
+        <arg name="vel" type="i"/>
+    </signal>
+    <signal name="midiControllerEvent">
+        <arg name="chan" type="i"/>
+        <arg name="ctl" type="i"/>
+        <arg name="value" type="i"/>
+    </signal>
+    <signal name="midiKeyPressureEvent">
+        <arg name="chan" type="i"/>
+        <arg name="note" type="i"/>
+        <arg name="value" type="i"/>
+    </signal>
+    <signal name="midiProgramEvent">
+        <arg name="chan" type="i"/>
+        <arg name="value" type="i"/>
+    </signal>
+    <signal name="midiChannelPressureEvent">
+        <arg name="chan" type="i"/>
+        <arg name="value" type="i"/>
+    </signal>
+    <signal name="midiPitchBendEvent">
+        <arg name="chan" type="i"/>
+        <arg name="value" type="i"/>
+    </signal>
+  </interface>
+</node>

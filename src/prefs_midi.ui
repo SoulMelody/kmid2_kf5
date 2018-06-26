@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>prefs_midi</class>
+ <widget class="QWidget" name="prefs_midi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>329</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label_backend">
+     <property name="text">
+      <string>MIDI Backend:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="KComboBox" name="backendsCombo"/>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="KLineEdit" name="kcfg_midi_backend"/>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QLabel" name="label_connection">
+     <property name="text">
+      <string>Output MIDI Connection:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="KListWidget" name="connList"/>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QCheckBox" name="kcfg_advanced_ports">
+     <property name="text">
+      <string>Show advanced MIDI ports</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="KLineEdit" name="kcfg_output_connection"/>
+   </item>
+   <item row="7" column="0" colspan="2">
+    <widget class="QLabel" name="label_mapper">
+     <property name="text">
+      <string>MIDI mapper file:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="2">
+    <widget class="KComboBox" name="mapsCombo"/>
+   </item>
+   <item row="9" column="0" colspan="2">
+    <widget class="KLineEdit" name="kcfg_midi_mapper"/>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="label_resetmode">
+     <property name="text">
+      <string>Reset Mode:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="KComboBox" name="kcfg_reset_mode">
+     <item>
+      <property name="text">
+       <string>Do not send reset messages</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>General MIDI</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Roland GS</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Yamaha XG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>System Exclusive File</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="11" column="0" colspan="2">
+    <widget class="KUrlRequester" name="kcfg_sysex_file">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="filter">
+      <string>*.syx|System Exclusive Files (*.syx)</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KComboBox</class>
+   <extends>QComboBox</extends>
+   <header>kcombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KListWidget</class>
+   <extends>QListWidget</extends>
+   <header>klistwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KUrlRequester</class>
+   <extends>QFrame</extends>
+   <header>kurlrequester.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>connList</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>kcfg_output_connection</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>181</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mapsCombo</sender>
+   <signal>activated(QString)</signal>
+   <receiver>kcfg_midi_mapper</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,1479 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+ <!ENTITY timidity '<application
+>TiMidity++</application
+>'>
+ <!ENTITY fluidsynth '<application
+>FluidSynth</application
+>'>
+ <!ENTITY qsynth '<application
+>QSynth</application
+>'>
+ <!ENTITY soundfont '<productname class="registered"
+>SoundFont</productname
+> (.SF2)'>
+ <!ENTITY kappname "&kmid;">
+ <!ENTITY package "extragear/multimedia"
+> 
+ <!ENTITY Pedro.Lopez-Cabanillas '<personname
+><firstname
+>Pedro</firstname
+><surname
+>Lopez-Cabanillas</surname
+></personname
+>'>
+ <!ENTITY Pedro.Lopez-Cabanillas.mail '<email
+>plcl@users.sourceforge.net</email
+>'
+> 
+ <!ENTITY % Brazilian-Portuguese "INCLUDE"
+> <!-- change language only here -->
+ <!ENTITY % addindex "IGNORE">
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+<title
+>O manual do &kmid;</title>
+<authorgroup>
+<author
+><firstname
+>Antonio</firstname
+> <surname
+>Larrosa Jim&eacute;nez</surname
+> <affiliation
+> <address
+><email
+>larrosa@kde.org</email
+></address>
+</affiliation>
+</author>
+<author
+><firstname
+>Pedro</firstname
+> <surname
+>Lopez-Cabanillas</surname
+> <affiliation
+> <address
+><email
+>plcl@users.sf.net</email
+></address>
+</affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Marcus</firstname
+><surname
+>Gama</surname
+><affiliation
+><address
+><email
+>marcus.gama@gmail.com</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>1999</year
+><year
+>2001</year>
+<holder
+>&Antonio.Larrosa.Jimenez;</holder>
+</copyright>
+<copyright>
+<year
+>2009</year
+><year
+>2010</year>
+<holder
+>&Pedro.Lopez-Cabanillas;</holder>
+</copyright>
+
+<date
+>2010-03-15</date>
+<releaseinfo
+>2.2</releaseinfo>
+
+<abstract>
+<para
+>O &kmid; é um leitor de multimídia &MIDI;/karaoke </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KMid</keyword>
+<keyword
+>MIDI</keyword>
+<keyword
+>karaoke</keyword>
+<keyword
+>multimídia</keyword>
+<keyword
+>mid</keyword>
+<keyword
+>kar</keyword>
+<keyword
+>reprodutor</keyword>
+<keyword
+>música</keyword>
+<keyword
+>som</keyword>
+<keyword
+>sintetizador</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introdução</title>
+
+<para
+>O &kmid; é o leitor multimídia de &MIDI; e Karaoke do &kde;. Ele contém algumas funcionalidades que não são encontradas em mais nenhum leitor de &MIDI; do &UNIX;, como os gráficos em tempo-real, o realce do texto do Karaoke, entre outros. </para>
+
+<para
+>O &kmid; funciona atualmente apenas no &Linux;, mas está planejado o suporte para outros sistemas operacionais, e se espera que ele fique disponível no futuro. Ele usa o controlador de som <acronym
+>ALSA</acronym
+>, assim deverá funcionar em todos os sistemas onde o &kde; e o <acronym
+>ALSA</acronym
+> consigam ser compilados. </para>
+
+<para
+>O &kmid; mostra as letras das músicas na tela, mudando a sua cor ao mesmo tempo que a música vai tocando, por isso é muito fácil seguir o ritmo das músicas. </para>
+
+<sect1 id="kmids-features">
+<title
+>Funcionalidades do &kmid;</title>
+
+<para
+>Estas são algumas das funcionalidades principais do &kmid;: </para>
+      
+<itemizedlist>
+<listitem>
+<para
+>Tem uma <emphasis
+>interface de usuário muito amigável</emphasis
+> para mostrar o texto do Karaoke com <emphasis
+>realce em tempo-real</emphasis
+> do texto das letras. </para>
+</listitem>
+<listitem>
+<para
+>Ele oferece uma visão gráfica sobre o que está sendo tocado em cada canal &MIDI;, realçando as teclas pressionada nos teclados de piano (virtuais). </para>
+</listitem>
+<listitem>
+<para
+>O <emphasis
+>Mapeador de MIDI</emphasis
+> mais poderoso que você poderá encontrar em qualquer sistema operacional. </para>
+</listitem>
+<listitem>
+<para
+>Suporte para <emphasis
+>Arrastar &amp; soltar</emphasis
+>, de modo a que você possa soltar no &kmid; qualquer arquivo &MIDI; a partir de uma janela do gerenciador de arquivos, como o &dolphin; ou o &konqueror;. </para>
+</listitem>
+<listitem>
+<para
+>Você poderá <emphasis
+>alterar o tempo</emphasis
+> das músicas, para tocá-las mais depressa ou mais devagar, de acordo com o seu gosto. </para>
+</listitem>
+<listitem>
+<para
+>Mostra um metrônomo visual para seguir facilmente o ritmo da música. </para>
+</listitem>
+<listitem>
+<para
+>Fontes e cores <emphasis
+>personalizados</emphasis
+> para mostrar o texto do Karaoke. </para>
+</listitem>
+<listitem>
+<para
+>Suporta as duas normas para inserir as letras nos arquivos &MIDI;, isto é, o texto ou os eventos de texto (e adivinha qual é usada por uma determinada música). </para>
+</listitem>
+<listitem>
+<para
+>Gerenciamento de Sessões. Se estiver sendo tocada uma música quando você sair do &kde;, da próxima vez que você se logar, a mesma música irá começar a tocar. </para>
+</listitem>
+<listitem>
+<para
+><emphasis
+>Volume e timbre ajustáveis</emphasis
+> em tempo-real. </para>
+</listitem>
+<listitem>
+<para
+>Ele poderá tocar os arquivos &MIDI; corrompidos, que em outros leitores os fariam estourar. </para>
+</listitem>
+<listitem>
+<para
+>Carga de <acronym
+>CPU</acronym
+> baixa, dependendo da complexidade da música. </para>
+</listitem>
+<listitem>
+<para
+>Suporta os sintetizadores &MIDI; externos e os sintetizados por 'software'. </para>
+</listitem>
+<listitem>
+<para
+>Executa no &Linux; com o suporte para o <acronym
+>ALSA</acronym
+>. </para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+</chapter>
+
+<chapter id="general-usage">
+<title
+>Uso Geral</title>
+
+<sect1 id="using-midi">
+<title
+>Usar o &MIDI;</title>
+<para
+>O &kmid; envia dados em &MIDI;, assim ele necessita de um receptor de &MIDI; para representar o som audível. Existem diversos tipos de receptores, ou sintetizadores, de &MIDI;, para você usar. A única funcionalidade comum que é necessária é o suporte de &MIDI; do <acronym
+>ALSA</acronym
+>. </para>
+
+<sect2 id="external-devices">
+<title
+>Dispositivos Externos</title>
+<para
+>Estes são dispositivos periféricos, conectados ao computador através de um cabo &MIDI;. Os dispositivos modernos também poderão incluir uma interface <acronym
+>USB</acronym
+>. Os dispositivos &MIDI; externos são instrumentos musicais eletrônicos, que poderão ser tocados de forma autônoma, sem necessitarem de um computador ligado. </para>
+
+<para
+>Para ligar um instrumento musical &MIDI; ao computador, é necessária uma interface &MIDI; do lado do computador e um cabo &MIDI;. Algumas placas de som incluem tomadas ou cabos &MIDI;. Existem também algumas interfaces <acronym
+>USB</acronym
+> baratas para &MIDI;. Os controladores &MIDI; do <acronym
+>ALSA</acronym
+> estão normalmente disponíveis para eles, e são absolutamente necessários para usar o &kmid;. </para>
+
+<para
+>Se o seu instrumento musical &MIDI; não compreender as mensagens-padrão do &MIDI; Geral, você poderá necessitar de um mapa de &MIDI;. Veja o <link linkend="MIDI-maps"
+>capítulo sobre os Mapas &MIDI;</link
+> para obter mais informações. </para>
+
+</sect2>
+
+<sect2 id="sound-card-synth">
+<title
+>Placas de Som com um Sintetizador por 'Hardware'</title>
+<para
+>Estas placas de som eram muito populares no passado, mas são muito menos comuns nos dias de hoje. Alguns exemplos são as placas de som clássicas <acronym
+>GUS</acronym
+> e <acronym
+>AWE</acronym
+>, ou ainda a SoundBlaster Audigy. Todas elas eram sintetizadores baseados em tabelas de ondas. Ainda mais antigos eram os sintetizadores FM, como a Ad Lib. De qualquer forma, conseguem reproduzir o &MIDI; como áudio em tempo-real, tendo como requisito ter instalados os controladores de &MIDI; do <acronym
+>ALSA</acronym
+>. Para os sintetizadores baseados em tabelas de ondas, também é necessária uma coleção de amostras de sons, no formato indicado pelo fabricante da placa de som. </para>
+</sect2>
+
+<sect2 id="soft-synth">
+<title
+>Sintetizadores por 'Software'</title>
+<para
+>Uma vez que ficou disponível mais memória <acronym
+>RAM</acronym
+> e mais poder de <acronym
+>CPU</acronym
+> nos computadores modernos, a quantidade e utilização dos sintetizadores por 'software' foi crescendo rapidamente. Também é uma alternativa barata, uma vez que o único 'hardware' necessário é uma placa de som simples, apenas com o suporte de áudio. O dispositivo de áudio integrado, que vem em muitas placas-mãe dos computadores, é mais do que adequado na maioria dos casos. </para>
+<para
+>Dois exemplos de aplicações que são capazes de representar os dados &MIDI; em sequências de áudio são o &timidity; e o &fluidsynth;. Ambos têm o suporte para sequências do <acronym
+>ALSA</acronym
+> e são sintetizadores baseados em tabelas de ondas. Existem opções na <link linkend="configuration"
+>janela de Configuração</link
+> para lançar estes sintetizadores por 'software' na inicialização automaticamente. </para>
+
+<para
+>Para usar o &timidity;, você terá que instalar a coleção de modificações do <acronym
+>GUS</acronym
+>, como o 'freepats', ou um arquivo de &soundfont;. Inicie o programa no modo de servidor, usando por exemplo o pacote 'timidity-daemon' dos sistemas Debian. </para>
+
+<para
+>Para usar o &fluidsynth;, você deverá instalar um arquivo &soundfont;. Poderá ser uma boa ideia também instalar a interface &GUI; &qsynth;. Dois tipos de sons excelentes e gratuitos para o &fluidsynth; são o <ulink url="http://www.schristiancollins.com/soundfonts.php"
+>General User GS</ulink
+> e o Fluid R3, que vêm incluídos em algumas distribuições de &Linux;. </para>
+</sect2>
+</sect1>
+
+<sect1 id="opening-songs">
+<title
+>Abrir Músicas</title>
+
+<para
+>Você poderá abrir uma música de várias formas diferentes. </para>
+
+<para
+>Primeiro, você poderá selecionar o <guimenuitem
+>Abrir...</guimenuitem
+> do menu <guimenu
+>Arquivo</guimenu
+>, onde será apresentada uma janela de arquivos normal, com a qual você poderá selecionar a música que deseja abrir. </para>
+
+<para
+>Você poderá arrastar um arquivo a partir de uma janela do &konqueror; ou do &dolphin; e soltá-lo na janela do &kmid;. Você poderá também fazer 'Arrastar &amp; Soltar' de várias músicas ao mesmo tempo. </para>
+
+<para
+>Você poderá indicar um ou mais nomes de arquivos de músicas, na linha de comando, ao invocar o &kmid;. São suportados &URL;s como argumentos, assim você poderá clicar numa ligação de uma página Web ou um nome de um arquivo no seu gerenciador de arquivos. </para>
+
+<para
+>Você poderá selecionar uma música da lista de arquivos tocados recentemente, os quais aparecem com a opção do menu <menuchoice
+><guimenu
+>Arquivo</guimenu
+> <guimenuitem
+>Abrir um Recente</guimenuitem
+></menuchoice
+>. </para>
+
+<para
+>Finalmente, você poderá selecionar a música a partir da lista de reprodução ativa. </para>
+
+<para
+>Da mesma forma, a configuração da música salva na última vez será obtida automaticamente, caso tenha ativa a opção <menuchoice
+><guimenu
+>Música</guimenu
+><guisubmenu
+>Configuração da Música</guisubmenu
+> <guimenuitem
+>Automática</guimenuitem
+></menuchoice
+>. </para>
+
+</sect1>
+
+<sect1 id="playing-songs">
+<title
+>Tocar Músicas</title>
+
+<para
+>Para tocar uma música, abra-a primeiro e depois clique no botão <guiicon
+>Tocar</guiicon
+> da barra de ferramentas, escolha o item <guimenuitem
+>Tocar</guimenuitem
+> do menu <guimenu
+>Música</guimenu
+> ou pressione apenas a tecla <keycap
+>Espaço</keycap
+>. </para>
+
+<para
+>Lembre-se que, ao abrir um arquivo com 'Arrastar &amp; Soltar', o &kmid; irá começar a tocá-lo automaticamente. Este comportamento poderá ser desativado com a opção de <guimenuitem
+>Início Automático</guimenuitem
+>, no menu <guimenu
+>Música</guimenu
+>. Se você soltar mais de um arquivo, eles serão adicionados a uma coleção e serão tocados sequencialmente. </para>
+
+<para
+>Logo que o &kmid; esteja tocando uma música, você poderá mover a barra temporal, clicando com o &MMB; para ir para uma determinada posição. </para>
+
+<para
+>Se uma música estiver tocando muito depressa ou muito devagar, você poderá usar a barra do tempo. Para voltar ao tempo padrão, basta clicar no botão "100%". </para>
+
+</sect1>
+
+<sect1 id="displaying-lyrics">
+<title
+>Mostrar as Letras</title>
+
+<para
+>Existem dois métodos de guardar as letras num arquivo de música &MIDI;, usando os <guimenuitem
+>Eventos de texto</guimenuitem
+> ou os <guimenuitem
+>Eventos de letras</guimenuitem
+>; algumas músicas usam o primeiro, outras o segundo, algumas usam ambos e outras não incluem letras da música. O &kmid; seleciona automaticamente o método mais apropriado para cada música. </para>
+
+<para
+>A norma SMF permite incorporar apenas texto em ASCII dentro de um arquivo &MIDI;. Contudo, você poderá encontrar vários arquivos &MIDI; com textos codificados de várias formas. Você poderá escolher a codificação de texto das letras musicais, usando a lista que se localiza na janela principal. A codificação selecionada irá permanecer dessa forma, até que escolha outra codificação, sendo recordada para a sessão seguinte. </para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Diálogo de configuração</title>
+
+<para
+>Para abrir a janela da <guilabel
+>Configuração</guilabel
+>, você pode usar o menu <menuchoice
+><guimenu
+>Configurações</guimenu
+> <guimenuitem
+>Configurar &kmid;...</guimenuitem
+></menuchoice
+> ou o ícone da barra de ferramentas correspondente. </para>
+
+<para
+>A configuração terá efeito, como de costume, quando você pressionar os botões <guibutton
+>OK</guibutton
+> ou <guibutton
+>Aplicar</guibutton
+>. </para>
+
+<sect1 id="configuration-lyrics">
+<title
+>Configuração das Letras</title>
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Tipo de fonte</guilabel
+>. Aqui você poderá escolher a tipografia usada para mostrar as letras na janela principal. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Cor do texto</guilabel
+>. Esta é a cor usada para o texto da música, quando já tiver sido reproduzida. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Tamanho do texto</guilabel
+>. Aqui você poderá definir o tamanho do texto das letras musicais na janela principal. </para>
+</listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="configuration-midi">
+<title
+>Configurações do &MIDI;</title>
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Conexão &MIDI; de Saída</guilabel
+>. Esta lista mostra as conexões &MIDI; disponíveis que foram detectadas no seu sistema, tal como indicado no sub-sistema &MIDI; nativo do seu sistema operacional. Você deverá escolher uma delas, sendo esta a usada como ligação de saída de &MIDI; do programa. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Mostrar as portas &MIDI; avançadas</guilabel
+>. As portas avançados de &MIDI; são os dispositivos &MIDI; raramente usados e que são filtrados da lista de conexões &MIDI; disponíveis, a menos que selecione esta opção. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Arquivo de mapeamento &MIDI;</guilabel
+>. Aqui você poderá escolher o arquivo de mapeamento &MIDI; usado com o seu sintetizador &MIDI; externo. Você poderá descobrir mais informações sobre os mapeamentos de &MIDI; no capítulo sobre os <link linkend="MIDI-maps"
+>Mapas &MIDI;</link
+>. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Restaurar Modo</guilabel
+>. Esta mensagem &MIDI; é enviada opcionalmente para a saída de &MIDI; conectada, antes de começar a tocar cada música, restaurando vários parâmetros que poderiam ser alterados pelo último arquivo de música. Aqui você poderá escolher um tipo-padrão de mensagens que seja reconhecido pelo seu sintetizador ou então um arquivo personalizado e exclusivo do sistema. </para>
+</listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="configuration-synths">
+<title
+>Configuração dos Sintetizadores por 'Software'</title>
+
+<sect2 id="fluidsynth">
+<title
+>&fluidsynth;</title>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Executar o &fluidsynth; na inicialização</guilabel
+>. Se você selecionar esta opção, o sintetizador por 'software' &fluidsynth; será invocado automaticamente na inicialização. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Comando</guilabel
+>. Aqui você deverá definir a localização e o nome do comando do sintetizador. Abaixo deste campo de texto, existe uma mensagem que indica a versão do programa detectada, assim como um ícone que indica se os requisitos mínimos necessários foram cumpridos ou não. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Saída de Áudio</guilabel
+>. Você deverá escolher aqui o sistema de áudio que será usado pelo programa de síntese. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Dispositivo de Áudio</guilabel
+>. Aqui você poderá indicar o nome de um dispositivo de áudio para a saída do sintetizador por 'software'. Normalmente é seguro deixar esta opção em branco. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Taxa de Amostragem</guilabel
+>. Aqui poderá definir a taxa de amostragem de áudio usada pelo sintetizador para gerar o áudio digital. Normalmente, é seguro deixar esta opção em branco. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Fonte de Som</guilabel
+>. Aqui você deverá definir a localização e o nome do arquivo da &soundfont; usada pelo sintetizador. Este argumento é obrigatório. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Argumentos</guilabel
+>. Aqui poderá definir os outros argumentos opcionais que poderão ser usados com o seu sintetizador por 'software'. Normalmente, é comum deixar este valor em branco. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="timidity">
+<title
+>&timidity;</title>
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Executar o &timidity; na inicialização</guilabel
+>. Se selecionar esta opção, o sintetizador por 'software' &timidity; será invocado automaticamente na inicialização. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Comando</guilabel
+>. Aqui você deverá definir a localização e o nome do comando do sintetizador. Abaixo deste campo de texto, existe uma mensagem que indica a versão do programa detectada, assim como um ícone que indica se os requisitos mínimos necessários foram cumpridos ou não. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Saída de Áudio</guilabel
+>. Você deverá escolher aqui o sistema de áudio que será usado pelo programa de síntese. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Dispositivo de Áudio</guilabel
+>. Aqui você poderá indicar o nome de um dispositivo de áudio para a saída do sintetizador por 'software'. Normalmente é seguro deixar esta opção em branco. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Taxa de Amostragem</guilabel
+>. Aqui poderá definir a taxa de amostragem de áudio usada pelo sintetizador para gerar o áudio digital. Normalmente, é seguro deixar esta opção em branco. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Argumentos</guilabel
+>. Aqui poderá definir os outros argumentos opcionais que poderão ser usados com o seu sintetizador por 'software'. Normalmente, é comum deixar este valor em branco. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+</chapter>
+
+<chapter id="playlists">
+<title
+>Listas de reprodução</title>
+
+<para
+>Uma lista de reprodução é uma lista de arquivos &MIDI; que você reúne num conjunto e que são tocados um após o outro. Esta seção irá ajudá-lo a usá-las, fornecendo-lhe também algumas dicas úteis para tirar um bom partido delas. </para>
+
+<sect1 id="creating-a-playlist">
+<title
+>Criar uma Lista de Reprodução</title>
+
+<para
+>Para criar uma lista de reprodução, primeiro abra a janela para <guilabel
+>Gerenciar a Lista de Reprodução</guilabel
+>, selecionando o item <guimenuitem
+>Editar a Lista de Reprodução ...</guimenuitem
+> do menu <guimenu
+>Lista de Reprodução</guimenu
+>, adicionando finalmente os seus arquivos à lista de reprodução. Finalmente, clique na opção do menu <guibutton
+>Salvar a Lista de Reprodução...</guibutton
+> do menu <guimenu
+>Lista de Reprodução</guimenu
+>, indicando o nome e a pasta que deseja que a lista de reprodução tenha. </para>
+
+<para
+>O arquivo da lista de reprodução é um arquivo de texto simples que poderá editar, copiar e mover, usando as suas ferramentas de gerenciamento de arquivos normais. </para>
+
+</sect1>
+
+<sect1 id="adding-songs-to-a-playlist">
+<title
+>Adicionar Músicas a uma Lista de Reprodução</title>
+<subtitle
+>Como Usar a Opção do Menu <guimenuitem
+>Auto-Adicionar à Lista de Reprodução</guimenuitem
+></subtitle>
+
+<para
+>Se a opção <guimenuitem
+>Auto-Adicionar à Lista de Reprodução</guimenuitem
+> estiver ativa, ao abrir uma música (usando a opção <menuchoice
+><guimenu
+>Arquivo</guimenu
+> <guimenuitem
+>Abrir...</guimenuitem
+></menuchoice
+> ou o 'Arrastar &amp; Soltar') ela será adicionada à lista de reprodução ativa sem a intervenção do usuário. </para>
+
+<para
+>Se a opção <guimenuitem
+>Auto-Adicionar à Lista de Reprodução</guimenuitem
+> não estiver ativa, quando abrir uma música, uma lista de reprodução temporária será aberta e limpa, adicionando posteriormente as músicas abertas à mesma. </para>
+
+</sect1>
+
+<sect1 id="removing-songs-from-playlists">
+<title
+>Remover as Músicas das Listas de Reprodução</title>
+
+<para
+>Para remover uma música de uma lista de reprodução, basta abrir a janela para <guilabel
+>Gerenciar a Lista de Reprodução</guilabel
+>, selecionar a música que deseja apagar, clicando depois no botão <guibutton
+>Remover</guibutton
+> e, finalmente, no botão <guibutton
+>OK</guibutton
+> para fechar a janela. </para>
+
+</sect1>
+
+<sect1 id="playing-order">
+<title
+>Ordem de Reprodução</title>
+
+<para
+>As músicas são reproduzidas na mesma ordem que estão definidas na lista de reprodução. Você poderá alterar a ordem das músicas, usando a janela para <guilabel
+>Gerenciar a Lista de Reprodução</guilabel
+>. </para>
+
+<para
+>O modo de <guimenuitem
+>Repetição</guimenuitem
+> coloca a lista de reprodução em ciclo, repetindo a primeira música de novo, quando a última música tiver terminado. </para>
+
+<para
+>Quando selecionar a opção <guimenuitem
+>Embaralhar</guimenuitem
+>, o &kmid; irá gerar de forma aleatória as músicas na lista de reprodução. A lista aleatória pela qual a lista será tocada será gerada de novo cada vez que você adiciona ou remove um arquivo na lista de reprodução ativa ou quando clica no item <guimenuitem
+>Embaralhar</guimenuitem
+> do menu. </para>
+
+</sect1>
+
+<sect1 id="selecting-from-a-playlist">
+<title
+>Selecionar uma Música de uma Lista de Reprodução</title>
+
+<para
+>Você poderá selecionar uma música entre as músicas da lista de reprodução, usando a janela para <guilabel
+>Gerenciar a Lista de Reprodução</guilabel
+>. </para>
+
+<para
+>Você poderá mudar para a próxima música, usando o item <literal
+>Música Seguinte</literal
+> do menu <literal
+>Música</literal
+>, o botão <literal
+>Música Seguinte</literal
+> ou pressionando a combinação de teclas definida pelo usuário. </para>
+
+<para
+>Para mudar para a música anterior, use o item <literal
+>Música Anterior</literal
+> do menu <literal
+>Música</literal
+>, o botão <literal
+>Música Anterior</literal
+> ou pressione a combinação de teclas definida pelo usuário. </para>
+
+</sect1>
+
+<sect1 id="deleting-a-playlist">
+<title
+>Apagar uma Lista de Reprodução</title>
+
+<para
+>Para remover o conteúdo de uma lista de reprodução, basta abrir a janela para <guilabel
+>Gerenciar a Lista de Reprodução</guilabel
+> e clicar no botão <guibutton
+>Limpar</guibutton
+>. </para>
+
+<para
+>Para apagar um arquivo de lista de reprodução salvo no disco, use a sua ferramenta de gerenciamento de arquivos favorita. </para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="MIDI-maps">
+<title
+>Mapas de &MIDI;</title>
+
+<sect1 id="what-is-a-midimap">
+<title
+>O que é um Mapa de &MIDI;?</title>
+
+<para
+>Um Mapa de &MIDI; é algo que mapeia os eventos do &MIDI; em outros eventos do &MIDI;. </para>
+
+<para
+>Isto é totalmente necessário se um sintetizador não conseguir compreender os eventos normais (isto é, se um sintetizador não for compatível com o &MIDI; Geral); neste caso, um mapa de &MIDI; irá traduzir os eventos do &MIDI; Geral para os eventos que o sintetizador compreenda. </para>
+
+<para
+>Por exemplo, você poderá fazer um mapa de &MIDI; que converta todos os eventos de <literal
+>Alterar o 'patch' para Piano Puro</literal
+> para eventos de <literal
+>Alterar o 'patch' para Trompete</literal
+>, e assim, quando uma música começar a tocar um piano, irá assim tocar um trompete. </para>
+
+<para
+>Isto poderá soar estranho (porquê tocar um trompete quando a música foi feita para tocar com um piano?), mas é bastante útil. A norma do <acronym
+>GM</acronym
+> diz que, quando um teclado &MIDI; recebe um evento para mudar o 'patch' para <literal
+>0</literal
+>, irá mudar o 'patch' atual para um <literal
+>Grande Piano</literal
+>, mas os sintetizadores mais antigos irão mudar, por exemplo, para uma <literal
+>Guitarra Elétrica</literal
+> quando receber um <literal
+>0</literal
+>. Este teclado antigo necessita de um <literal
+>3</literal
+> (por exemplo) para mudar para um <literal
+>Piano</literal
+>. É aqui que entra em ação o mapa de &MIDI;, mudando todos os eventos <literal
+>alterar 'patch' para 0</literal
+> para <literal
+>alterar 'patch' para 3</literal
+>, tocando deste modo o instrumento correto quando tiver que o fazer. </para>
+
+</sect1>
+
+<sect1 id="do-i-need-a-MIDI-map">
+<title
+>Eu preciso de um Mapa de &MIDI;?</title>
+
+<para
+>Em resumo, se você não tiver um sintetizador externo, <emphasis
+>não</emphasis
+>. </para>
+
+<para
+>Se só tiver uma placa de som com um sintetizador de &MIDI;, os mapas de &MIDI; não são necessários porque todas as placas são compatíveis com o <acronym
+>GM</acronym
+> (isto inclui as placas AWE, as <acronym
+>GUS</acronym
+>, os dispositivos <acronym
+>FM</acronym
+> e assim por diante). </para>
+
+<para
+>Se você estiver tocando música através de um sintetizador externo que não sejam compatível com o GM, você terá que fazer um mapa de MIDI para o seu teclado. Ainda que você perca uma tarde inteira fazendo o seu arquivo de mapa e tenha que tentar vários valores diferentes para todas as opções, você será completamente recompensado quando terminar, por que será capaz de ouvir muitos arquivos de músicas que iriam soar mal em outro caso. </para>
+
+</sect1>
+
+<sect1 id="creating-a-MIDI-map">
+<title
+>Criar um mapa de &MIDI;</title>
+
+<para
+>Não existe nenhum programa para gerar mapas &MIDI;, por isso você terá que editar o arquivo à mão (com o seu editor de texto favorito). </para>
+
+<para
+>Um mapa MIDI é um arquivo de texto que contém todas as traduções necessárias que são necessárias fazer para tocar músicas. </para>
+
+<para
+>Consiste em quatro seções:  <literal
+>PATCHMAP</literal
+>, <literal
+>KEYMAP</literal
+>, <literal
+>CHANNELMAP</literal
+> e <literal
+>OPTIONS</literal
+>. Cada seção só deverá aparecer uma vez. </para>
+
+<para
+>A estrutura geral de um arquivo de mapa é a de um arquivo do estilo INI: </para>
+
+<screen
+>[PATCHMAP]
+...
+
+# linha de comentário
+ 
+[KEYMAP]
+...
+
+[CHANNELMAP]
+...
+
+[OPTIONS]
+...
+</screen>
+
+<para
+>Cada um dos quatro nomes de seções, entre colchetes, inicia a seção correspondente. Você poderá colocar comentários se começar a linha com um caracter <literal
+>&num;</literal
+>. Cada seção é uma coleção de diversas linhas com pares chave=valor. </para>
+
+<para
+>Por favor, não se esqueça de enviar para o autor os seus arquivos de mapas por e-mail, para que as versões futuras do &kmid; incluam o suporte para mais teclados incompatíveis com o Midi Geral. </para>
+
+<sect2 id="the-patchmap-section">
+<title
+>A Seção <literal
+>PATCHMAP</literal
+></title>
+
+<para
+>Esta seção é usada para indicar como os 'patches' vão ser mapeados, do GM para a especificação do seu teclado. A utilização geral é: </para>
+
+<screen
+>(Nome do Patch de GM)=(<replaceable
+>N</replaceable
+>)
+</screen>
+
+<para
+>Em que o <replaceable
+>N</replaceable
+> é o número que o seu teclado precisa receber para mudar o 'patch' para o mesmo que a norma do GM usa. </para>
+
+<para
+>Note que o lado esquerdo da igualdade é ignorado, assim você poderá alterar a ordem das linhas e omitir qualquer um dos 128 instrumentos. </para>
+
+</sect2>
+
+<sect2 id="The-keymap-section">
+<title
+>A Seção <literal
+>KEYMAP</literal
+></title>
+
+<para
+>A seção <literal
+>KEYMAP</literal
+> é usada para indicar como as teclas de percussão serão mapeadas. A utilização é a seguinte: </para>
+
+<screen
+>[KEYMAP]
+C 0 =0
+C#0 =1
+D 0 =2
+...
+</screen>
+
+<para
+>Tal como com a seção <literal
+>PATCHMAP</literal
+>, você poderá alterar a ordem das linhas e omitir alguma delas. Só são levados em conta os primeiros quatro caracteres de cada chave. </para>
+
+<para
+>Os mapas de teclas são usados principalmente para mapear as teclas no canal de percussão. Dê uma olhada nos mapas distribuídos para ver alguns exemplos. </para>
+
+</sect2>
+
+<sect2 id="the-channelmap-section">
+<title
+>A Seção <literal
+>CHANNELMAP</literal
+></title>
+
+<para
+>Esta seção pode ser usada para mapear alguns canais com outros diferentes. Por exemplo, se você quiser trocar o primeiro e o segundo canal, você poderá fazer isso facilmente com a seção <literal
+>CHANNELMAP</literal
+>. </para>
+
+<para
+>Contudo, é mais útil para os teclados que precisem do canal de percussão estarem num canal indicado (a norma do GM usa o canal 10, enquanto que outros usam o 16 ou o 9). </para>
+
+<para
+>Repare que os dispositivos &MIDI; usam 16 canais, por isso a seção <literal
+>CHANNELMAP</literal
+> tem 16 linhas, da 0 à 15, como a seguinte: </para>
+
+<screen
+>(N) = (M)
+</screen>
+
+<para
+>Onde o <literal
+>N</literal
+> é o canal que está associado ao canal <literal
+>M</literal
+>. </para>
+
+</sect2>
+
+<sect2 id="the-options-section">
+<title
+>A Seção <literal
+>OPTIONS</literal
+></title>
+
+<para
+>A seção <literal
+>OPTIONS</literal
+> tem algumas opções gerais que poderão ser bastante úteis: </para>
+
+<screen
+>[OPTIONS]
+PitchBenderRatio = r
+MapExpressionToVolumeEvents = true
+ForceDrumsPatch = 30
+</screen>
+
+<para
+>Você poderá indicar ambas as opções, somente uma, ou nenhuma delas. </para>
+
+<para
+>O valor do <literal
+>PitchBenderRatio r</literal
+> tem a proporção pela qual os eventos de ajuste da frequência serão multiplicados. Isto é, quando um arquivo &MIDI; tentar enviar um evento de ajuste de frequência com um valor <literal
+>n</literal
+>, o valor real que será enviado é <literal
+>n*(r/4096)</literal
+> (o valor <literal
+>4096</literal
+> é para não ter que colocar valores decimais no arquivo do mapa). </para>
+
+<para
+>Isto é usado porque a norma do <acronym
+>GM</acronym
+> diz que, quando um teclado &MIDI; recebe um evento de Ajuste de Frequência com um valor de dados 4096, deverá mudar a nota para uma superior, mas alguns teclados &MIDI; tentam ajustar a nota inicial por duas ou mais notas mais altas (às vezes, uma oitava mais alta!) quando recebem um 4096 . Isto poderá ser facilmente corrigido se enviar valores diferentes, de modo que, em vez de enviar um 4096, o &kmid; envie o valor apropriado. </para>
+
+<para
+>Quando a opção <literal
+>MapExpressionToVolumeEvents</literal
+> estiver definida no arquivo do mapa e um arquivo &MIDI; tente enviar um evento de expressão, o &kmid; irá enviar um evento de volume que é compreendido pela maioria dos teclados não-GM e que tem um efeito semelhante. Existem muitos arquivos &MIDI; que usam eventos de expressão para desvanescer no fim da música, de modo a que ouça a música cada vez mais baixa; você poderá ativar esta opção e ver se isto é o que você realmente precisa, porque o seu sintetizador &MIDI; poderá estar ignorando os eventos de expressão devido ao fato de não compreendê-los. </para>
+
+<para
+>A opção <literal
+>ForceDrumsPatch</literal
+> poderá ser útil, por exemplo, para usar sempre o 'patch' de percussão no canal de percussão. </para>
+
+</sect2>
+
+</sect1>
+
+<sect1 id="using-midimaps">
+<title
+>Usar os Mapas &MIDI;</title>
+
+<para
+>Para usar um mapa &MIDI;, basta abrir a janela da <guilabel
+>Configuração</guilabel
+>, selecionando o item <guimenuitem
+>Configurar &kmid;...</guimenuitem
+> no menu <guimenu
+>Configurações</guimenu
+>. </para>
+
+<para
+>Depois, clique no ícone da categoria <guilabel
+>&MIDI;</guilabel
+> e selecione o arquivo do mapa na lista <guilabel
+>arquivo do mapeamento &MIDI;</guilabel
+>. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="advanced-features">
+<title
+>Características Avançadas</title>
+
+<sect1 id="song-settings">
+<title
+>Configuração da Música</title>
+<para
+>Para cada música tocada, você poderá salvar e obter automaticamente várias opções da próxima vez que a música for acessada. Estas opções são: <itemizedlist>
+<listitem
+><para
+>Codificação de texto</para
+></listitem>
+<listitem
+><para
+>Volume</para
+></listitem>
+<listitem
+><para
+>Timbre (tonalidade, transposição)</para
+></listitem>
+<listitem
+><para
+>Tempo do ritmo</para
+></listitem>
+<listitem
+><para
+>Legendas dos canais</para
+></listitem>
+<listitem
+><para
+>Botões do canal</para
+></listitem>
+<listitem
+><para
+>Instrumentos do canal</para
+></listitem>
+</itemizedlist>
+</para>
+
+<para
+>Se você não deseja salvar e obter automaticamente estes parâmetros, você pode usar o menu <guimenuitem
+>Carregar</guimenuitem
+> e <guimenuitem
+>Salvar</guimenuitem
+> disponível no menu <menuchoice
+><guimenu
+>Música</guimenu
+> <guisubmenu
+>Configuração da Música</guisubmenu
+></menuchoice
+>. </para>
+</sect1>
+
+<sect1 id="the-channel-view">
+<title
+>A visão dos canais</title>
+
+<para
+>A área de Canais é uma tabela com 16 linhas, correspondendo cada uma ao seu canal &MIDI;. Em cada linha, existem botões para ativar as funções <guilabel
+>Solo</guilabel
+> e <guilabel
+>Silenciar</guilabel
+>, um medidor de VU, um botão <guilabel
+>Bloquear</guilabel
+> e uma lista onde poderá ver e alterar o instrumento selecionado para o canal. </para>
+
+<para
+>Só os canais ativos (os usados pela música atual) é que têm os controles ativos. </para>
+
+</sect1>
+
+<sect1 id="piano-player">
+<title
+>A área do Piano</title>
+
+<para
+>A área do Piano poderá mostrar até 16 teclados virtuais, um para cada canal &MIDI;. Só os canais ativos (os usados pela música atual) é que poderão ser ativados. Os teclados virtuais não só mostram as notas tocadas em tempo-real, mas também poderão ser usados para disparar notas com o mouse ou com o teclado do computador. </para>
+
+</sect1>
+
+<sect1 id="rhythm-controls">
+<title
+>Os Controles de Ritmo</title>
+
+<para
+>Os controles do ritmo são: o texto do tempo, que mostra o ritmo da música em batidas por minuto, um metrônomo visual que inclui um contador de medidas/parte e uma barra de tempo que modifica o ritmo da música, isto é, a velocidade da mesma. </para>
+
+<para
+>Logo que você tenha alterado o tempo, você poderá voltar ao valor padrão se clicar no botão <guibutton
+>100%</guibutton
+>. </para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="key-bindings">
+<title
+>Combinação de teclas</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+<row>
+<entry
+>Tecla</entry>
+<entry
+>Ação</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry
+><keycap
+>P</keycap
+></entry>
+<entry
+>Toca a música carregada.</entry>
+</row>
+<row>
+<entry
+><keycap
+>S</keycap
+></entry>
+<entry
+>Pára de tocar</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Sai do &kmid;</entry>
+</row>
+<row>
+<entry
+><keycap
+>F1</keycap
+></entry>
+<entry
+>Abre este documento</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+</chapter>
+
+<chapter id="frequently-asked-questions">
+<title
+>Perguntas Mais Frequentes (FAQ)</title>
+
+<qandaset>
+<qandaentry>
+<question>
+<para
+>O que é exatamente um arquivo &MIDI;? </para>
+</question>
+
+<answer>
+<para
+>Um arquivo &MIDI; é um arquivo que contém a informação sobre como tocar uma música, isto é, contém apenas as notas, o ritmo, a velocidade, &etc;. Isto implica que o mesmo arquivo &MIDI;, quando for tocado em dois dispositivos diferentes, possa produzir resultados bastante diferentes, assim como uma sinfonia pode ser tocada de forma diferente por dois músicos diferentes. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Eu consigo obter melhor som com um leitor de MP3/WAV, porque devo usar o &kmid;? </para>
+</question>
+<answer>
+<para
+>Um arquivo &MIDI; típico ocupa 50 Kb. enquanto que um arquivo MP3 típico ocupa 4 Mb. E, com um bom sintetizador, você poderá obter uma qualidade de som comparável. Mais ainda, com um arquivo &MIDI;, você poderá alterar os instrumentos individualmente, a velocidade da música, &etc;, por isso terá um maior controle global. </para>
+<para
+>Outro ponto de vista sobre isto: comparar o &MIDI; e o MP3 é como comparar a pintura com a fotografia, ou como comparar o <acronym
+>SVG</acronym
+> com o JPEG. Cada um tem diferentes propriedades e casos de uso. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Não consigo colocar a minha placa de som funcionando com o &kmid;; o que posso fazer? </para>
+</question>
+<answer>
+<para
+>Em primeiro lugar, você deverá verificar a sua instalação e configuração do ALSA. Em segundo, terá que conectar o &kmid; a um sintetizador &MIDI;. Se a sua placa de som não tiver nenhum, use um sintetizador por 'software' em alternativa. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Eu quero adicionar uma pasta inteira para uma lista de reprodução, mas ter que adicionar os arquivos &MIDI;, um a um, não é nada engraçado. </para>
+</question>
+<answer>
+<para
+>O autor concorda com isso, por isso é que o &kmid; suporta o 'Arrastar &amp; Soltar'. Basta abrir, no &konqueror;, a pasta que deseja adicionar, selecionar todos os arquivos, arrastá-los e soltá-los no &kmid;. </para>
+<para
+>Certifique-se de ativar a opção <guimenuitem
+>Auto-Adicionar à Lista de Reprodução</guimenuitem
+> antes, para que os arquivos sejam adicionados à lista atual. Se você não fizer isto, os arquivos serão adicionados a uma lista de reprodução nova e temporária. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Não consigo seguir as letras; está tocando muito depressa! </para>
+</question>
+<answer>
+<para
+>Você poderá usar a barra de controle do tempo para a música tocar mais devagar. Lembre-se que poderá clicar no botão <guibutton
+>100%</guibutton
+> para voltar ao tempo padrão. </para
+> 
+</answer>
+</qandaentry>
+</qandaset>
+
+</chapter>
+
+<chapter id="final-notes">
+<title
+>Notas Finais</title>
+
+<sect1 id="some-tips-and-tricks">
+<title
+>Alguns Truques e Dicas</title>
+
+<para
+>Serão incluídas algumas sugestões para que você possa tirar partido de todas as funcionalidades do &kmid;: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Abrir os arquivos</term>
+<listitem>
+<para
+>Mantenha sempre uma tela do &kde; com uma janela do &konqueror; aberta na pasta base dos arquivos &MIDI; e o &kmid; nesta tela (se estiver tocando um arquivo &MIDI;) ou fixo (se estiver tocando um arquivo de Karaoke :-)). Desta forma, quando a lista ativa terminar ou se a pessoa quiser tocar algum arquivo, poderá ir à janela do &konqueror;, selecionar os arquivos desejados, arrastá-los e soltá-los na janela do &kmid;. </para>
+
+<para
+>Suponha que deseja tocar alguns arquivos &MIDI;, mas não quer adicioná-los a nenhuma lista; nesse caso, basta desligar a opção <guimenuitem
+>Auto-Adicionar à Lista de Reprodução</guimenuitem
+> no menu <guimenu
+>Lista de Reprodução</guimenu
+> e abrir os arquivos, para que eles sejam adicionados a uma lista temporária. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Outro método para criar uma lista de reprodução nova</term>
+<listitem>
+<para
+>Suponha que você tem os arquivos &MIDI; <filename
+>A.mid</filename
+>, <filename
+>B.mid</filename
+> e <filename
+>C.mid</filename
+>. Em primeiro lugar, só deseja tocar o primeiro arquivo &MIDI;, por isso irá desselecionar a opção <guimenuitem
+>Auto-Adicionar</guimenuitem
+> e abrir o <filename
+>A.mid</filename
+>. Você irá obter então uma lista de reprodução temporária com apenas um arquivo &MIDI;. </para>
+<para
+>Então opta por tocar também o B e o C, fazendo uma lista de reprodução com ambos, o que faria? </para>
+<para
+>Simples; selecione o <guimenuitem
+>Auto-Adicionar</guimenuitem
+> e abra os arquivos <filename
+>B.mid</filename
+> e <filename
+>C.mid</filename
+> (usando um dos vários métodos), para que eles sejam adicionados automaticamente à lista de reprodução temporária, a qual irá então ter o <filename
+>A.mid</filename
+>, o <filename
+>B.mid</filename
+> e o <filename
+>C.mid</filename
+>. A esta altura, você poderá abrir a janela para <guilabel
+>Salvar a Lista de Reprodução</guilabel
+>, indicar o nome da nova lista de reprodução, e é tudo. Assim, passa a ter uma lista nova, que contém os arquivos &MIDI; A, B e C, e que não é removida quando você sair do &kmid;. </para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="hall-of-kmids-friends">
+<title
+>Painel de Amigos do &kmid;</title>
+
+<para
+>Estas são algumas pessoas que enviaram arquivos &MIDI; ou alguns postais; muito obrigado a todos!. </para>
+
+<itemizedlist>
+<listitem>
+<para
+>Ola Sigurdson - <literal
+>Taking Care of Business</literal
+> (Bachman Turner Overdrive)</para>
+</listitem>
+<listitem>
+<para
+>EG Lim - Um postal mesmo muito bonito de Penang.</para>
+</listitem>
+<listitem>
+<para
+>Guenther Starnberger - <literal
+>Amadeus</literal
+> (Falco) e <literal
+>Schrei Nach Liebe</literal
+> (Die Aerzte)</para>
+</listitem>
+<listitem>
+<para
+>Leandro Terr&eacute;s - <literal
+>All That She Wants</literal
+> e <literal
+>The Sign</literal
+> (Ace of Base)</para>
+</listitem>
+<listitem>
+<para
+>Nick Stoic - Dois arquivos &MIDI;</para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="about-the-authors">
+<title
+>Sobre os Autores</title>
+
+<para
+>O &kmid; foi feito originalmente por &Antonio.Larrosa.Jimenez;, de M&aacute;laga (Espanha). Foi adaptado e é mantido e publicado atualmente com o nome &kmid; por &Pedro.Lopez-Cabanillas;, também da Espanha. </para>
+
+<para
+>Obrigado as seguintes pessoas por sua ajuda no desenvolvimento do &kmid;: </para>
+
+<itemizedlist>
+<listitem>
+<para
+>Paul J. Leonard <email
+>P.J.Leonard@bath.ac.uk</email
+> - suporte para placas AWE </para>
+</listitem>
+<listitem>
+<para
+>Sebestyen Zoltan <email
+>szoli@digo.inf.elte.hu</email
+> - Passagem para o BSD e testes com o AWE </para>
+</listitem>
+<listitem>
+<para
+>Christian Esken <email
+>esken@kde.org</email
+> - por organizar os esforços do &kde; multimídia </para>
+</listitem>
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;- scripts do 'configure' e ajuda com o <command
+>automake</command
+> e <command
+>CVS</command
+> </para>
+</listitem>
+<listitem>
+<para
+>Jaroslav Kysela - Ajuda a fazer o suporte do controlador do &Linux; Ultrasound Project (Projeto Ultrasound do &Linux;) </para>
+</listitem>
+<listitem>
+<para
+>Takashi Iwai e Joseph H. Buehler - Correção da frequência das placas AWE que estava muito alta </para>
+</listitem>
+<listitem>
+<para
+>Adrian Knoth - Por me dar boas notícias e várias sugestões </para>
+</listitem>
+<listitem>
+<para
+>Kevin Street - correção para suporte a FreeBSD 3.0 </para>
+</listitem>
+<listitem>
+<para
+>Os agradecimentos vão também para o Jose Luis Sanchez pelo seu teste do suporte de GUS, ao Ignacio Garcia por testar ao suporte do AWE, ao Hans Petter Bieker, Ola Sigurdson, Marc Diefenbruch, Peter Gritsch, Magnus Pfeffer, Urko Lusa, Peter-Paul Witta, Thorsten Westheider, Ulrich Cordes e a todos que enviaram para o autor as correções, relatórios de erros ou apenas mensagem de e-mail a encorajá-lo. </para>
+</listitem>
+<listitem>
+<para
+>E, claro, a todos os músicos fabulosos na Net que continuam fornecendo à equipe os vários arquivos &MIDI; e Karaoke maravilhosos. </para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="copyright-and-license">
+<title
+>Direitos autorais e licença</title>
+
+<para
+>Direitos autorais do programa e da documentação 1999-2001 &Antonio.Larrosa.Jimenez; </para>
+<para
+>Direitos autorais do programa e da documentação 2009-2010 &Pedro.Lopez-Cabanillas; </para>
+
+<para
+>Tradução de Marcus Gama<email
+>marcus.gama@gmail.com</email
+></para
+> 
+&underFDL; &underGPL; </sect1>
+
+</chapter>
+
+<appendix id="installation">
+<title
+>Instalação</title>
+
+<sect1 id="how-to-obtain-kmid">
+<title
+>Como obter o &kmid;</title>
+
+<para
+>Adicionalmente, o &kmid; pode ser encontrado na sua página pessoal, que está em <ulink url="http://sourceforge.net/projects/kmid2"
+> http://sourceforge.net/projects/kmid2</ulink
+>. Na página pessoal, você poderá acompanhar o seu desenvolvimento, ver algumas informações sobre ele, algumas imagens, &etc; </para>
+
+</sect1>
+
+<sect1 id="requirements">
+<title
+>Requisitos</title>
+
+<para
+>O &kmid; necessita para funcionar:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Plataforma &kde; </para>
+</listitem>
+<listitem>
+<para
+>&Linux; com o controlador e a biblioteca do ALSA, assim como os controladores &MIDI;. </para>
+</listitem>
+<listitem>
+<para
+>Uma placa de som. Uma boa placa de som e/ou sintetizador externo são recomendados, uma vez que a qualidade do som depende em grande medida da sua placa de som. </para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="compilation-and-installation">
+<title
+>Compilação e instalação</title>
+&install.compile.documentation; <para
+>Vêm incluídos alguns exemplos instalados na <filename class="directory"
+>$dollar;<envar
+>KDEDIR</envar
+>/share/apps/kmid</filename
+> </para>
+
+</sect1>
+
+</appendix>
+
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

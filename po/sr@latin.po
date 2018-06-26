@@ -1,0 +1,1937 @@
+# Translation of kmid.po into Serbian.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2003, 2010.
+# Toplica Tanaskovic <toptan@kde.org.yu>, 2003, 2004.
+# Slobodan Simic <slsimic@gmail.com>, 2005, 2007, 2010.
+# Dalibor Djuric <daliborddjuric@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmid\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-08-06 05:24+0200\n"
+"PO-Revision-Date: 2010-06-04 16:58+0200\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+"X-Associated-UI-Catalogs: kdelibs4\n"
+
+#: alsa/alsabackend.cpp:78
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Fatal error from the ALSA sequencer backend. This usually happens when the "
+"kernel does not have ALSA support, the device node (/dev/snd/seq) does not "
+"exist, or the kernel module (snd_seq) is not loaded. Please check your ALSA/"
+"MIDI configuration. Returned error was: %1"
+msgstr ""
+"Kobna greška začelja sekvencera Alse. Ovo se obično događa kada jezgro nema "
+"podršku za Alsu, čvorište uređaja (<filename>/dev/snd/seq</filename>) ne "
+"postoji ili modul jezgra (<filename>snd_seq</filename>) nije učitan. "
+"Proverite postavu Alse/MIDI‑ja. Vraćena greška je: %1"
+
+#: alsa/alsabackend.cpp:84
+msgctxt "@title:window"
+msgid "ALSA Sequencer Backend Error"
+msgstr "Greška začelja sekvencera Alse"
+
+#: alsa/alsabackend.cpp:209 alsa/alsabackend.cpp:223
+msgctxt "@info"
+msgid "Not found"
+msgstr "Nije nađeno"
+
+#: alsa/alsabackend.cpp:210 alsa/alsabackend.cpp:224
+#, kde-format
+msgctxt "@info"
+msgid "Found version: %1"
+msgstr "Nađena verzija %1"
+
+#: src/playlistdialog.cpp:29
+msgctxt "@title:window"
+msgid "Manage Playlist"
+msgstr "Upravljanje listom"
+
+#: src/main.cpp:29
+msgid "A KDE 4 MIDI/Karaoke player"
+msgstr "Karaoke/MIDI plejer za KDE 4"
+
+#: src/main.cpp:35
+msgid "KMid"
+msgstr "KMid"
+
+#: src/main.cpp:37 examples/kmidtest/kmidtest.cpp:91
+msgid "Pedro Lopez-Cabanillas"
+msgstr "Pedro Lopez Kabaniljas"
+
+#: src/main.cpp:37
+msgid "Maintainer"
+msgstr "održavalac"
+
+#: src/main.cpp:39
+msgid "Antonio Larrosa Jimenez"
+msgstr "Antonio Larosa Himenez"
+
+#: src/main.cpp:39
+msgid "Author"
+msgstr "autor"
+
+#: src/main.cpp:43
+msgid "Song(s) to open"
+msgstr "Pesme za otvaranje"
+
+#: src/kmid2.cpp:169 src/kmid_part.cpp:211
+msgctxt "@info"
+msgid "No MIDI backend loaded."
+msgstr "Nema učitanog MIDI začelja."
+
+#: src/kmid2.cpp:170 src/kmid_part.cpp:212
+msgctxt "@title:window"
+msgid "Fatal"
+msgstr "Kobno"
+
+#: src/kmid2.cpp:250
+msgctxt "@info:whatsthis"
+msgid "Exit the application"
+msgstr "Izlazi iz programa"
+
+#: src/kmid2.cpp:252
+msgctxt "@info:whatsthis"
+msgid "Open a file from disk"
+msgstr "Otvara fajl sa diska"
+
+#: src/kmid2.cpp:254
+msgctxt "@info:whatsthis"
+msgid "Configure the program settings"
+msgstr "Podešava postavke programa"
+
+#: src/kmid2.cpp:256
+msgctxt "@info:whatsthis"
+msgid "Print the lyrics"
+msgstr "Štampa stihove"
+
+#: src/kmid2.cpp:261
+msgctxt "@action:inmenu"
+msgid "Save Lyrics..."
+msgstr "Sačuvaj stihove..."
+
+#: src/kmid2.cpp:267 src/kmid_part.cpp:168
+msgctxt "@action player play"
+msgid "Play"
+msgstr "Pusti"
+
+#: src/kmid2.cpp:270 src/kmid_part.cpp:171
+msgctxt "@info:whatsthis"
+msgid "Start playback of the current session"
+msgstr "Počinje puštanje tekuće sesije"
+
+#: src/kmid2.cpp:276 src/kmid_part.cpp:177
+msgctxt "@action player pause"
+msgid "Pause"
+msgstr "Pauziraj"
+
+#: src/kmid2.cpp:278 src/kmid_part.cpp:179
+msgctxt "@info:whatsthis"
+msgid "Pause the playback"
+msgstr "Pauzira puštanje"
+
+#: src/kmid2.cpp:284
+msgctxt "@action player next song"
+msgid "Next song"
+msgstr "Sledeća pesma"
+
+#: src/kmid2.cpp:287
+msgctxt "@info:whatsthis"
+msgid "Next song"
+msgstr "Sledeća pesma"
+
+#: src/kmid2.cpp:293
+msgctxt "@action player previous song"
+msgid "Previous song"
+msgstr "Prethodna pesma"
+
+#: src/kmid2.cpp:296
+msgctxt "@info:whatsthis"
+msgid "Previous song"
+msgstr "Prethodna pesma"
+
+#: src/kmid2.cpp:302
+msgctxt "@action player skip forward"
+msgid "Forward"
+msgstr "Napred"
+
+#: src/kmid2.cpp:304
+msgctxt "@info:whatsthis"
+msgid "Player seek forward"
+msgstr "Traži unapred"
+
+#: src/kmid2.cpp:310
+msgctxt "@action player skip backward"
+msgid "Rewind"
+msgstr "Premotaj"
+
+#: src/kmid2.cpp:312
+msgctxt "@info:whatsthis"
+msgid "Player seek backward"
+msgstr "Traži unazad"
+
+#: src/kmid2.cpp:318 src/kmid_part.cpp:185
+msgctxt "@action player stop"
+msgid "Stop"
+msgstr "Zaustavi"
+
+#: src/kmid2.cpp:321 src/kmid_part.cpp:188
+msgctxt "@info:whatsthis"
+msgid "Stop playback or recording"
+msgstr "Zaustavlja puštanje ili snimanje"
+
+#: src/kmid2.cpp:327
+msgctxt "@action:inmenu"
+msgid "File info..."
+msgstr "Podaci o fajlu..."
+
+#: src/kmid2.cpp:333
+msgctxt "@action playlist repeat"
+msgid "Repeat"
+msgstr "Ponovi"
+
+#: src/kmid2.cpp:339
+msgctxt "@action playlist shuffle"
+msgid "Shuffle"
+msgstr "Promešaj"
+
+#: src/kmid2.cpp:346
+msgctxt "@action player auto-start"
+msgid "Auto-Start"
+msgstr "Sam pokreni"
+
+#: src/kmid2.cpp:351
+msgctxt "@action"
+msgid "Auto-Add to Playlist"
+msgstr "Sam dodaj u listu"
+
+#: src/kmid2.cpp:355
+msgctxt "@action"
+msgid "Load Playlist..."
+msgstr "Učitaj listu puštanja..."
+
+#: src/kmid2.cpp:361
+msgctxt "@action"
+msgid "Save Playlist..."
+msgstr "Sačuvaj listu puštanja..."
+
+#: src/kmid2.cpp:367
+msgctxt "@action"
+msgid "Edit Playlist..."
+msgstr "Uredi listu..."
+
+#: src/kmid2.cpp:373
+msgctxt "@action Pianola"
+msgid "Player Piano"
+msgstr "Pijanista"
+
+#: src/kmid2.cpp:374
+msgctxt "@info:whatsthis Pianola"
+msgid "Show or hide the player piano window"
+msgstr "Prikazuje ili skriva prozor klavira"
+
+#: src/kmid2.cpp:379
+msgctxt "@action"
+msgid "Channels"
+msgstr "Kanali"
+
+#: src/kmid2.cpp:380
+msgctxt "@info:whatsthis"
+msgid "Show or hide the channels window"
+msgstr "Prikazuje ili skriva prozor kanâ̂la"
+
+#: src/kmid2.cpp:385
+msgctxt "@action load song settings"
+msgid "Load"
+msgstr "Učitaj"
+
+#: src/kmid2.cpp:387
+msgctxt "@info:whatsthis"
+msgid "Load the stored settings for the current song"
+msgstr "Učitava sačuvane postavke za trenutnu pesmu"
+
+#: src/kmid2.cpp:392
+msgctxt "@action save song settings"
+msgid "Save"
+msgstr "Sačuvaj"
+
+#: src/kmid2.cpp:394
+msgctxt "@info:whatsthis"
+msgid "Save the settings of the current song"
+msgstr "Upisuje postavke trenutne pesme"
+
+#: src/kmid2.cpp:399
+msgctxt "@action auto load/save song settings"
+msgid "Automatic"
+msgstr "Automatski"
+
+#: src/kmid2.cpp:400
+msgctxt "@info:whatsthis"
+msgid "Automatically load and save song settings"
+msgstr "Automatski učitava i upisuje postavke pesme"
+
+#: src/kmid2.cpp:409
+msgctxt "@title:window"
+msgid "Open MIDI/Karaoke files"
+msgstr "Otvaranje MIDI/karaoke fajlova"
+
+#: src/kmid2.cpp:547
+msgctxt "@info:status player playing"
+msgid "playing"
+msgstr "puštam"
+
+#: src/kmid2.cpp:550
+msgctxt "@info:status player paused"
+msgid "paused"
+msgstr "pauzirano"
+
+#: src/kmid2.cpp:553
+msgctxt "@info:status player stopped"
+msgid "stopped"
+msgstr "zaustavljeno"
+
+#: src/kmid2.cpp:557
+msgctxt "@info:status player loading"
+msgid "loading"
+msgstr "učitavam"
+
+#: src/kmid2.cpp:560
+msgctxt "@info:status player invalid status"
+msgid "not ready"
+msgstr "nespreman"
+
+#: src/kmid2.cpp:570
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> [%2]"
+msgstr "<filename>%1</filename> [%2]"
+
+#: src/kmid2.cpp:792
+msgctxt "@title:group"
+msgid "Lyrics"
+msgstr "Stihovi"
+
+#: src/kmid2.cpp:793
+msgctxt "@title:group"
+msgid "MIDI"
+msgstr "MIDI"
+
+#: src/kmid2.cpp:797
+msgctxt "@title:group"
+msgid "Soft Synths"
+msgstr "Softsintovi"
+
+#: src/kmid2.cpp:836
+msgctxt "@info"
+msgid "The new MIDI backend will take effect after restarting the program."
+msgstr "Novo MIDI začelje biće primenjeno nakon ponovnog pokretanja programa."
+
+#: src/kmid2.cpp:838
+msgctxt "@title:window"
+msgid "MIDI Backend Changed"
+msgstr "Promenjeno MIDI začelje"
+
+#: src/kmid2.cpp:937
+msgctxt "@info"
+msgid "No file loaded"
+msgstr "Nema učitanog fajla"
+
+#: src/kmid2.cpp:939
+#, kde-format
+msgctxt "@info"
+msgid "File: <filename>%1</filename><nl/>"
+msgstr "Fajl: <filename>%1</filename><nl/>"
+
+#: src/kmid2.cpp:941 src/kmid2.cpp:945 src/kmid2.cpp:949 src/kmid2.cpp:953
+#: src/kmid2.cpp:957 src/kmid2.cpp:961 src/kmid2.cpp:965 src/kmid2.cpp:969
+msgctxt "@info"
+msgid "<nl/>"
+msgstr "<nl/>"
+
+#: src/kmid2.cpp:943
+#, kde-format
+msgctxt "@info"
+msgid "Copyright: <emphasis>%1</emphasis><nl/>"
+msgstr "Autorska prava: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:947
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke type: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke vrsta: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:951
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke version: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke verzija: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:955
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke info: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke podaci: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:959
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke language: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke jezik: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:963
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke title: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke naslov: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:967
+#, kde-format
+msgctxt "@info"
+msgid "Karaoke warnings: <emphasis>%1</emphasis><nl/>"
+msgstr "Karaoke upozorenja: <emphasis>%1</emphasis><nl/>"
+
+#: src/kmid2.cpp:970
+msgctxt "@title:window"
+msgid "Sequence Information"
+msgstr "Podaci o sekvenci"
+
+#: src/kmid2.cpp:980
+msgctxt "@title:window"
+msgid "Save lyrics to file"
+msgstr "Upisivanje stihova u fajl"
+
+#: src/kmid2.cpp:1028 src/kmid2.cpp:1079
+msgctxt "@title:window"
+msgid "MIDI Player connection"
+msgstr "Veza sa MIDI plejerom"
+
+#: src/kmid2.cpp:1038
+msgctxt "@info"
+msgid ""
+"You need to select one MIDI port if you want to be able to listen sounds. "
+"This MIDI port may be a software synthesizer like Timidity++ or FluidSynth, "
+"or an external MIDI device, or a hardware synthesizer provided by your sound "
+"card. This setting can be changed later, using the Settings->Configure KMid-"
+">MIDI dialog. You can find more information in the <link url='help:/kmid/"
+"general-usage.html#using-midi'>online help documents</link><nl/>Please "
+"select one MIDI port now:"
+msgstr ""
+"Morate izabrati jedan MIDI port ako želite da čujete zvuke. Taj MIDI port "
+"može biti softverski sintetizator poput TiMidityja ili FluidSyntha ili "
+"spoljašnji MIDI uređaj ili hardverski sintetizator koji ima vaša zvučna "
+"kartica. Ova postavka se može kasnije promeniti pomoću dijaloga "
+"<interface>Podešavanje->Podesi KMid...->MIDI</interface>. Više informacija "
+"možete naći u <link url='help:/kmid/general-usage.html#using-"
+"midi'>dokumentima pomoći na vezi</link><nl/>Izaberite sada jedan MIDI port:"
+
+#: src/kmid2.cpp:1071
+msgctxt "@info"
+msgid ""
+"There are no available MIDI ports in your system. You can specify a software "
+"synthesizer, such as TiMidity++ or FluidSynth, to be launched automatically "
+"when KMid starts. This option is located in the dialog Settings->Configure "
+"KMid, programs category. You can find more information in the <link "
+"url='help:/kmid/general-usage.html#using-midi'>online help documents</link>."
+msgstr ""
+"Nema dostupnih MIDI portova na vašem sistemu. Možete navesti softverski "
+"sintetizator, poput TiMidityja ili FluidSyntha, da se pokreće automatski "
+"kada se KMid pokrene. Ova opcija se nalazi u dijalogu <interface>Podešavanje-"
+">Podesi KMid...</interface>. Više informacija možete naći u <link url='help:/"
+"kmid/general-usage.html#using-midi'>dokumentima pomoći na vezi</link>."
+
+#: src/kmid2.cpp:1114
+msgctxt "@title:window"
+msgid "Open playlist from file"
+msgstr "Otvaranje liste puštanja iz fajla"
+
+#: src/kmid2.cpp:1123
+msgctxt "@title:window"
+msgid "Save playlist to file"
+msgstr "Upisivanje liste puštanja u fajl"
+
+#: src/kmid2.cpp:1217 src/kmid2.cpp:1261
+msgctxt "@title:window"
+msgid "Volume and Pitch"
+msgstr "Jačina i visina"
+
+# well-spelled: Јач
+#: src/kmid2.cpp:1226
+msgctxt "@label:slider Sound master volume"
+msgid "Vol."
+msgstr "Jač."
+
+# well-spelled: Вис
+#: src/kmid2.cpp:1230
+msgctxt "@label:slider Musical tone, note height (transpose)"
+msgid "Pitch"
+msgstr "Vis."
+
+#: src/kmid2.cpp:1240
+msgctxt "@info:whatsthis"
+msgid "MIDI master volume control"
+msgstr "Glavna kontrola jačine MIDI‑ja"
+
+#: src/kmid2.cpp:1252
+msgctxt "@info:whatsthis"
+msgid "Note height transposition"
+msgstr "Premeštanje visine note"
+
+#: src/kmid2.cpp:1263
+msgctxt "@action:inmenu"
+msgid "Show or hide the volume and pitch controls"
+msgstr "Prikaz ili skrivanje kontrola jačine i visine"
+
+#: src/kmid2.cpp:1271 src/kmid2.cpp:1296
+msgctxt "@title:window"
+msgid "Time Position"
+msgstr "Vremenska pozicija"
+
+#: src/kmid2.cpp:1282 src/kmid_partview.cpp:78
+msgctxt "@info:whatsthis"
+msgid "Time position control"
+msgstr "Kontrola vremenske pozicije"
+
+#: src/kmid2.cpp:1298
+msgctxt "@action:inmenu"
+msgid "Show or hide the time position controls"
+msgstr "Prikaz ili skrivanje kontrole vremenske pozicije"
+
+#: src/kmid2.cpp:1303 src/kmid2.cpp:1315
+msgctxt "@title:window"
+msgid "Text Encoding"
+msgstr "Kodiranje teksta"
+
+#: src/kmid2.cpp:1307
+msgctxt "@info:whatsthis"
+msgid "Character encoding for lyrics and other text"
+msgstr "Kodiranje za stihove i ostali tekst"
+
+#: src/kmid2.cpp:1308
+msgctxt "@item:inlistbox Default MIDI text encoding"
+msgid "Default ( ASCII )"
+msgstr "podrazumevano (ASCII)"
+
+#: src/kmid2.cpp:1317
+msgctxt "@action:inmenu"
+msgid "Show or hide the character encoding control"
+msgstr "Prikaz ili skrivanje kontrole kodiranja"
+
+#: src/kmid2.cpp:1322 src/kmid2.cpp:1377
+msgctxt "@title:window"
+msgid "Rhythm"
+msgstr "Ritam"
+
+#: src/kmid2.cpp:1329
+msgctxt "@label"
+msgid "Tempo:"
+msgstr "Tempo:"
+
+#: src/kmid2.cpp:1336
+msgctxt "@label:slider bpm=beats per minute"
+msgid "120.0 bpm"
+msgstr "120.0 o/min"
+
+#: src/kmid2.cpp:1337
+msgctxt "@info:whatsthis"
+msgid "Tempo, or song speed in beats per minute"
+msgstr "Tempo ili brzina pesme u otkucajima u minuti"
+
+#: src/kmid2.cpp:1347
+msgctxt "@info:whatsthis"
+msgid "Tempo (song speed) control, between 50% and 200%"
+msgstr "Kontrola tempa (brzine pesme), između 50% i 200%"
+
+#: src/kmid2.cpp:1352
+msgctxt "@action:button"
+msgid "100%"
+msgstr "100%"
+
+#: src/kmid2.cpp:1353
+msgctxt "@info:whatsthis"
+msgid "Reset the song tempo (song speed) to 100%"
+msgstr "Resetuje tempo pesme (brzinu) na 100%"
+
+#: src/kmid2.cpp:1357
+msgctxt "@label"
+msgid "Metronome:"
+msgstr "Metronom:"
+
+#: src/kmid2.cpp:1365
+msgctxt "@info:whatsthis"
+msgid "Time position in measures:beats"
+msgstr "Pozicija vremena merena otkucajima"
+
+#: src/kmid2.cpp:1370
+msgctxt "@info:whatsthis"
+msgid "Visual metronome"
+msgstr "Vizuelni metronom"
+
+#: src/kmid2.cpp:1379
+msgctxt "@action:inmenu"
+msgid "Show or hide the rhythm controls"
+msgstr "Prikaz ili skrivanje kontrola ritma"
+
+#: src/kmid2.cpp:1387
+msgctxt "@info:whatsthis"
+msgid "Song lyrics, or some other text"
+msgstr "Stihovi pesme ili neki drugi tekst"
+
+#: src/kmid2.cpp:1410
+msgctxt "@label"
+msgid "Sample Songs"
+msgstr "Pesme za probu"
+
+#: src/kmid2.cpp:1421
+msgctxt "@label"
+msgid "System Songs"
+msgstr "Sistemske pesme"
+
+#: src/kmid2.cpp:1514 src/kmid_part.cpp:340
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Failed to run %1 with the provided arguments.<nl/>Returned messages:<nl/>"
+#| "%2"
+msgctxt "@info"
+msgid ""
+"Failed to run %2 with the provided arguments.<nl/>Returned message:<nl/>%3"
+msgid_plural ""
+"Failed to run %2 with the provided arguments.<nl/>Returned messages:<nl/>%3"
+msgstr[0] ""
+"Ne mogu da pokrenem %1 sa datim argumentima.<nl/>Vraćene su poruke:<nl/>%2"
+msgstr[1] ""
+"Ne mogu da pokrenem %1 sa datim argumentima.<nl/>Vraćene su poruke:<nl/>%2"
+msgstr[2] ""
+"Ne mogu da pokrenem %1 sa datim argumentima.<nl/>Vraćene su poruke:<nl/>%2"
+msgstr[3] ""
+"Ne mogu da pokrenem %1 sa datim argumentima.<nl/>Vraćene su poruke:<nl/>%2"
+
+#: src/kmid2.cpp:1520 src/kmid_part.cpp:346
+#, kde-format
+msgctxt "@title:window"
+msgid "%1 startup failed"
+msgstr "Pokretanje %1 nije uspelo"
+
+#: src/kmid2.cpp:1542 src/kmid_part.cpp:323
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "%1 has returned the following messages when launched with the provided "
+#| "arguments."
+msgctxt "@info"
+msgid ""
+"%2 has returned the following message when launched with the provided "
+"arguments."
+msgid_plural ""
+"%2 has returned the following messages when launched with the provided "
+"arguments."
+msgstr[0] ""
+"Program %1 je vratio sledeće poruke kada je pokrenut sa datim argumentima."
+msgstr[1] ""
+"Program %1 je vratio sledeće poruke kada je pokrenut sa datim argumentima."
+msgstr[2] ""
+"Program %1 je vratio sledeće poruke kada je pokrenut sa datim argumentima."
+msgstr[3] ""
+"Program %1 je vratio sledeće poruke kada je pokrenut sa datim argumentima."
+
+#: src/kmid2.cpp:1549 src/kmid_part.cpp:330
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "%1 messages"
+msgctxt "@title:window"
+msgid "%2 message"
+msgid_plural "%2 messages"
+msgstr[0] "%1 poruke"
+msgstr[1] "%1 poruke"
+msgstr[2] "%1 poruke"
+msgstr[3] "%1 poruke"
+
+#: src/pianola.cpp:39
+msgctxt "@title:window"
+msgid "Player Piano"
+msgstr "Pijanista"
+
+#: src/pianola.cpp:45
+msgctxt "@title:menu"
+msgid "MIDI Channels"
+msgstr "MIDI kanali"
+
+#: src/pianola.cpp:47
+msgctxt "@action:inmenu"
+msgid "Show all channels"
+msgstr "Prikaži sve kanale"
+
+#: src/pianola.cpp:51
+msgctxt "@action:inmenu"
+msgid "Hide all channels"
+msgstr "Sakrij sve kanale"
+
+#: src/pianola.cpp:82
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "Channel %1"
+msgstr "Kanal %1"
+
+#: src/instrumentset.cpp:35
+msgctxt "@item:inlistbox"
+msgid "Acoustic Grand Piano"
+msgstr "akustični veliki klavir"
+
+#: src/instrumentset.cpp:36
+msgctxt "@item:inlistbox"
+msgid "Bright Acoustic Piano"
+msgstr "akustični svetli klavir"
+
+#: src/instrumentset.cpp:37
+msgctxt "@item:inlistbox"
+msgid "Electric Grand Piano"
+msgstr "električni veliki klavir"
+
+# well-spelled: хонки, тонк
+#: src/instrumentset.cpp:38
+msgctxt "@item:inlistbox"
+msgid "Honky-Tonk"
+msgstr "honki‑tonk"
+
+#: src/instrumentset.cpp:39
+msgctxt "@item:inlistbox"
+msgid "Rhodes Piano"
+msgstr "Roudsov klavir"
+
+#: src/instrumentset.cpp:40
+msgctxt "@item:inlistbox"
+msgid "Chorused Piano"
+msgstr "horski klavir"
+
+#: src/instrumentset.cpp:41
+msgctxt "@item:inlistbox"
+msgid "Harpsichord"
+msgstr "harpsikord"
+
+#: src/instrumentset.cpp:42
+msgctxt "@item:inlistbox"
+msgid "Clavinet"
+msgstr "klavinet"
+
+#: src/instrumentset.cpp:43
+msgctxt "@item:inlistbox"
+msgid "Celesta"
+msgstr "čelesta"
+
+#: src/instrumentset.cpp:44
+msgctxt "@item:inlistbox"
+msgid "Glockenspiel"
+msgstr "glokenšpil"
+
+#: src/instrumentset.cpp:45
+msgctxt "@item:inlistbox"
+msgid "Music Box"
+msgstr "muzička kutija"
+
+#: src/instrumentset.cpp:46
+msgctxt "@item:inlistbox"
+msgid "Vibraphone"
+msgstr "vibrafon"
+
+# well-spelled: маримба
+#: src/instrumentset.cpp:47
+msgctxt "@item:inlistbox"
+msgid "Marimba"
+msgstr "marimba"
+
+#: src/instrumentset.cpp:48
+msgctxt "@item:inlistbox"
+msgid "Xylophone"
+msgstr "ksilofon"
+
+#: src/instrumentset.cpp:49
+msgctxt "@item:inlistbox"
+msgid "Tubular Bells"
+msgstr "cevasta zvona"
+
+# well-spelled: чимбала
+#: src/instrumentset.cpp:50
+msgctxt "@item:inlistbox"
+msgid "Dulcimer"
+msgstr "čimbala"
+
+#: src/instrumentset.cpp:51
+msgctxt "@item:inlistbox"
+msgid "Hammond Organ"
+msgstr "Hamondove orgulje"
+
+#: src/instrumentset.cpp:52
+msgctxt "@item:inlistbox"
+msgid "Percussive Organ"
+msgstr "udaraljke-orgulje"
+
+#: src/instrumentset.cpp:53
+msgctxt "@item:inlistbox"
+msgid "Rock Organ"
+msgstr "rok orgulje"
+
+#: src/instrumentset.cpp:54
+msgctxt "@item:inlistbox"
+msgid "Church Organ"
+msgstr "crkvene orgulje"
+
+# well-spelled: рид
+#: src/instrumentset.cpp:55
+msgctxt "@item:inlistbox"
+msgid "Reed Organ"
+msgstr "rid orgulje"
+
+#: src/instrumentset.cpp:56
+msgctxt "@item:inlistbox"
+msgid "Accordion"
+msgstr "harmonika"
+
+#: src/instrumentset.cpp:57
+msgctxt "@item:inlistbox"
+msgid "Harmonica"
+msgstr "usna harmonika"
+
+#: src/instrumentset.cpp:58
+msgctxt "@item:inlistbox"
+msgid "Tango Accordion"
+msgstr "tango-harmonika"
+
+#: src/instrumentset.cpp:59
+msgctxt "@item:inlistbox"
+msgid "Acoustic Guitar (Nylon)"
+msgstr "akustična gitara (najlon)"
+
+#: src/instrumentset.cpp:60
+msgctxt "@item:inlistbox"
+msgid "Acoustic Guitar (Steel)"
+msgstr "akustična gitara (čelik)"
+
+#: src/instrumentset.cpp:61
+msgctxt "@item:inlistbox"
+msgid "Electric Guitar (Jazz)"
+msgstr "električna gitara (džez)"
+
+#: src/instrumentset.cpp:62
+msgctxt "@item:inlistbox"
+msgid "Electric Guitar (Clean)"
+msgstr "električna gitara (čista)"
+
+#: src/instrumentset.cpp:63
+msgctxt "@item:inlistbox"
+msgid "Electric Guitar (Muted)"
+msgstr "električna gitara (prigušena)"
+
+# well-spelled: овердрајв
+#: src/instrumentset.cpp:64
+msgctxt "@item:inlistbox"
+msgid "Overdriven Guitar"
+msgstr "overdrajv gitara"
+
+#: src/instrumentset.cpp:65
+msgctxt "@item:inlistbox"
+msgid "Distortion Guitar"
+msgstr "gitara sa distorzijom"
+
+#: src/instrumentset.cpp:66
+msgctxt "@item:inlistbox"
+msgid "Guitar Harmonics"
+msgstr "gitarski harmonici"
+
+#: src/instrumentset.cpp:67
+msgctxt "@item:inlistbox"
+msgid "Acoustic Bass"
+msgstr "akustični bas"
+
+#: src/instrumentset.cpp:68
+msgctxt "@item:inlistbox"
+msgid "Electric Bass (Finger)"
+msgstr "električni bas (finger)"
+
+#: src/instrumentset.cpp:69
+msgctxt "@item:inlistbox"
+msgid "Electric Bass (Pick)"
+msgstr "električni bas (pik)"
+
+# well-spelled: фретлес
+#: src/instrumentset.cpp:70
+msgctxt "@item:inlistbox"
+msgid "Fretless Bass"
+msgstr "fretles bas"
+
+# well-spelled: слап
+#: src/instrumentset.cpp:71
+msgctxt "@item:inlistbox"
+msgid "Slap Bass 1"
+msgstr "slap bas 1"
+
+# well-spelled: слап
+#: src/instrumentset.cpp:72
+msgctxt "@item:inlistbox"
+msgid "Slap Bass 2"
+msgstr "slap bas 2"
+
+#: src/instrumentset.cpp:73
+msgctxt "@item:inlistbox"
+msgid "Synth Bass 1"
+msgstr "sintesajzerski bas 1"
+
+#: src/instrumentset.cpp:74
+msgctxt "@item:inlistbox"
+msgid "Synth Bass 2"
+msgstr "sintesajzerski bas 2"
+
+#: src/instrumentset.cpp:75
+msgctxt "@item:inlistbox"
+msgid "Violin"
+msgstr "violina"
+
+#: src/instrumentset.cpp:76
+msgctxt "@item:inlistbox"
+msgid "Viola"
+msgstr "viola"
+
+#: src/instrumentset.cpp:77
+msgctxt "@item:inlistbox"
+msgid "Cello"
+msgstr "čelo"
+
+#: src/instrumentset.cpp:78
+msgctxt "@item:inlistbox"
+msgid "Contrabass"
+msgstr "kontrabas"
+
+#: src/instrumentset.cpp:79
+msgctxt "@item:inlistbox"
+msgid "Tremolo Strings"
+msgstr "tremolo gudači"
+
+#: src/instrumentset.cpp:80
+msgctxt "@item:inlistbox"
+msgid "Pizzicato Strings"
+msgstr "picikato gudači"
+
+#: src/instrumentset.cpp:81
+msgctxt "@item:inlistbox"
+msgid "Orchestral Harp"
+msgstr "orkestarska harfa"
+
+#: src/instrumentset.cpp:82
+msgctxt "@item:inlistbox"
+msgid "Timpani"
+msgstr "timpani"
+
+#: src/instrumentset.cpp:83
+msgctxt "@item:inlistbox"
+msgid "String Ensemble 1"
+msgstr "gudački ansambl 1"
+
+#: src/instrumentset.cpp:84
+msgctxt "@item:inlistbox"
+msgid "String Ensemble 2"
+msgstr "gudački ansambl 2"
+
+#: src/instrumentset.cpp:85
+msgctxt "@item:inlistbox"
+msgid "Synth Strings 1"
+msgstr "sintesajzerski gudači 1"
+
+#: src/instrumentset.cpp:86
+msgctxt "@item:inlistbox"
+msgid "Synth Strings 2"
+msgstr "sintesajzerski gudači 2"
+
+#: src/instrumentset.cpp:87
+msgctxt "@item:inlistbox"
+msgid "Choir Aahs"
+msgstr "hor: ah"
+
+#: src/instrumentset.cpp:88
+msgctxt "@item:inlistbox"
+msgid "Voice Oohs"
+msgstr "glas: oh"
+
+#: src/instrumentset.cpp:89
+msgctxt "@item:inlistbox"
+msgid "Synth Voice"
+msgstr "sintetizovani glas"
+
+#: src/instrumentset.cpp:90
+msgctxt "@item:inlistbox blow, stroke, impact"
+msgid "Orchestra Hit"
+msgstr "orkestarski zvuk"
+
+#: src/instrumentset.cpp:91
+msgctxt "@item:inlistbox"
+msgid "Trumpet"
+msgstr "truba"
+
+#: src/instrumentset.cpp:92
+msgctxt "@item:inlistbox"
+msgid "Trombone"
+msgstr "trombon"
+
+#: src/instrumentset.cpp:93
+msgctxt "@item:inlistbox"
+msgid "Tuba"
+msgstr "tuba"
+
+#: src/instrumentset.cpp:94
+msgctxt "@item:inlistbox"
+msgid "Muted Trumpet"
+msgstr "prigušena truba"
+
+#: src/instrumentset.cpp:95
+msgctxt "@item:inlistbox"
+msgid "French Horn"
+msgstr "francuski rog"
+
+#: src/instrumentset.cpp:96
+msgctxt "@item:inlistbox"
+msgid "Brass Section"
+msgstr "duvačka sekcija"
+
+#: src/instrumentset.cpp:97
+msgctxt "@item:inlistbox"
+msgid "Synth Brass 1"
+msgstr "sintesajzerski duvači 1"
+
+#: src/instrumentset.cpp:98
+msgctxt "@item:inlistbox"
+msgid "Synth Brass 2"
+msgstr "sintesajzerski duvači 2"
+
+#: src/instrumentset.cpp:99
+msgctxt "@item:inlistbox"
+msgid "Soprano Sax"
+msgstr "sopranski saksofon"
+
+# well-spelled: алтски
+#: src/instrumentset.cpp:100
+msgctxt "@item:inlistbox"
+msgid "Alto Sax"
+msgstr "altski saksofon"
+
+#: src/instrumentset.cpp:101
+msgctxt "@item:inlistbox"
+msgid "Tenor Sax"
+msgstr "tenorski saksofon"
+
+#: src/instrumentset.cpp:102
+msgctxt "@item:inlistbox"
+msgid "Baritone Sax"
+msgstr "baritonski saksofon"
+
+#: src/instrumentset.cpp:103
+msgctxt "@item:inlistbox"
+msgid "Oboe"
+msgstr "oboa"
+
+#: src/instrumentset.cpp:104
+msgctxt "@item:inlistbox"
+msgid "English Horn"
+msgstr "engleski rog"
+
+#: src/instrumentset.cpp:105
+msgctxt "@item:inlistbox"
+msgid "Bassoon"
+msgstr "fagot"
+
+#: src/instrumentset.cpp:106
+msgctxt "@item:inlistbox"
+msgid "Clarinet"
+msgstr "klarinet"
+
+#: src/instrumentset.cpp:107
+msgctxt "@item:inlistbox"
+msgid "Piccolo"
+msgstr "pikolo"
+
+#: src/instrumentset.cpp:108
+msgctxt "@item:inlistbox"
+msgid "Flute"
+msgstr "flauta"
+
+#: src/instrumentset.cpp:109
+msgctxt ""
+"@item:inlistbox woodwind musical instrument. http://en.wikipedia.org/wiki/"
+"Recorder"
+msgid "Recorder"
+msgstr "engleska flauta"
+
+#: src/instrumentset.cpp:110
+msgctxt "@item:inlistbox"
+msgid "Pan Flute"
+msgstr "Panova frula"
+
+#: src/instrumentset.cpp:111
+msgctxt "@item:inlistbox"
+msgid "Blown Bottle"
+msgstr "duvanje u flašu"
+
+# well-spelled: шакухачи
+#: src/instrumentset.cpp:112
+msgctxt "@item:inlistbox"
+msgid "Shakuhachi"
+msgstr "šakuhači"
+
+#: src/instrumentset.cpp:113
+msgctxt "@item:inlistbox"
+msgid "Whistle"
+msgstr "pištaljka"
+
+# well-spelled: окарина
+#: src/instrumentset.cpp:114
+msgctxt "@item:inlistbox"
+msgid "Ocarina"
+msgstr "okarina"
+
+#: src/instrumentset.cpp:115
+msgctxt "@item:inlistbox"
+msgid "Lead 1 - Square Wave"
+msgstr "vodeći 1 (četvrtasti talas)"
+
+#: src/instrumentset.cpp:116
+msgctxt "@item:inlistbox"
+msgid "Lead 2 - Saw Tooth"
+msgstr "vodeći 2 (testerasti talas)"
+
+# well-spelled: калиопи
+#: src/instrumentset.cpp:117
+msgctxt "@item:inlistbox"
+msgid "Lead 3 - Calliope"
+msgstr "vodeći 3 (kaliopi)"
+
+# well-spelled: кифлид
+#: src/instrumentset.cpp:118
+msgctxt "@item:inlistbox"
+msgid "Lead 4 - Chiflead"
+msgstr "Vodeći 4 (kiflid)"
+
+# well-spelled: каранг
+#: src/instrumentset.cpp:119
+msgctxt "@item:inlistbox"
+msgid "Lead 5 - Charang"
+msgstr "vodeći 5 (karang)"
+
+#: src/instrumentset.cpp:120
+msgctxt "@item:inlistbox"
+msgid "Lead 6 - Voice"
+msgstr "vodeći 6 (glas)"
+
+#: src/instrumentset.cpp:121
+msgctxt "@item:inlistbox"
+msgid "Lead 7 - Fifths"
+msgstr "vodeći 7 (pedesete)"
+
+#: src/instrumentset.cpp:122
+msgctxt "@item:inlistbox"
+msgid "Lead 8 - Bass+Lead"
+msgstr "vodeći 8 (bas i vokal)"
+
+#: src/instrumentset.cpp:123
+msgctxt "@item:inlistbox"
+msgid "Pad 1 - New Age"
+msgstr "osnova 1 (njuejdž)"
+
+#: src/instrumentset.cpp:124
+msgctxt "@item:inlistbox"
+msgid "Pad 2 - Warm"
+msgstr "osnova 2 (toplo)"
+
+# well-spelled: полисинт
+#: src/instrumentset.cpp:125
+msgctxt "@item:inlistbox"
+msgid "Pad 3 - Polysynth"
+msgstr "osnova 3 (polisint)"
+
+#: src/instrumentset.cpp:126
+msgctxt "@item:inlistbox"
+msgid "Pad 4 - Choir"
+msgstr "osnova 4 (hor)"
+
+#: src/instrumentset.cpp:127
+msgctxt "@item:inlistbox"
+msgid "Pad 5 - Bow"
+msgstr "osnova 5 (gudanje)"
+
+#: src/instrumentset.cpp:128
+msgctxt "@item:inlistbox"
+msgid "Pad 6 - Metallic"
+msgstr "osnova 6 (metalno)"
+
+#: src/instrumentset.cpp:129
+msgctxt "@item:inlistbox"
+msgid "Pad 7 - Halo"
+msgstr "osnova 7 (halo)"
+
+#: src/instrumentset.cpp:130
+msgctxt "@item:inlistbox"
+msgid "Pad 8 - Sweep"
+msgstr "osnova 8 (huk)"
+
+#: src/instrumentset.cpp:131
+msgctxt "@item:inlistbox"
+msgid "FX 1 - Rain"
+msgstr "efekat 1 (kiša)"
+
+#: src/instrumentset.cpp:132
+msgctxt "@item:inlistbox"
+msgid "FX 2 - Soundtrack"
+msgstr "efekat 2 (muzička pratnja)"
+
+#: src/instrumentset.cpp:133
+msgctxt "@item:inlistbox"
+msgid "FX 3 - Crystal"
+msgstr "efekat 3 (kristal)"
+
+#: src/instrumentset.cpp:134
+msgctxt "@item:inlistbox"
+msgid "FX 4 - Atmosphere"
+msgstr "efekat 4 (atmosfera)"
+
+#: src/instrumentset.cpp:135
+msgctxt "@item:inlistbox"
+msgid "FX 5 - Brightness"
+msgstr "efekat 5 (osvetljaj)"
+
+#: src/instrumentset.cpp:136
+msgctxt "@item:inlistbox"
+msgid "FX 6 - Goblins"
+msgstr "efekat 6 (goblini)"
+
+#: src/instrumentset.cpp:137
+msgctxt "@item:inlistbox"
+msgid "FX 7 - Echoes"
+msgstr "efekat 7 (odjeci)"
+
+#: src/instrumentset.cpp:138
+msgctxt "@item:inlistbox"
+msgid "FX 8 - Sci-fi"
+msgstr "efekat 8 (naučna fantastika)"
+
+# well-spelled: ситар
+#: src/instrumentset.cpp:139
+msgctxt "@item:inlistbox"
+msgid "Sitar"
+msgstr "sitar"
+
+#: src/instrumentset.cpp:140
+msgctxt "@item:inlistbox"
+msgid "Banjo"
+msgstr "bendžo"
+
+# well-spelled: шамисен
+#: src/instrumentset.cpp:141
+msgctxt "@item:inlistbox"
+msgid "Shamisen"
+msgstr "šamisen"
+
+# well-spelled: кото
+#: src/instrumentset.cpp:142
+msgctxt "@item:inlistbox"
+msgid "Koto"
+msgstr "koto"
+
+# well-spelled: калимба
+#: src/instrumentset.cpp:143
+msgctxt "@item:inlistbox"
+msgid "Kalimba"
+msgstr "kalimba"
+
+#: src/instrumentset.cpp:144
+msgctxt "@item:inlistbox"
+msgid "Bagpipe"
+msgstr "gajde"
+
+#: src/instrumentset.cpp:145
+msgctxt "@item:inlistbox"
+msgid "Fiddle"
+msgstr "gudački"
+
+# well-spelled: шанаји
+#: src/instrumentset.cpp:146
+msgctxt "@item:inlistbox"
+msgid "Shannai"
+msgstr "šanaji"
+
+#: src/instrumentset.cpp:147
+msgctxt "@item:inlistbox"
+msgid "Tinkle Bell"
+msgstr "Zvonce"
+
+# well-spelled: агого
+#: src/instrumentset.cpp:148
+msgctxt "@item:inlistbox"
+msgid "Agogo"
+msgstr "agogo"
+
+#: src/instrumentset.cpp:149
+msgctxt "@item:inlistbox"
+msgid "Steel Drum"
+msgstr "limeni doboš"
+
+#: src/instrumentset.cpp:150
+msgctxt "@item:inlistbox"
+msgid "Wood Block"
+msgstr "drveni blok"
+
+# well-spelled: таико
+#: src/instrumentset.cpp:151
+msgctxt "@item:inlistbox"
+msgid "Taiko Drum"
+msgstr "taiko doboš"
+
+#: src/instrumentset.cpp:152
+msgctxt "@item:inlistbox"
+msgid "Melodic Tom"
+msgstr "melodični Tom"
+
+#: src/instrumentset.cpp:153
+msgctxt "@item:inlistbox"
+msgid "Synth Drum"
+msgstr "sintesajzerski doboš"
+
+#: src/instrumentset.cpp:154
+msgctxt "@item:inlistbox"
+msgid "Reverse Cymbal"
+msgstr "obrnute činele"
+
+# well-spelled: флажолет
+# Стварно?
+#: src/instrumentset.cpp:155
+msgctxt "@item:inlistbox"
+msgid "Guitar Fret Noise"
+msgstr "flažolet"
+
+#: src/instrumentset.cpp:156
+msgctxt "@item:inlistbox"
+msgid "Breath Noise"
+msgstr "disanje"
+
+#: src/instrumentset.cpp:157
+msgctxt "@item:inlistbox"
+msgid "Seashore"
+msgstr "morska obala"
+
+#: src/instrumentset.cpp:158
+msgctxt "@item:inlistbox"
+msgid "Bird Tweet"
+msgstr "cvrkut ptice"
+
+#: src/instrumentset.cpp:159
+msgctxt "@item:inlistbox"
+msgid "Telephone"
+msgstr "telefon"
+
+#: src/instrumentset.cpp:160
+msgctxt "@item:inlistbox"
+msgid "Helicopter"
+msgstr "helikopter"
+
+#: src/instrumentset.cpp:161
+msgctxt "@item:inlistbox"
+msgid "Applause"
+msgstr "aplauz"
+
+#: src/instrumentset.cpp:162
+msgctxt "@item:inlistbox"
+msgid "Gunshot"
+msgstr "pucanj"
+
+#: src/instrumentset.cpp:166
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Percussion %1"
+msgstr "udaraljke %1"
+
+#: src/channels.cpp:42
+msgctxt "@title:window"
+msgid "MIDI Channels"
+msgstr "MIDI kanali"
+
+#: src/channels.cpp:54
+msgctxt "MIDI channel number"
+msgid "Channel"
+msgstr "Kanal"
+
+#: src/channels.cpp:57
+msgctxt "Sound muting"
+msgid "Mute"
+msgstr "Utišaj"
+
+#: src/channels.cpp:60
+msgctxt "Soloist channel"
+msgid "Solo"
+msgstr "Solo"
+
+#: src/channels.cpp:63
+msgctxt "Channel volume level"
+msgid "Level"
+msgstr "Nivo"
+
+#: src/channels.cpp:66
+msgctxt "Instrument locked"
+msgid "Lock"
+msgstr "Zaključaj"
+
+#: src/channels.cpp:69
+msgctxt "MIDI program/patch, predefined instrument"
+msgid "Patch (sound setting)"
+msgstr "Zakrpa (postavka zvuka)"
+
+#: src/kmid_part.cpp:434
+#, fuzzy
+#| msgid "KMid"
+msgctxt "@title"
+msgid "KMidPart"
+msgstr "KMid"
+
+#: src/kmid_part.cpp:435
+#, fuzzy
+#| msgid "Pedro Lopez-Cabanillas"
+msgctxt "@info:credit"
+msgid "Pedro Lopez-Cabanillas"
+msgstr "Pedro Lopez Kabaniljas"
+
+#: src/kmid_part.cpp:436
+#, fuzzy
+#| msgid "Maintainer"
+msgctxt "@info:credit"
+msgid "Maintainer"
+msgstr "održavalac"
+
+#: src/kmid_partview.cpp:60
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid "Time position control"
+msgctxt "@info:whatsthis"
+msgid "Player play/stop control"
+msgstr "Kontrola vremenske pozicije"
+
+#: src/kmid_partview.cpp:61
+#, fuzzy
+#| msgctxt "@action player play"
+#| msgid "Play"
+msgctxt "@info:tooltip player button"
+msgid "Play/Stop"
+msgstr "Pusti"
+
+#: src/kmid_partview.cpp:68
+#, fuzzy
+#| msgctxt "@action Pianola"
+#| msgid "Player Piano"
+msgctxt "@info:whatsthis"
+msgid "Player pause control"
+msgstr "Pijanista"
+
+#: src/kmid_partview.cpp:69
+#, fuzzy
+#| msgctxt "@action player pause"
+#| msgid "Pause"
+msgctxt "@info:tooltip player button"
+msgid "Pause"
+msgstr "Pauziraj"
+
+#: src/kmid_partview.cpp:79
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Time Position"
+msgctxt "@info:tooltip player button"
+msgid "Time position"
+msgstr "Vremenska pozicija"
+
+#: src/kmid_partview.cpp:91
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid "Time position control"
+msgctxt "@info:whatsthis"
+msgid "Volume factor control"
+msgstr "Kontrola vremenske pozicije"
+
+#: src/kmid_partview.cpp:92
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Volume and Pitch"
+msgctxt "@info:tooltip player control"
+msgid "Volume factor"
+msgstr "Jačina i visina"
+
+#: src/kmid_partview.cpp:106
+msgctxt "@info:whatsthis"
+msgid "Pitch transpose control"
+msgstr ""
+
+#: src/kmid_partview.cpp:107
+msgctxt "@info:tooltip player control"
+msgid "Pitch transpose"
+msgstr ""
+
+#: src/kmid_partview.cpp:121
+msgctxt "@info:whatsthis"
+msgid "Speed factor reset"
+msgstr ""
+
+#: src/kmid_partview.cpp:122
+msgctxt "@info:tooltip player button"
+msgid "Speed reset"
+msgstr ""
+
+#: src/kmid_partview.cpp:129
+msgctxt "@info:whatsthis"
+msgid "Speed factor control"
+msgstr ""
+
+#: src/kmid_partview.cpp:130
+msgctxt "@info:tooltip player control"
+msgid "Speed factor"
+msgstr ""
+
+#: examples/kmidtest/kmidtest.cpp:51
+msgid "Could not find KMidPart!"
+msgstr ""
+
+#: examples/kmidtest/kmidtest.cpp:81
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid "Exit the application"
+msgid "A KDE KPart Application"
+msgstr "Izlazi iz programa"
+
+#: examples/kmidtest/kmidtest.cpp:87
+#, fuzzy
+#| msgid "KMid"
+msgid "KMidTest"
+msgstr "KMid"
+
+#: examples/kmidtest/kmidtest.cpp:89
+#, fuzzy
+#| msgid "Pedro Lopez-Cabanillas"
+msgid "(C) 2010 Pedro Lopez-Cabanillas"
+msgstr "Pedro Lopez Kabaniljas"
+
+#: examples/kmidtest/kmidtest.cpp:95
+#, fuzzy
+#| msgid "Song(s) to open"
+msgid "Song to open"
+msgstr "Pesme za otvaranje"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Zoltan Čala,Jovan N. Popović,Časlav Ilić,Slobodan Simić"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"zolika@sezampro.yu,jpopovic@pakom.co.yu,caslav.ilic@gmx.net,slsimic@gmail.com"
+
+#. i18n: file: alsa/prefs_progs.ui:30
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_exec_fluid)
+#. i18n: file: library/kmid.kcfg:71
+#. i18n: ectx: label, entry (exec_fluid), group (Settings)
+#: rc.cpp:6 rc.cpp:193
+msgid "Run FluidSynth at startup"
+msgstr "Pokreni FluidSynth na početku"
+
+#. i18n: file: alsa/prefs_progs.ui:37
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: alsa/prefs_progs.ui:204
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:9 rc.cpp:52
+msgid "Command:"
+msgstr "Naredba:"
+
+# skip-rule: application
+#. i18n: file: alsa/prefs_progs.ui:47
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_cmd_fluid)
+#. i18n: file: alsa/prefs_progs.ui:214
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_cmd_timidity)
+#: rc.cpp:12 rc.cpp:55
+msgid "application/x-executable"
+msgstr "application/x-executable"
+
+#. i18n: file: alsa/prefs_progs.ui:54
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: file: alsa/prefs_progs.ui:228
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: rc.cpp:15 rc.cpp:61
+msgid "Audio Output:"
+msgstr "Zvučni izlaz:"
+
+#. i18n: file: alsa/prefs_progs.ui:68
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:242
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:18 rc.cpp:64
+msgid "alsa"
+msgstr "Alsa"
+
+#. i18n: file: alsa/prefs_progs.ui:73
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:247
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:21 rc.cpp:67
+msgid "pulseaudio"
+msgstr "PulseAudio"
+
+#. i18n: file: alsa/prefs_progs.ui:78
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:252
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:24 rc.cpp:70
+msgid "oss"
+msgstr "OSS"
+
+#. i18n: file: alsa/prefs_progs.ui:83
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_fluid)
+#. i18n: file: alsa/prefs_progs.ui:257
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_audio_timidity)
+#: rc.cpp:27 rc.cpp:73
+msgid "jack"
+msgstr "Jack"
+
+#. i18n: file: alsa/prefs_progs.ui:91
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: mac/prefs_synth.ui:27
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:30 rc.cpp:247
+msgid "Sound Font:"
+msgstr "Zvučni font:"
+
+#. i18n: file: alsa/prefs_progs.ui:104
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_sf2_fluid)
+#: rc.cpp:33
+msgid "audio/x-soundfont"
+msgstr "audio/x-soundfont"
+
+#. i18n: file: alsa/prefs_progs.ui:111
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#. i18n: file: alsa/prefs_progs.ui:311
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:36 rc.cpp:82
+msgid "Arguments:"
+msgstr "Argumenti:"
+
+#. i18n: file: alsa/prefs_progs.ui:134
+#. i18n: ectx: property (text), widget (KTitleWidget, label_fluid_available)
+#. i18n: file: alsa/prefs_progs.ui:221
+#. i18n: ectx: property (text), widget (KTitleWidget, label_timidity_available)
+#: rc.cpp:39 rc.cpp:58
+msgid "Not yet tested"
+msgstr "Još uvek nije probano"
+
+#. i18n: file: alsa/prefs_progs.ui:141
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: file: alsa/prefs_progs.ui:265
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: rc.cpp:42 rc.cpp:76
+msgid "Audio Device:"
+msgstr "Audio uređaj:"
+
+#. i18n: file: alsa/prefs_progs.ui:151
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: file: alsa/prefs_progs.ui:288
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: rc.cpp:45 rc.cpp:79
+msgid "Sample Rate:"
+msgstr "Uzorkovanje:"
+
+#. i18n: file: alsa/prefs_progs.ui:197
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_exec_timidity)
+#. i18n: file: library/kmid.kcfg:106
+#. i18n: ectx: label, entry (exec_timidity), group (Settings)
+#: rc.cpp:49 rc.cpp:214
+msgid "Run TiMidity++ at startup"
+msgstr "Pokreni TiMidity++ na početku"
+
+#. i18n: file: src/prefs_lyrics.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:85
+msgid "Font face:"
+msgstr "Font:"
+
+#. i18n: file: src/prefs_lyrics.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:88
+msgid "Font color:"
+msgstr "Boja fonta:"
+
+#. i18n: file: src/prefs_lyrics.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:91
+msgid "Font size:"
+msgstr "Veličina fonta:"
+
+#. i18n: file: src/prefs_midi.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_backend)
+#: rc.cpp:94
+msgid "MIDI Backend:"
+msgstr "MIDI začelje:"
+
+#. i18n: file: src/prefs_midi.ui:30
+#. i18n: ectx: property (text), widget (QLabel, label_connection)
+#: rc.cpp:97
+msgid "Output MIDI Connection:"
+msgstr "Izlazna MIDI veza:"
+
+#. i18n: file: src/prefs_midi.ui:40
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_advanced_ports)
+#: rc.cpp:100
+msgid "Show advanced MIDI ports"
+msgstr "Prikaži napredne MIDI portove"
+
+#. i18n: file: src/prefs_midi.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_mapper)
+#: rc.cpp:103
+msgid "MIDI mapper file:"
+msgstr "Fajl MIDI mapera:"
+
+#. i18n: file: src/prefs_midi.ui:63
+#. i18n: ectx: property (text), widget (QLabel, label_resetmode)
+#: rc.cpp:106
+msgid "Reset Mode:"
+msgstr "Režim resetovanja:"
+
+#. i18n: file: src/prefs_midi.ui:71
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:109
+msgid "Do not send reset messages"
+msgstr "Ne šalji resetujuće poruke"
+
+#. i18n: file: src/prefs_midi.ui:76
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:112
+msgid "General MIDI"
+msgstr "Opšti MIDI"
+
+#. i18n: file: src/prefs_midi.ui:81
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:115
+msgid "Roland GS"
+msgstr "Rolandov GS"
+
+#. i18n: file: src/prefs_midi.ui:86
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:118
+msgid "Yamaha XG"
+msgstr "Yamahin XG"
+
+#. i18n: file: src/prefs_midi.ui:91
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_reset_mode)
+#: rc.cpp:121
+msgid "System Exclusive File"
+msgstr "Sistemski ekskluzivni fajl"
+
+#. i18n: file: src/prefs_midi.ui:102
+#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_sysex_file)
+#: rc.cpp:124
+msgid "*.syx|System Exclusive Files (*.syx)"
+msgstr "*.syx|sistemski ekskluzivni fajl (*.syx)"
+
+#. i18n: file: src/kmidui.rc:8
+#. i18n: ectx: Menu (song)
+#: rc.cpp:127
+msgid "&Song"
+msgstr "&Pesma"
+
+#. i18n: file: src/kmidui.rc:18
+#. i18n: ectx: Menu (song_settings)
+#: rc.cpp:130
+msgid "S&ong Settings"
+msgstr "&Postavke pesme"
+
+#. i18n: file: src/kmidui.rc:25
+#. i18n: ectx: Menu (playlist)
+#: rc.cpp:133
+msgid "&Playlist"
+msgstr "&Lista"
+
+#. i18n: file: src/kmidui.rc:34
+#. i18n: ectx: Menu (view)
+#. i18n: file: src/kmid_part.rc:4
+#. i18n: ectx: Menu (view)
+#: rc.cpp:136 rc.cpp:142
+msgid "&View"
+msgstr "&Prikaz"
+
+#. i18n: file: src/kmidui.rc:45
+#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: examples/kmidtest/kmidtestui.rc:11
+#. i18n: ectx: ToolBar (mainToolBar)
+#: rc.cpp:139 rc.cpp:148
+msgid "Main Toolbar"
+msgstr "Glavna traka"
+
+#. i18n: file: examples/kmidtest/kmidtestui.rc:4
+#. i18n: ectx: Menu (file)
+#: rc.cpp:145
+msgid "File"
+msgstr ""
+
+#. i18n: file: library/kmid.kcfg:11
+#. i18n: ectx: label, entry (font), group (Settings)
+#: rc.cpp:151
+msgid "The font used to display the lyrics."
+msgstr "Font koji se koristi za prikaz stihova."
+
+#. i18n: file: library/kmid.kcfg:15
+#. i18n: ectx: label, entry (size), group (Settings)
+#: rc.cpp:154
+msgid "Size of the lyrics font"
+msgstr "Veličina fonta stihova"
+
+#. i18n: file: library/kmid.kcfg:19
+#. i18n: ectx: label, entry (color), group (Settings)
+#: rc.cpp:157
+msgid "Color of the lyrics text, after being played"
+msgstr "Boja stihova nakon što su prikazani"
+
+#. i18n: file: library/kmid.kcfg:23
+#. i18n: ectx: label, entry (encoding), group (Settings)
+#: rc.cpp:160
+msgid "Initial lyrics text encoding"
+msgstr "Početno kodiranje teksta stihova"
+
+#. i18n: file: library/kmid.kcfg:26
+#. i18n: ectx: label, entry (midi_backend), group (Settings)
+#: rc.cpp:163
+msgid "MIDI backend."
+msgstr "MIDI začelje."
+
+#. i18n: file: library/kmid.kcfg:29
+#. i18n: ectx: label, entry (output_connection), group (Settings)
+#: rc.cpp:166
+msgid "MIDI port connection."
+msgstr "Veza preko MIDI porta."
+
+#. i18n: file: library/kmid.kcfg:32
+#. i18n: ectx: label, entry (midi_mapper), group (Settings)
+#: rc.cpp:169
+msgid "MIDI mapper file."
+msgstr "Fajl MIDI mapera."
+
+#. i18n: file: library/kmid.kcfg:36
+#. i18n: ectx: label, entry (player_autostart), group (Settings)
+#: rc.cpp:172
+msgid "Start playing right after loading a song."
+msgstr "Počni puštanje odmah po učitavanju pesme."
+
+#. i18n: file: library/kmid.kcfg:40
+#. i18n: ectx: label, entry (player_loop), group (Settings)
+#: rc.cpp:175
+msgid "Loop the play list."
+msgstr "Kruži listu puštanja."
+
+#. i18n: file: library/kmid.kcfg:44
+#. i18n: ectx: label, entry (playlist_shuffle), group (Settings)
+#: rc.cpp:178
+msgid "Shuffle the play list."
+msgstr "Izmešaj listu puštanja."
+
+#. i18n: file: library/kmid.kcfg:48
+#. i18n: ectx: label, entry (reset_mode), group (Settings)
+#: rc.cpp:181
+msgid "MIDI reset message mode."
+msgstr "Režim resetujuće MIDI poruke."
+
+#. i18n: file: library/kmid.kcfg:59
+#. i18n: ectx: label, entry (sysex_file), group (Settings)
+#: rc.cpp:184
+msgid "System Exclusive MIDI file for reset message."
+msgstr "Sistemski ekskluzivan MIDI fajl za resetujuću poruku."
+
+#. i18n: file: library/kmid.kcfg:62
+#. i18n: ectx: label, entry (advanced_ports), group (Settings)
+#: rc.cpp:187
+msgid "Show advanced MIDI ports."
+msgstr "Prikaži napredne MIDI portove."
+
+#. i18n: file: library/kmid.kcfg:66
+#. i18n: ectx: label, entry (auto_song_settings), group (Settings)
+#: rc.cpp:190
+msgid "Load and save automatically the song settings."
+msgstr "Automatski učitaj i sačuvaj postavke pesme."
+
+#. i18n: file: library/kmid.kcfg:75
+#. i18n: ectx: label, entry (cmd_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:110
+#. i18n: ectx: label, entry (cmd_timidity), group (Settings)
+#: rc.cpp:196 rc.cpp:217
+msgid "Command"
+msgstr "Naredba"
+
+#. i18n: file: library/kmid.kcfg:79
+#. i18n: ectx: label, entry (audio_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:114
+#. i18n: ectx: label, entry (audio_timidity), group (Settings)
+#: rc.cpp:199 rc.cpp:220
+msgid "Audio Output"
+msgstr "Audio izlaz"
+
+#. i18n: file: library/kmid.kcfg:89
+#. i18n: ectx: label, entry (audiodev_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:124
+#. i18n: ectx: label, entry (audiodev_timidity), group (Settings)
+#: rc.cpp:202 rc.cpp:223
+msgid "Audio Device"
+msgstr "Audio uređaj"
+
+#. i18n: file: library/kmid.kcfg:93
+#. i18n: ectx: label, entry (rate_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:128
+#. i18n: ectx: label, entry (rate_timidity), group (Settings)
+#: rc.cpp:205 rc.cpp:226
+msgid "Sample Rate"
+msgstr "Uzorkovanje"
+
+#. i18n: file: library/kmid.kcfg:97
+#. i18n: ectx: label, entry (sf2_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:145
+#. i18n: ectx: label, entry (soundfont_dls), group (Settings)
+#: rc.cpp:208 rc.cpp:238
+msgid "Sound Font"
+msgstr "Zvučni font"
+
+#. i18n: file: library/kmid.kcfg:101
+#. i18n: ectx: label, entry (args_fluid), group (Settings)
+#. i18n: file: library/kmid.kcfg:132
+#. i18n: ectx: label, entry (args_timidity), group (Settings)
+#: rc.cpp:211 rc.cpp:229
+msgid "Arguments"
+msgstr "Argumenti"
+
+#. i18n: file: library/kmid.kcfg:137
+#. i18n: ectx: label, entry (exec_dls), group (Settings)
+#. i18n: file: mac/prefs_synth.ui:20
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_exec_dls)
+#: rc.cpp:232 rc.cpp:244
+msgid "Enable DLS Synth at startup"
+msgstr "Pokreni DLS Synth na početku"
+
+#. i18n: file: library/kmid.kcfg:141
+#. i18n: ectx: label, entry (default_dls), group (Settings)
+#. i18n: file: mac/prefs_synth.ui:53
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_default_dls)
+#: rc.cpp:235 rc.cpp:251
+msgid "Default Apple DLS Sound Set"
+msgstr "Podrazumevani Appleov DLS komplet"
+
+#. i18n: file: library/kmid.kcfg:149
+#. i18n: ectx: label, entry (reverb_dls), group (Settings)
+#. i18n: file: mac/prefs_synth.ui:60
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_reverb_dls)
+#: rc.cpp:241 rc.cpp:254
+msgid "Use Internal Reverb"
+msgstr "Koristi unutrašnju reverberaciju"

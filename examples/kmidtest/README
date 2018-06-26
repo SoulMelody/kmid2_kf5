@@ -1,0 +1,9 @@
+Here you can find two examples of a KParts shell application for the KMidPart
+
+* Python: kmidtest.py
+* C++: kmidtest.cpp, kmidtest.h
+ 
+KMidPart implements the interfaces KMediaPlayer::Player and KMediaPlayer::View
+For more information, please read the documentation available at:
+
+http://api.kde.org/4.x-api/kdelibs-apidocs/interfaces/kmediaplayer/index.html

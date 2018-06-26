@@ -1,0 +1,1408 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+ <!ENTITY timidity '<application>TiMidity++</application>'>
+ <!ENTITY fluidsynth '<application>FluidSynth</application>'>
+ <!ENTITY qsynth '<application>QSynth</application>'>
+ <!ENTITY soundfont '<productname class="registered">SoundFont</productname> (.SF2)'>
+ <!ENTITY kappname "&kmid;">
+ <!ENTITY package "extragear/multimedia"> 
+ <!ENTITY Pedro.Lopez-Cabanillas '<personname><firstname>Pedro</firstname><surname>Lopez-Cabanillas</surname></personname>'>
+ <!ENTITY Pedro.Lopez-Cabanillas.mail '<email>plcl@users.sourceforge.net</email>'> 
+ <!ENTITY % English "INCLUDE" > <!-- change language only here -->
+ <!ENTITY % addindex "IGNORE">
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+<title>The &kmid; Handbook</title>
+<authorgroup>
+<author>
+<firstname>Antonio</firstname>
+<surname>Larrosa Jim&eacute;nez</surname>
+<affiliation>
+<address><email>larrosa@kde.org</email></address>
+</affiliation>
+</author>
+<author>
+<firstname>Pedro</firstname>
+<surname>Lopez-Cabanillas</surname>
+<affiliation>
+<address><email>plcl@users.sf.net</email></address>
+</affiliation>
+</author>
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
+</authorgroup>
+
+<copyright>
+<year>1999</year><year>2001</year>
+<holder>&Antonio.Larrosa.Jimenez;</holder>
+</copyright>
+<copyright>
+<year>2009</year><year>2010</year>
+<holder>&Pedro.Lopez-Cabanillas;</holder>
+</copyright>
+
+<date>2010-03-15</date>
+<releaseinfo>2.2</releaseinfo>
+
+<abstract>
+<para>
+&kmid; is a &MIDI;/karaoke multimedia player
+</para>
+</abstract>
+
+<keywordset>
+<keyword>kmid</keyword>
+<keyword>MIDI</keyword>
+<keyword>karaoke</keyword>
+<keyword>multimedia</keyword>
+<keyword>mid</keyword>
+<keyword>kar</keyword>
+<keyword>player</keyword>
+<keyword>music</keyword>
+<keyword>sound</keyword>
+<keyword>synthesizer</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title>Introduction</title>
+
+<para>
+&kmid; is &kde;'s &MIDI; and karaoke multimedia player. 
+It offers some features not found in any other &UNIX; &MIDI; 
+player, such as real-time graphics and karaoke text highlighting among others.
+</para>
+
+<para>
+&kmid; currently runs on &Linux; only, but support for other operating systems
+is planned, and hopefully will be available in the future. It uses the 
+<acronym>ALSA</acronym> sound driver, so it should run on every system where 
+&kde; and <acronym>ALSA</acronym> can compile.
+</para>
+
+<para>
+&kmid; shows the lyrics in the main window, highlighting the words with a 
+different color while the music is playing, so it is very easy to follow the 
+songs.
+</para>
+
+<sect1 id="kmids-features">
+<title>&kmid;'s Features</title>
+
+<para>
+These are some of &kmid;'s main features:
+</para>
+      
+<itemizedlist>
+<listitem>
+<para>
+It has a very <emphasis>friendly user interface</emphasis> to display karaoke
+text with <emphasis>real-time highlighting</emphasis> of lyrics.
+</para>
+</listitem>
+<listitem>
+<para>
+It features a graphical view of what is being played on each 
+&MIDI; channel, by highlighting the keys pressed in (virtual) 
+piano keyboards.
+</para>
+</listitem>
+<listitem>
+<para>
+The most powerful <emphasis>Midi Mapper</emphasis> that you will ever find in
+any operating system.
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Drag &amp; drop</emphasis> so you can drop in &kmid; any 
+&MIDI; file from a file manager like &konqueror; or &dolphin;.
+</para>
+</listitem>
+<listitem>
+<para>
+You can <emphasis>change the tempo</emphasis> of songs to play them slower or
+faster at your wish.
+</para>
+</listitem>
+<listitem>
+<para>
+It shows a visual metronome to easily follow the rhythm of the song.
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Customizable</emphasis> font and color for karaoke text.
+</para>
+</listitem>
+<listitem>
+<para>
+Supports the two standards used to include lyrics in &MIDI; 
+files: lyrics events and text events (guessing which one a song uses 
+automatically).
+</para>
+</listitem>
+<listitem>
+<para>
+Session Management. If a song is playing while you logout from &kde;, the next
+time you login, the same song will start playing.
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Adjustable volume and pitch</emphasis> in real-time.
+</para>
+</listitem>
+<listitem>
+<para>
+It can play broken &MIDI; files which make other players core 
+dump.
+</para>
+</listitem>
+<listitem>
+<para>
+Low <acronym>CPU</acronym> usage, depending on the complexity of the song.
+</para>
+</listitem>
+<listitem>
+<para>
+Supports external &MIDI; synthesizers and software synths.
+</para>
+</listitem>
+<listitem>
+<para>
+Runs on &Linux; with <acronym>ALSA</acronym> support.
+</para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+</chapter>
+
+<chapter id="general-usage">
+<title>General Usage</title>
+
+<sect1 id="using-midi">
+<title>Using &MIDI;</title>
+<para>
+&kmid; outputs &MIDI; data, so it needs a 
+&MIDI; receiver to render audible sound. There are several
+kind of &MIDI; receivers, or Synthesizers, that you can use.
+The only common required feature is <acronym>ALSA</acronym> &MIDI; support. 
+</para>
+
+<sect2 id="external-devices">
+<title>External Devices</title>
+<para>
+These are peripheral devices, connected to the computer using a 
+&MIDI; cable. Modern devices may also include an <acronym>USB</acronym> interface. 
+The external &MIDI; devices are electronic musical instruments, 
+that usually can be played in standalone mode without requiring a connected 
+computer. 
+</para>
+
+<para>
+To connect a &MIDI; musical instrument to the computer, you
+need a &MIDI; interface in the computer side and a &MIDI; cable. 
+Some sound cards include &MIDI; sockets, 
+or cables. There are also cheap <acronym>USB</acronym> &MIDI; interfaces. 
+<acronym>ALSA</acronym> &MIDI; drivers are usually available for them, and absolutely
+required for &kmid; usage. 
+</para>
+
+<para>
+If your &MIDI; musical instrument does not understand General
+&MIDI; standard messages, you may need a &MIDI; 
+map. See the <link linkend="MIDI-maps">&MIDI; Maps chapter</link> 
+for more information.
+</para>
+
+</sect2>
+
+<sect2 id="sound-card-synth">
+<title>Sound Cards with a Hardware Synthesizer</title>
+<para>
+These sound cards were very popular in the past, but much less common nowadays.  
+Some examples are the classic <acronym>GUS</acronym> and <acronym>AWE</acronym> 
+sound cards, or the SoundBlaster Audigy. All of them are wave-table based synths.
+Even older are the FM synths, like the Ad Lib. Anyway, they can render 
+&MIDI; into audio in real-time, with the requirement of 
+<acronym>ALSA</acronym> &MIDI; drivers installed. 
+For wave-table based synths, it is also necessary a collection of sound samples, 
+in the format provided by the sound card 
+manufacturer.  
+ </para>
+</sect2>
+
+<sect2 id="soft-synth">
+<title>Software Synthesizers</title>
+<para>
+Since more <acronym>RAM</acronym> memory and <acronym>CPU</acronym> power is
+available in modern computers, the number and usage of software synths is 
+growing quickly. It is also a cheap alternative, as the only required hardware 
+is a simple sound card, with only audio support. The integrated audio device 
+in many computer motherboards is adequate in most cases.
+</para>
+<para>
+Two examples of applications capable of rendering &MIDI; data 
+into audio streams are &timidity; and &fluidsynth;. Both have <acronym>ALSA</acronym>
+sequencer support, and are wave-table based synthesizers. There are options in
+the <link linkend="configuration">Configuration dialog</link> to launch these 
+soft synth programs automatically at startup. 
+</para>
+
+<para>
+To use &timidity; you should install a <acronym>GUS</acronym> patches collection, 
+like freepats, or a &soundfont; file. You can start the program in daemon mode, 
+for instance using the timidity-daemon package in Debian systems.  
+</para>
+
+<para>
+To use &fluidsynth; you should install a &soundfont; file. It may be a 
+good idea to install also the &qsynth; &GUI; front-end. Two excellent and free 
+sound fonts for &fluidsynth; are <ulink 
+url="http://www.schristiancollins.com/soundfonts.php">General User GS</ulink>, 
+and Fluid R3, included in some &Linux; distributions.
+</para>
+</sect2>
+</sect1>
+
+<sect1 id="opening-songs">
+<title>Opening Songs</title>
+
+<para>
+You can open a song in several different ways.
+</para>
+
+<para>
+First, you can select <guimenuitem>Open...</guimenuitem> from the
+<guimenu>File</guimenu> menu, then you are presented with a standard
+open dialog, with which you can select the song you wish to open.
+</para>
+
+<para>
+You can drag a file from &konqueror; or &dolphin; and drop it into the &kmid; 
+window. You can also Drag &amp; Drop multiple songs at the same time.
+</para>
+
+<para>
+You can specify one or more song file names in the command line when running 
+&kmid;. &URL; arguments are supported, so you can click and open a web link or 
+a file name in your file manager. 
+</para>
+
+<para>
+You can select a song from the list of recently played files, that are 
+displayed by the menu option <menuchoice><guimenu>File</guimenu>
+<guimenuitem>Open Recent</guimenuitem></menuchoice>.
+</para>
+
+<para>
+And the final way is by selecting the song from the list of songs in the active
+playlist.
+</para>
+
+<para>
+Anyway, the saved song settings from the last time you played the song are
+automatically retrieved, if the option 
+<menuchoice><guimenu>Song</guimenu><guisubmenu>Song Settings</guisubmenu>
+<guimenuitem>Automatic</guimenuitem></menuchoice> is enabled.
+</para>
+
+</sect1>
+
+<sect1 id="playing-songs">
+<title>Playing Songs</title>
+
+<para>
+To play a song, first open it, and then press on the
+<guiicon>Play</guiicon> button of the toolbar, choose the
+<guimenuitem>Play</guimenuitem> entry of the <guimenu>Song</guimenu>
+menu, or just press the playback shortcut, by default the <keycap>Space</keycap> key.
+</para>
+
+<para>
+Note that when you open a file, &kmid; will start playing it automatically. 
+This behavior can be disabled using the <guimenuitem>Auto-start</guimenuitem> 
+option in the <guimenu>Song</guimenu> menu.
+If you drag and drop more than one file, they will be added to a playlist and 
+they will be played sequentially.
+</para>
+
+<para>
+Once &kmid; is playing a song, you can move the time slider, by pressing
+with the &MMB; mouse button, to go to a specified position.
+</para>
+
+<para>
+If a song is playing too fast or too slow for you, you can use the tempo
+slider. To get back to the default tempo, just press the "100%" button.
+</para>
+
+</sect1>
+
+<sect1 id="displaying-lyrics">
+<title>Displaying Lyrics</title>
+
+<para>
+There are two methods to store lyrics in a &MIDI; song file: by using
+<guimenuitem>Text events</guimenuitem> or <guimenuitem>Lyrics
+events</guimenuitem>. Some songs use the first method, some the second, both of 
+them, or none at all when the song does not include lyrics. &kmid; automatically 
+selects the most appropriate method for each song.
+</para>
+
+<para>
+The SMF standard specification allows only ASCII text to be embedded inside a &MIDI;
+file. However, you can find many &MIDI; files with texts encoded in different ways.
+The text encoding of the lyrics can be selected using a combo box located
+in the main window. The selected encoding will remain until some other encoding
+is chosen, and will be remembered for the next session.
+</para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title>Configuration Dialog</title>
+
+<para>
+To open the <guilabel>Configure</guilabel> dialog, you can use the menu
+<menuchoice><guimenu>Settings</guimenu>
+<guimenuitem>Configure &kmid;...</guimenuitem></menuchoice>, 
+or the corresponding toolbar icon.
+</para>
+
+<para>
+The settings take effect as usual when you press the <guibutton>OK</guibutton> 
+or <guibutton>Apply</guibutton> buttons.
+</para>
+
+<sect1 id="configuration-lyrics">
+<title>Lyrics Settings</title>
+<itemizedlist>
+<listitem>
+<para>
+<guilabel>Font face</guilabel>. Here you can set the typography used to 
+show the song lyrics in the main window.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Font color</guilabel>. This is the color used for the song text 
+when it has been already played.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Font size</guilabel>. Here you can set the font size for the song 
+lyrics in the main window.
+</para>
+</listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="configuration-midi">
+<title>&MIDI; Settings</title>
+<itemizedlist>
+<listitem>
+<para>
+<guilabel>Output &MIDI; Connection</guilabel>. This list shows the available 
+ &MIDI; connections detected in your system, as reported by the native &MIDI; 
+ subsystem of your operating system.
+ You should choose one of them, that will be connected to the program's &MIDI; 
+ output port. 
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Show advanced &MIDI; ports</guilabel>. The advanced &MIDI; ports are
+seldom used &MIDI; devices that are filtered out from the list of available &MIDI;
+connections unless you select this checkbox.   
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>&MIDI; mapper file</guilabel>. Here you can choose the &MIDI; mapper
+file that will be used with your external &MIDI; synthesizer. You can find more
+information about &MIDI; mappers in the 
+<link linkend="MIDI-maps">&MIDI; Maps chapter</link>.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Reset Mode</guilabel>. This &MIDI; message is optionally sent to the 
+connected &MIDI; output port before starting to play each song, resetting 
+several parameters that could be changed by the last song file. Here you can 
+choose a standard message type recognized by your synthesizer, or a custom 
+system exclusive file.
+</para>
+</listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="configuration-synths">
+<title>Soft-Synths Settings</title>
+
+<sect2 id="fluidsynth">
+<title>&fluidsynth;</title>
+
+<itemizedlist>
+<listitem>
+<para>
+<guilabel>Run &fluidsynth; at startup</guilabel>. If you select this checkbox, 
+the &fluidsynth; soft synth will be automatically lauched at startup.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Command</guilabel>. Here you must set the path and name of the soft
+ synth command. Below this text box there is a label reporting the detected 
+ program version, and an icon indicating if the minimal requirements
+ to use this program are met.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Audio Output</guilabel>. You should choose here the audio system that 
+will be used by the soft synth program. 
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Audio Device</guilabel>. Here you can specify an audio device name
+for the soft synth output. It is usually safe to leave this setting blank.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Sample Rate</guilabel>. Here you can specify the audio sampling rate
+used by the soft synth to generate digital audio. It is usually safe to leave 
+this setting blank.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Sound Font</guilabel>. Here you must set the path and file name of the
+&soundfont; used by the soft synth. This argument is mandatory. 
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Arguments</guilabel>. Here you can specify other optional arguments 
+that may be used with your soft synth. It is usual to leave it blank.
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="timidity">
+<title>&timidity;</title>
+<itemizedlist>
+<listitem>
+<para>
+<guilabel>Run &timidity; at startup</guilabel>. If you select this checkbox, 
+the &timidity; soft synth will be automatically lauched at startup.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Command</guilabel>. Here you must set the path and name of the soft
+ synth command. Below this text box there is a label reporting the detected 
+ program version, and an icon indicating if the minimal requirements
+ to use this program are met.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Audio Output</guilabel>. You should choose here the audio system that 
+will be used by the soft synth program. 
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Audio Device</guilabel>. Here you can specify an audio device name
+for the soft synth output. It is usually safe to leave this setting blank.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Sample Rate</guilabel>. Here you can specify the audio sampling rate
+used by the soft synth to generate digital audio. It is usually safe to leave 
+this setting blank.
+</para>
+</listitem>
+<listitem>
+<para>
+<guilabel>Arguments</guilabel>. Here you can specify other optional arguments 
+that may be used with your soft synth. It is usual to leave it blank.
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+</chapter>
+
+<chapter id="playlists">
+<title>Playlists</title>
+
+<para>
+A playlist is a list of &MIDI; files that you put in a set, and which
+are played one after another. This section will help you to use them,
+and will give you some useful tips to make a good use of them.
+</para>
+
+<sect1 id="creating-a-playlist">
+<title>Creating a Playlist</title>
+
+<para>
+To create a playlist, first open the <guilabel>Manage Playlist</guilabel> 
+dialog, by selecting the <guimenuitem>Edit Playlist...</guimenuitem> 
+entry of the <guimenu>Playlist</guimenu> menu, and add your files to the 
+playlist. Finally, select the <guimenuitem>Save Playlist...</guimenuitem>  
+entry of the <guimenu>Playlist</guimenu> menu, and provide the folder and 
+file name for your playlist.
+</para>
+
+<para>
+The playlist file is a simple text file that you can edit, copy and move using 
+your usual file management tools.
+</para>
+
+</sect1>
+
+<sect1 id="adding-songs-to-a-playlist">
+<title>Adding Songs to a Playlist</title>
+<subtitle>How to Use <guimenuitem>Auto-Add to Playlist</guimenuitem> Menu 
+Option</subtitle>
+
+<para>
+If <guimenuitem>Auto-Add to Playlist</guimenuitem> is enabled, when
+you open a song (using <menuchoice><guimenu>File</guimenu>
+<guimenuitem>Open...</guimenuitem></menuchoice> or Drag &amp; Drop) it
+(they) will be added to the active playlist without user intervention.
+</para>
+
+<para>
+If <guimenuitem>Auto-Add to Playlist</guimenuitem> is not enabled,
+when you open a song a temporary playlist will be created and
+cleared, and the opened songs will be added to it.
+</para>
+
+</sect1>
+
+<sect1 id="removing-songs-from-playlists">
+<title>Removing Songs from Playlists</title>
+
+<para>
+To delete a song from a playlist, just open the <guilabel>Manage 
+Playlist</guilabel> dialog, select the song you wish to delete, and then click 
+on the <guibutton>Remove</guibutton> button, pressing finally the 
+<guibutton>OK</guibutton> button to close the dialog window. 
+</para>
+
+</sect1>
+
+<sect1 id="playing-order">
+<title>Playing Order</title>
+
+<para>
+The songs are played in the same order they are set in the playlist. 
+You can edit the order of the songs using the <guilabel>Manage 
+Playlist</guilabel> dialog.
+</para>
+
+<para>
+The <guimenuitem>Repeat</guimenuitem> mode loops the playlist, repeating the
+first song again when the last song has finished.
+</para>
+
+<para>
+When you select the <guimenuitem>Shuffle</guimenuitem> mode, &kmid; will
+randomize the order of the songs in the playlist. The playlist will be
+shuffled each time you add a new file in the active playlist,
+and when you activate the <guimenuitem>Shuffle</guimenuitem> mode.
+</para>
+
+</sect1>
+
+<sect1 id="selecting-from-a-playlist">
+<title>Selecting a Song from a Playlist</title>
+
+<para>
+You can select a song among the songs of the playlist using the 
+<guilabel>Manage Playlist</guilabel> dialog.
+</para>
+
+<para>
+You can also change to the next song by using the <guimenuitem>Next
+Song</guimenuitem> entry of the <guimenu>Song</guimenu> menu, the
+<guilabel>Next Song</guilabel> button of the toolbar, or pressing the user 
+configured shortcut key.
+</para>
+
+<para>
+To change to the previous song, use the <guimenuitem>Previous
+Song</guimenuitem> entry of the <guimenu>Song</guimenu> menu, the
+<guimenuitem>Previous Song</guimenuitem> button of the toolbar, or press
+the user configured shortcut key.
+</para>
+
+</sect1>
+
+<sect1 id="deleting-a-playlist">
+<title>Deleting a Playlist</title>
+
+<para>
+To delete the contents of a playlist, simply open the <guilabel>Manage Playlist
+</guilabel> dialog and click the <guibutton>Reset</guibutton> button.
+</para>
+
+<para>
+To delete a playlist file stored on disk, use your favorite file management tool.
+</para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="MIDI-maps">
+<title>&MIDI; Maps</title>
+
+<sect1 id="what-is-a-midimap">
+<title>What is a &MIDI; Map ?</title>
+
+<para>
+A &MIDI; map is something that maps &MIDI; 
+events in other &MIDI; events.
+</para>
+
+<para>
+This is totally needed if a synthesizer does not understand the standard
+events (that is, if a synthesizer is not General &MIDI; compliant), in
+this case, a &MIDI; map will translate General &MIDI; events in the events
+that the synthesizer understands.
+</para>
+
+<para>
+For example you can make a &MIDI; map that converts all the
+<literal>Change patch to Bright Piano</literal> events, to
+<literal>Change patch to Trumpet</literal> events, and so when a song
+tries to play a piano, it will play a trumpet instead.
+</para>
+
+<para>
+This may sound odd, (why playing a trumpet when the song is made to play
+a piano?), but it is very useful. The <acronym>GM</acronym> standard
+specifies that when a &MIDI; keyboard receives a patch change event to 
+<literal>0</literal>, it will change the current patch to <literal>Grand
+Piano</literal>, but an older synthesizer will change for example to a
+<literal>Electric Guitar</literal> when it receives a
+<literal>0</literal>. This old keyboard, needed to receive a
+<literal>3</literal> (for example) to change to a
+<literal>Piano</literal>. And here comes the &MIDI; map in action,
+changing all <literal>change patch to 0</literal> to <literal>change
+patch to 3</literal> and thus really playing the correct instrument when
+it has to.
+</para>
+
+</sect1>
+
+<sect1 id="do-i-need-a-MIDI-map">
+<title>Do I Need a &MIDI; Map ?</title>
+
+<para>
+In short, if you do not have an external synth, the answer is <emphasis>no</emphasis>.
+</para>
+
+<para>
+If you only have a sound card with &MIDI; synth, 
+&MIDI; maps are not likely needed because almost all the
+sound cards are <acronym>GM</acronym> compliant (this include AWE cards,
+<acronym>GUS</acronym> cards, <acronym>FM</acronym> devices and so on).
+</para>
+
+<para>
+If you are playing music through an external synthesizer, and it is not
+GM compliant, you will need to make a &MIDI; map for your &MIDI; device.
+Although you will perhaps spend a whole afternoon doing your map file and
+trying different values for all the options, you will be fully rewarded
+when you finish it, because you will be able to correctly listen many song files 
+that would sound wrong otherwise.
+</para>
+
+</sect1>
+
+<sect1 id="creating-a-MIDI-map">
+<title>Creating a &MIDI; Map</title>
+
+<para>
+There is not any program to generate &MIDI; maps, so you will have to edit a file
+by hand (using your favorite text editor).
+</para>
+
+<para>
+A Midi map is a text file that keeps all the needed translations there will be
+made when playing music.
+</para>
+
+<para>
+It consist of four sections: <literal>PATCHMAP</literal>,
+<literal>KEYMAP</literal>, <literal>CHANNELMAP</literal> and
+<literal>OPTIONS</literal>.
+Each section must appear only once.
+</para>
+
+<para>
+The general structure of a map file is an ini style file:
+</para>
+
+<screen>[PATCHMAP]
+...
+
+# comment line
+ 
+[KEYMAP]
+...
+
+[CHANNELMAP]
+...
+
+[OPTIONS]
+...
+</screen>
+
+<para>
+Each one of the four section names between square brackets starts the 
+corresponding section. You can put comments by starting the line with a
+<literal>&num;</literal> character. Each section is a collection of several
+lines of key=value pairs.
+</para>
+
+<para>
+Please, do not forget to send me your map file by email, so that future
+releases of &kmid; will include support for more non General Midi
+compliant keyboards.
+</para>
+
+<sect2 id="the-patchmap-section">
+<title>The <literal>PATCHMAP</literal> Section</title>
+
+<para>
+This section is used to specify how patches are going to be mapped, from
+GM to your keyboard specs. The general usage is:
+</para>
+
+<screen>(Name of GM Patch name)=(<replaceable>N</replaceable>)
+</screen>
+
+<para>
+Where <replaceable>N</replaceable> is the number that you keyboard needs to
+receive to change the patch to the same that the GM standard does .
+</para>
+
+<para>
+Please note that the left side of the equal sign is a symbolic key, 
+so you can change the order of the lines and omit any of the 128 instruments.
+</para>
+
+</sect2>
+
+<sect2 id="The-keymap-section">
+<title>The <literal>KEYMAP</literal> Section</title>
+
+<para>
+The <literal>KEYMAP</literal> section is used to specify how precussion keys are
+going to be mapped. The usage is:
+</para>
+
+<screen>[KEYMAP]
+C 0 =0
+C#0 =1
+D 0 =2
+...
+</screen>
+
+<para>
+As with the <literal>PATCHMAP</literal> section, you can change 
+the order of the lines, and omit any of them. Only the first four characters
+of each key are taken into account.
+</para>
+
+<para>
+Keymaps are only used to map keys in the percussion channel. Have a
+look at the distributed maps to see some examples.
+</para>
+
+</sect2>
+
+<sect2 id="the-channelmap-section">
+<title>The <literal>CHANNELMAP</literal> Section</title>
+
+<para>
+This section can be used to map some channels to different ones. For
+example, if you want to swap the first and second channels, you can
+easily do it within the <literal>CHANNELMAP</literal> section.
+</para>
+
+<para>
+However it is more useful for keyboards that need the percussion
+channel to be in a given channel (the GM standard use the channel 10,
+others use the channel 16 and others use channel 9).
+</para>
+
+<para>
+Note that &MIDI; devices use 16 channels, so the 
+<literal>CHANNELMAP</literal> section, has 16 lines, from 0 to 15 , as this one:
+</para>
+
+<screen>(N) = (M)
+</screen>
+
+<para>
+Where <literal>N</literal> is the channel which is mapped to the
+<literal>M</literal> channel.
+</para>
+
+</sect2>
+
+<sect2 id="the-options-section">
+<title>The <literal>OPTIONS</literal> Section</title>
+
+<para>
+The <literal>OPTIONS</literal> section has some general options that can
+be very useful:
+</para>
+
+<screen>[OPTIONS]
+PitchBenderRatio = r
+MapExpressionToVolumeEvents = true
+ForceDrumsPatch = 30
+</screen>
+
+<para>
+You can specify all options, only one, or none of them.
+</para>
+
+<para>
+The <literal>PitchBenderRatio r</literal> value, has the ratio by which
+pitch bender events will be multiplied. That is, when a &MIDI; file tries
+to send a pitch bender event with a <literal>n</literal> value, the real
+value that will be sent is <literal>n*(r/4096)</literal> (the
+<literal>4096</literal> value is for not having to put decimal points in
+the map file).
+</para>
+
+<para>
+This is used because the <acronym>GM</acronym> standard says that when a
+&MIDI; keyboard receives a Pitch Bender event with a 4096 data value, it
+should bend the note to a higher one , but some &MIDI; keyboards try to
+bend the initial note by two or more higher notes (even an octave
+higher!) when they receive a 4096. This can be easily fixed by trying
+different values so that instead of sending a 4096, &kmid; sends the
+appropriate value.
+</para>
+
+<para>
+When the <literal>MapExpressionToVolumeEvents</literal> option is set in
+the map file, and a &MIDI; file try to send an expression event, &kmid; will
+send a volume event which is understood by more non-GM keyboards, and
+which has a similar effect. There are many &MIDI; files which use
+expression events to fade out at the end of a song, so if you feel that
+music should be heard softer and softer, you can turn on this option and
+see if this is what you need, because your &MIDI; synthesizer could be
+ignoring the expression events because it does not understand them.
+</para>
+
+<para>
+The <literal>ForceDrumsPatch</literal> option may be useful to always use the 
+percussion patch on the percussion channel.
+</para>
+
+</sect2>
+
+</sect1>
+
+<sect1 id="using-midimaps">
+<title>Using &MIDI; Maps</title>
+
+<para>
+To use a &MIDI; map, open the <guilabel>Configuration</guilabel>
+dialog by selecting the <guimenuitem>Configure &kmid;...</guimenuitem> entry
+of the <guimenu>Settings</guimenu> menu.
+</para>
+
+<para>
+Then click the <guilabel>&MIDI;</guilabel> category icon, and select the map file 
+in the <guilabel>&MIDI; mapper file</guilabel> combo box.
+</para>
+
+</sect1>
+</chapter>
+
+<chapter id="advanced-features">
+<title>Advanced Features</title>
+
+<sect1 id="song-settings">
+<title>Song Settings</title>
+<para>For each played song, several options can be saved and automatically
+retrieved the next time the song is opened. These options are:
+<itemizedlist>
+<listitem><para>Text encoding</para></listitem>
+<listitem><para>Volume</para></listitem>
+<listitem><para>Pitch (tone, transposition)</para></listitem>
+<listitem><para>Rhythm tempo</para></listitem>
+<listitem><para>Channel labels</para></listitem>
+<listitem><para>Channel buttons</para></listitem>
+<listitem><para>Channel instruments</para></listitem>
+</itemizedlist>
+</para>
+
+<para>
+If you do not want automatic saving and retrieving, you can use the
+<guimenuitem>Load</guimenuitem> and <guimenuitem>Save</guimenuitem>
+menu options available in the menu <menuchoice><guimenu>Song</guimenu>
+<guisubmenu>Song Settings</guisubmenu></menuchoice>.
+</para>
+</sect1>
+
+<sect1 id="the-channel-view">
+<title>The Channel View</title>
+
+<para>
+The Channel view is a table of 16 rows, one for each &MIDI; 
+channel. In each row there is a text box where you can label the channels for
+your own reference, buttons to enable the <guilabel>Solo</guilabel>
+and <guilabel>Mute</guilabel> functions, a vu-meter, and also a <guilabel>Lock</guilabel> 
+button and a combo box where you can see and change the musical instrument 
+for each channel.
+</para>
+
+<para>
+Only the active channels (the channels used by the current song) have enabled controls.
+</para>
+
+</sect1>
+
+<sect1 id="piano-player">
+<title>The Piano Player view</title>
+
+<para>
+The Piano Player view can show up to 16 virtual keyboards, one for each 
+&MIDI; channel. Only the active channels (the channels used by the current
+song) can be enabled. The virtual keyboards not only show the played 
+notes in real-time, but can be used also to trigger notes using the mouse or
+the computer keyboard. 
+</para>
+
+</sect1>
+
+<sect1 id="rhythm-controls">
+<title>The Rhythm Controls</title>
+
+<para>
+The rhythm controls are: a tempo label, showing the song tempo in beats per
+minute, a visual metronome including a measure/part counter, and a tempo slider
+to modify the song tempo, that is, the speed of the song.
+</para>
+
+<para>
+If you changed the tempo, you can get back the original one clicking on the
+<guilabel>100%</guilabel> button.
+</para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="key-bindings">
+<title>Key Bindings</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Key</entry>
+<entry>Action</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><keycap>P</keycap></entry>
+<entry>Play the loaded song.</entry>
+</row>
+<row>
+<entry><keycap>S</keycap></entry>
+<entry>Stop playing</entry>
+</row>
+<row>
+<entry><keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo></entry>
+<entry>Quit &kmid;</entry>
+</row>
+<row>
+<entry><keycap>F1</keycap></entry>
+<entry>Open this document</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+</chapter>
+
+<chapter id="frequently-asked-questions">
+<title>Frequently Asked Questions (FAQ)</title>
+
+<qandaset>
+<qandaentry>
+<question>
+<para>
+What is exactly a &MIDI; file?
+</para>
+</question>
+
+<answer>
+<para>A Midi file contains information about how to play a song, that is, 
+it contains the notes, the rhythm, velocity, &etc; This implies that the same 
+&MIDI; file, when played in two different devices can produce 
+very different results. It is like a musical score, that can be performed very 
+differently by two different musicians.
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>
+I can get better sound with a mp3/wav player, why should I use &kmid;?
+</para>
+</question>
+<answer>
+<para>
+A typical &MIDI; file weights around 50 Kb. while the typical 
+mp3 filesize is 4 Mb. And with a good synthesizer device, you can
+get a comparable sound quality. Even more, with a &MIDI; file, 
+you can change individual instruments, change the velocity of a song, &etc; so
+you have more overall control.
+</para>
+<para>
+Another point of view about this: comparing &MIDI; and mp3 is 
+like comparing painting with photography. Or comparing <acronym>SVG</acronym> 
+with jpeg. Each one has different properties and use cases.
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>
+I cannot get my sound card to work with &kmid;, what can I do?
+</para>
+</question>
+<answer>
+<para>
+First, you should verify your ALSA installation and configuration. Second, you
+need to connect &kmid; to a &MIDI; synthesizer. If your sound
+card does not have one, use a software synth instead.
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>
+I want to add a whole folder to a playlist, but having to add the &MIDI;
+files one by one is not funny.
+</para>
+</question>
+<answer>
+<para>
+I agree, that's why &kmid; supports Drag &amp; Drop. Just open, in &konqueror;,
+the folder you want to add, select all the files, drag them and drop them in
+&kmid;.
+</para>
+<para>
+Be sure to set the <guimenuitem>Auto-Add to Playlist</guimenuitem> option before, so that the
+files will be added to the current playlist. If you do not do this, files will
+be added to a new temporary playlist.
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>
+I cannot follow the lyrics, it's playing too fast!
+</para>
+</question>
+<answer>
+<para>
+You can use the rhythm control tempo slider to make it play slower. Remember 
+that you can press the <guilabel>100%</guilabel> button to restore the original
+tempo.
+</para> 
+</answer>
+</qandaentry>
+</qandaset>
+
+</chapter>
+
+<chapter id="final-notes">
+<title>Final Notes</title>
+
+<sect1 id="some-tips-and-tricks">
+<title>Some Tips and Tricks</title>
+
+<para>
+I will include some tips so that you can take fully advantage from all
+the features of &kmid;:
+</para>
+
+<variablelist>
+<varlistentry>
+<term>Opening files</term>
+<listitem>
+<para>I always keep a &kde; desktop with a &konqueror; window in my root
+&MIDI; folder, and &kmid; in this desktop (if playing a &MIDI; file) or
+sticky (if playing a karaoke file :-)). This way, when the active
+playlist finishes, or I want to play some file, I just go to the
+&konqueror; window, select the desired files and Drag &amp; Drop to the
+&kmid;'s window.
+</para>
+
+<para>
+Suppose that you want to play some &MIDI; files, but do not want to add
+them to any playlist, well, just turn off the <guimenuitem>Auto-Add to
+Playlist</guimenuitem> option in the <guimenu>Playlist</guimenu>
+menu, and open the files, they will be added to a temporary playlist.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Another method to create a new playlist</term>
+<listitem>
+<para>
+Suppose that you have &MIDI; files <filename>A.mid</filename>,
+<filename>B.mid</filename> and <filename>C.mid</filename>. At first you
+only want to play the first &MIDI; file, so you unselect
+<guimenuitem>Auto-Add</guimenuitem> and open
+<filename>A.mid</filename>. You get then a Temporary playlist with
+only one &MIDI; file.
+</para>
+<para>
+Then you decide to play also B and C, and make a playlist with all them, what
+do you do?
+</para>
+<para>
+Easy, select <guimenuitem>Auto-Add</guimenuitem> and open
+<filename>B.mid</filename> and <filename>C.mid</filename> (by any of the
+multiple methods), they will be automatically added to the temporary
+playlist, that will then have <filename>A.mid</filename>,
+<filename>B.mid</filename> and <filename>C.mid</filename>. At this
+point, you can use the <guimenuitem>Save Playlist</guimenuitem>  
+dialog, enter the name of the new playlist, and you are done. You already have 
+a new playlist, which holds the A, B and C &MIDI; files, and 
+that is not deleted when you close &kmid;.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="hall-of-kmids-friends">
+<title>Hall of &kmid;'s Friends</title>
+
+<para>
+These are some folks who have sent &MIDI; files or a postcard, 
+thanks to everyone!.
+</para>
+
+<itemizedlist>
+<listitem>
+<para>Ola Sigurdson  - <literal>Taking Care of Business</literal> (Bachman
+Turner Overdrive)</para>
+</listitem>
+<listitem>
+<para>EG Lim - A really very nice postcard from Penang.</para>
+</listitem>
+<listitem>
+<para>Guenther Starnberger - <literal>Amadeus</literal> (Falco) and
+<literal>Schrei Nach Liebe</literal> (Die Aerzte)</para>
+</listitem>
+<listitem>
+<para>Leandro Terr&eacute;s - <literal>All That She Wants</literal> and
+<literal>The Sign</literal> (Ace of Base)</para>
+</listitem>
+<listitem>
+<para>Nick Stoic - Two &MIDI; files</para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="about-the-authors">
+<title>About the Authors</title>
+
+<para>
+&kmid; was originally made by &Antonio.Larrosa.Jimenez;, from M&aacute;laga
+(Spain). It has been rewritten, currently maintained and published with the name 
+&kmid; by &Pedro.Lopez-Cabanillas;, from Spain as well. 
+</para>
+
+<para>
+Thanks to the following persons their help in developing &kmid;:
+</para>
+
+<itemizedlist>
+<listitem>
+<para>
+Paul J. Leonard <email>P.J.Leonard@bath.ac.uk</email> - Support for AWE
+cards
+</para>
+</listitem>
+<listitem>
+<para>
+Sebestyen Zoltan <email>szoli@digo.inf.elte.hu</email>- FreeBSD port and
+AWE testing
+</para>
+</listitem>
+<listitem>
+<para>
+Christian Esken <email>esken@kde.org</email> - For organizing the &kde;
+multimedia efforts
+</para>
+</listitem>
+<listitem>
+<para>
+&Stephan.Kulow; &Stephan.Kulow.mail;- Configure scripts and help
+with <command>automake</command> and <command>CVS</command>
+</para>
+</listitem>
+<listitem>
+<para>
+Jaroslav Kysela - Help in doing the &Linux; Ultrasound Project driver
+support
+</para>
+</listitem>
+<listitem>
+<para>
+Takashi Iwai and Joseph H. Buehler    - Fix for AWE cards pitch being
+too high 
+</para>
+</listitem>
+<listitem>
+<para>
+Adrian Knoth     - For giving me good news and many suggestions
+</para>
+</listitem>
+<listitem>
+<para>
+Kevin Street     - Patch to support FreeBSD 3.0
+</para>
+</listitem>
+<listitem>
+<para>
+Thanks go also to Jose Luis Sanchez for his testing of GUS support,
+Ignacio Garcia for testing the AWE support, Hans Petter Bieker, Ola
+Sigurdson, Marc Diefenbruch, Peter Gritsch, Magnus Pfeffer, Urko Lusa,
+Peter-Paul Witta, Thorsten Westheider, Ulrich Cordes and everyone that
+sent me a patch, bug report or just an email to give me encouragement.
+</para>
+</listitem>
+<listitem>
+<para>
+And of course to all the fabulous musicians over the net that keep giving
+us those wonderful &MIDI; and karaoke files.
+</para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="copyright-and-license">
+<title>Copyrights and License</title>
+
+<para>
+Program and documentation copyright 1999-2001 &Antonio.Larrosa.Jimenez;
+</para>
+<para>
+Program and documentation copyright 2009-2010 &Pedro.Lopez-Cabanillas;
+</para>
+
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+&underFDL;
+&underGPL;
+
+</sect1>
+
+</chapter>
+
+<appendix id="installation">
+<title>Installation</title>
+
+<sect1 id="how-to-obtain-kmid">
+<title>How to Obtain &kmid;</title>
+
+<para>
+&kmid; can be found on its homepage: <ulink
+url="http://sourceforge.net/projects/kmid2">
+http://sourceforge.net/projects/kmid2</ulink>. 
+In the homepage, you can follow the development, see some information about it, 
+some screenshots, &etc;
+</para>
+
+</sect1>
+
+<sect1 id="requirements">
+<title>Requirements</title>
+
+<para>&kmid; requires to work:</para>
+
+<itemizedlist>
+<listitem>
+<para>
+&kde; Platform
+</para>
+</listitem>
+<listitem>
+<para>
+&Linux; with ALSA sound, &MIDI; drivers, and the ALSA library.
+</para>
+</listitem>
+<listitem>
+<para>
+A sound card.  A good soundcard and/or external synthesizer are
+recommended, as the sound quality depends greatly in your soundcard.
+</para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="compilation-and-installation">
+<title>Compilation and Installation</title>
+
+&install.compile.documentation;
+
+<para>
+There are some examples installed in <filename
+class="directory">&dollar;<envar>KDEDIR</envar>/share/apps/kmid</filename>
+</para>
+
+</sect1>
+
+</appendix>
+
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

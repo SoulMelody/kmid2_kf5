@@ -1,0 +1,104 @@
+2010-08-15 Pedro Lopez-Cabanillas
+    * release 2.4.0
+ 
+2010-08-02 Pedro Lopez-Cabanillas
+    * Fixes in ALSA sequencer, Windows and Mac backends for initial MIDI program 
+      changes with locked MIDI channels and MIDI reset messages.  
+    
+2010-08-01 Pedro Lopez-Cabanillas
+    * DBus interfaces org.kde.KMid and org.kde.KMidPart offered by the main 
+      program and the kpart respectively.
+    * libkmidbackend new methods: songProperties() and channelProperties(),
+      soversion bumped to 1.0.0
+
+2010-07-26 Pedro Lopez-Cabanillas
+    * vumeter widget: fixed drawing errors and CPU waste  
+
+2010-07-20 Pedro Lopez-Cabanillas
+	* kmid_part: KPart implementing KMediaPlayer::Player and KMediaPlayer::View 
+
+2010-07-12 Pedro Lopez-Cabanillas
+    * Assigned shortcuts to keyboard media keys
+    * Synced Drumstick 0.4.1 fixes
+    * Drumstick 0.4.1 also fixes this bug: Launching fluidsynth 1.1.x at 
+      program's startup fails in systems affected by this glib-2.22 bug:
+      https://bugzilla.gnome.org/show_bug.cgi?id=599079
+
+2010-06-27
+    * Fix in ALSA sequencer backend: bug 242912 (requires Drumstick >= 0.4)    
+
+2010-06-12 Pedro Lopez-Cabanillas
+    * Fixes in ALSA sequencer backend: two crashes, bugs 240391 and 240394. 
+    * release 2.3.1
+
+2010-04-26 Pedro Lopez-Cabanillas
+    * New Mac OSX and Windows backends
+    * Fixes in ALSA sequencer backend: 
+    * ·don't set an explicit output pool size, using the default size instead.
+    * ·unconditionally reload MIDI devices before checking the available outputs. 
+    * ·complementary Drumstick 0.3.1 fixes
+    * release 2.3.0 
+
+2010-03-14 Pedro Lopez-Cabanillas
+    * Fixed program termination, sending notes-off and reset-controllers messages.
+    * Fixed a crash shuffling an empty playlist.
+    * Fixed creation of bookmarks at runtime, for file open dialog places. Don't 
+      create bookmarks if there aren't files, and search recursively in the 
+      sound resources directory.  
+    * Fixed saving the initial MIDI connection dialog selection. 
+    * Replaced the KInputDialog used to ask for the initial MIDI connection by 
+      a custom KDialog, adding a "Help" button and enabling the URL link in the 
+      text label. The list box has also been replaced by a KComboBox.
+    * Save the last directory used in several open/save dialogs. 
+    * Link to drumstick-0.3 libraries.
+    * release 2.2.2
+
+2010-02-28 Pedro Lopez-Cabanillas
+    * moved to extragear/multimedia
+    * renamed from kmid2 to kmid
+
+2010-02-08 Pedro Lopez-Cabanillas
+    * Fixed a memory leak
+    * Fixed command line play lists handling
+    * Fixed settings dialog: soft-synth audio output combo problems with 
+      translated strings
+    * Fixed settings dialog: apply button
+    * Check the runtime ALSA driver version for advanced MIDI ports
+    * Automatic detection of lyrics text encodings using KEncodingProber
+    * Get channel labels from SMF metadata (tracks names)
+    * Pianola window: added labels showing the channel names
+    * Patch from Kevin Kofler adding a "pulseaudio" option for TiMidity++
+    * release 0.2.1
+
+2010-01-27 Pedro Lopez-Cabanillas
+    * song examples: several old files replaced by other songs, correctly 
+      licensed
+    * release 0.2.0
+
+2010-01-12 Pedro Lopez-Cabanillas
+    * External soft-synths can be automatically launched at startup. A new page 
+      including FluidSynth and TiMidity++ settings has been added to the 
+      "Configure kmid2" dialog.
+    * Each channel may be labeled in a text field besides each channel number.
+    * New "lock instrument" button in the channels window to override the song's 
+      predefined instruments.
+    * Settings per song can be saved and automatically retrieved, including text 
+      encoding, volume, pitch, rhythm, channel labels and fixed instruments.
+    * The sample songs location is added to the places navigation panel in the 
+      open dialog.
+    * Several other usability enhancements. Many thanks to the KDE Usability 
+      Team for the suggestions.
+
+2010-01-07 Pedro Lopez-Cabanillas
+    * local library 'aseqmm' renamed to 'drumstick'
+
+2009-12-30 Pedro Lopez-Cabanillas
+    * Recent files menu 
+    * Highlight trimmed syllables, ignoring leading and trailing white spaces
+    * Allow stop in paused state
+    * Synchronized with lib. aseqmm 0.2.0
+    * Assorted fixes
+    * release 0.1.1
+
+2009-11-30 Pedro Lopez-Cabanillas
+    * release 0.1.0

@@ -1,0 +1,12 @@
+Goal: KMid2 should be comparable with VanBasco Karaoke player, and even win in
+some features. See http://www.vanbasco.com/karaokeplayer/
+
+Pending
+-------
+* Multiplatform backend based on the FluidSynth library. This will require 
+several new features from FluidSynth, to be included in a new release. 
+* Multiple MIDI output ports. Currently plays to a single output port. This is 
+needed by a few MIDI songs requiring more than 16 channels.
+
+See also:
+http://bugs.kde.org/buglist.cgi?product=kmid&bug_severity=wishlist

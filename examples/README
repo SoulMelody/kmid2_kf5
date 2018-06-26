@@ -1,0 +1,16 @@
+KMid2 MIDI and Karaoke examples.
+
+The MIDI files have been created in Rosegarden, and the corresponding sources 
+are included in this directory.
+
+The license of the MIDI examples is: 
+    Creative Commons Attribution-Share Alike 3.0 Unported
+    http://creativecommons.org/licenses/by-sa/3.0/
+
+The Karaoke examples are created with MMA (Musical MIDI Accompaniment) and the 
+corresponding sources are included in this directory. Use MMA 1.5e or newer.
+
+See http://www.mellowood.ca/mma/index.html for more information. 
+
+The MMA examples are copyrighted by Bob van der Poel, and licensed under the 
+terms of the GPLv2+, like the MMA program itself.

@@ -1,0 +1,1 @@
+#include "midiobject.h"

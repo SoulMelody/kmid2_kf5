@@ -1,0 +1,1471 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+ <!ENTITY timidity '<application
+>TiMidity++</application
+>'>
+ <!ENTITY fluidsynth '<application
+>FluidSynth</application
+>'>
+ <!ENTITY qsynth '<application
+>QSynth</application
+>'>
+ <!ENTITY soundfont '<productname class="registered"
+>SoundFont</productname
+> (.SF2)'>
+ <!ENTITY kappname "&kmid;">
+ <!ENTITY package "extragear/multimedia"
+> 
+ <!ENTITY Pedro.Lopez-Cabanillas '<personname
+><firstname
+>Pedro</firstname
+><surname
+>Lopez-Cabanillas</surname
+></personname
+>'>
+ <!ENTITY Pedro.Lopez-Cabanillas.mail '<email
+>plcl@users.sourceforge.net</email
+>'
+> 
+ <!ENTITY % Swedish "INCLUDE"
+> <!-- change language only here -->
+ <!ENTITY % addindex "IGNORE">
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+<title
+>Handbok &kmid;</title>
+<authorgroup>
+<author
+><firstname
+>Antonio</firstname
+> <surname
+>Larrosa Jim&eacute;nez</surname
+> <affiliation
+> <address
+><email
+>larrosa@kde.org</email
+></address>
+</affiliation>
+</author>
+<author
+><firstname
+>Pedro</firstname
+> <surname
+>Lopez-Cabanillas</surname
+> <affiliation
+> <address
+><email
+>plcl@users.sf.net</email
+></address>
+</affiliation>
+</author>
+<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@comhem.se</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>1999</year
+><year
+>2001</year>
+<holder
+>&Antonio.Larrosa.Jimenez;</holder>
+</copyright>
+<copyright>
+<year
+>2009</year
+><year
+>2010</year>
+<holder
+>&Pedro.Lopez-Cabanillas;</holder>
+</copyright>
+
+<date
+>2010-03-15</date>
+<releaseinfo
+>2.2</releaseinfo>
+
+<abstract>
+<para
+>&kmid; är en &MIDI; och Karaoke multimediaspelare </para>
+</abstract>
+
+<keywordset>
+<keyword
+>kmid</keyword>
+<keyword
+>MIDI</keyword>
+<keyword
+>karaoke</keyword>
+<keyword
+>multimedia</keyword>
+<keyword
+>mid</keyword>
+<keyword
+>kar</keyword>
+<keyword
+>spelare</keyword>
+<keyword
+>musik</keyword>
+<keyword
+>ljud</keyword>
+<keyword
+>synthesizer</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Inledning</title>
+
+<para
+>&kmid; är &kde;s &MIDI; och Karaoke multimediaspelare. Den tillhandahåller några funktioner som inte finns i någon annan &UNIX; &MIDI;-spelare, som bland annat realtidsgrafik och markering av Karaoke-text. </para>
+
+<para
+>&kmid; fungerar för närvarande bara på &Linux;, men stöd för andra operativsystem är planerat, och blir förhoppningsvis tillgängligt i framtiden. Det använder ljuddrivrutinen <acronym
+>ALSA</acronym
+>, så det bör fungera på alla system där &kde; och <acronym
+>ALSA</acronym
+> går att kompilera. </para>
+
+<para
+>&kmid; visar sångtexten i huvudfönstret, och markerar ord med en annan färg medan musiken spelar, så det är väldigt lätt att följa med i sången. </para>
+
+<sect1 id="kmids-features">
+<title
+>&kmid;s funktioner</title>
+
+<para
+>Det här är några av &kmid;s viktigaste funktioner: </para>
+      
+<itemizedlist>
+<listitem>
+<para
+>Den har ett mycket  <emphasis
+>användarvänligt gränssnitt</emphasis
+> för att visa Karaoke med markering av sångtext <emphasis
+>i realtid</emphasis
+>. </para>
+</listitem>
+<listitem>
+<para
+>Den har en funktion som grafiskt visar vad som spelas på varje &MIDI;-kanal, genom att markera tangenterna som trycks ner på en (virtuell) pianoklaviatur. </para>
+</listitem>
+<listitem>
+<para
+>Den kraftfullaste <emphasis
+>hanteringen av Midi-avbildningar</emphasis
+> som finns för något operativsystem. </para>
+</listitem>
+<listitem>
+<para
+><emphasis
+>Drag och släpp</emphasis
+> så att du kan släppa vilken &MIDI;-fil som helst på &kmid; från en filhanterare som &konqueror; eller &dolphin;. </para>
+</listitem>
+<listitem>
+<para
+>Du kan <emphasis
+>ändra tempo</emphasis
+> på sånger för att spela dem långsammare eller snabbare om du vill. </para>
+</listitem>
+<listitem>
+<para
+>Det visar en visuell metronom för att enkelt följa sångens rytm. </para>
+</listitem>
+<listitem>
+<para
+><emphasis
+>Anpassningsbara</emphasis
+>  teckensnitt och färger för Karaoke-text. </para>
+</listitem>
+<listitem>
+<para
+>Stöder de två standardsätten att infoga sångtexter i &MIDI;-filer, dvs. sångtexter eller texthändelser (och gissar automatiskt vad en sång använder). </para>
+</listitem>
+<listitem>
+<para
+>Sessionshantering. Om en sång spelas när du loggar ut från &kde;, så börjar samma sång spelas nästa gång du loggar in. </para>
+</listitem>
+<listitem>
+<para
+><emphasis
+>Justerbar volym och tonhöjd</emphasis
+> i realtid. </para>
+</listitem>
+<listitem>
+<para
+>Den kan spela felaktiga &MIDI;-filer som får andra spelare att göra minnesdumpar! </para>
+</listitem>
+<listitem>
+<para
+>Låg användning av processorkraft, beroende på sångens komplexitet. </para>
+</listitem>
+<listitem>
+<para
+>Stöder extern &MIDI;-syntar och programvarusyntar. </para>
+</listitem>
+<listitem>
+<para
+>Kör på &Linux; med stöd för <acronym
+>ALSA</acronym
+>. </para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+</chapter>
+
+<chapter id="general-usage">
+<title
+>Allmän användning</title>
+
+<sect1 id="using-midi">
+<title
+>Att använda &MIDI;</title>
+<para
+>&kmid; matar ut &MIDI;-data, så en &MIDI;-mottagare behövs för att skapa hörbart ljud. Det finns flera olika &MIDI;-mottagare, eller synthesizers, som man kan använda. Den enda gemensamma funktion som krävs är stöd för &MIDI; i <acronym
+>ALSA</acronym
+>. </para>
+
+<sect2 id="external-devices">
+<title
+>Externa enheter</title>
+<para
+>Dessa är externa enheter anslutna till datorn via en &MIDI;-kabel. Moderna enheter kan också ha en <acronym
+>USB</acronym
+>-anslutning. De externa &MIDI;-enheterna är elektroniska musikinstrument, som oftast kan spelas fristående utan att kräva att en dator är ansluten. </para>
+
+<para
+>För att ansluta ett &MIDI;-musikinstrument till datorn behövs en &MIDI;-utgång på datorn och en &MIDI;-kabel. Vissa ljudkort innehåller &MIDI;-kontakter, eller kablar. Det finns också billiga <acronym
+>USB</acronym
+> till &MIDI;-konverterare. &MIDI;-drivrutiner i <acronym
+>ALSA</acronym
+> är ofta tillgängliga för dem, och är ett absolut krav för att använda &kmid;. </para>
+
+<para
+>Om &MIDI;-musikinstrumentet inte förstår standardmeddelanden enligt General &MIDI;, kanske du behöver en &MIDI;-avbildning. Se <link linkend="MIDI-maps"
+>&MIDI;-avbildningar</link
+> för mer information. </para>
+
+</sect2>
+
+<sect2 id="sound-card-synth">
+<title
+>Ljudkort med en hårdvarusyntheziser</title>
+<para
+>Sådana ljudkort var mycket populära förr, men är mycket mindre vanliga nu för tiden. Några exempel är de klassiska ljudkorten <acronym
+>GUS</acronym
+> och <acronym
+>AWE</acronym
+>, eller SoundBlaster Audigy. Alla är vågtabellbaserade syntar. Ännu äldre är FM-syntarna, som Ad Lib. Hur som helst, kan de omvandla &MIDI; till ljud i realtid, med kravet att <acronym
+>ALSA</acronym
+> &MIDI;-drivrutiner är installerade. Det är också nödvändigt att ha en samling ljudsamplingar för vågtabellbaserade syntar, på formatet som tillhandahålls av ljudkortets tillverkare. </para>
+</sect2>
+
+<sect2 id="soft-synth">
+<title
+>Programvarusynthesizers</title>
+<para
+>Eftersom större primärminne och processorkraft är tillgängliga i moderna datorer, växer antalet och användningen av programvarusyntar snabbt. Det är också ett billigt alternativ, eftersom den enda hårdvara som krävs är ett enkelt ljudkort, enbart med stöd för ljud. Den inbyggda ljudenheten på många moderkort är tillräcklig i de flesta fall. </para>
+<para
+>Två exempel på program som klarar av att återge &MIDI;-data som ljudströmmar är &timidity; och &fluidsynth;. Båda har stöd för <acronym
+>ALSA</acronym
+>-sekvensenhet, och är synthesizers baserade på vågtabeller. Det finns alternativ i <link linkend="configuration"
+>inställningsdialogrutan</link
+> för att automatiskt köra dessa programvarusyntar vid start. </para>
+
+<para
+>För att använda &timidity; måste du installera <acronym
+>GUS</acronym
+> samling av patcher, som freepats eller en ljudteckensnittsfil. Starta programmet som demon, genom att exempelvis använda paketet timidity-daemon i Debian-system. </para>
+
+<para
+>För att använda &fluidsynth; måste du installera en ljudteckensnittsfil. Det kan också vara en god idé att installera det grafiska användargränssnittet &qsynth;. Två utmärkta och fria ljudteckensnitt för &fluidsynth; är <ulink url="http://www.schristiancollins.com/soundfonts.php"
+>General User GS</ulink
+> och Fluid R3, som ingår i vissa &Linux;-distributioner. </para>
+</sect2>
+</sect1>
+
+<sect1 id="opening-songs">
+<title
+>Att öppna sånger</title>
+
+<para
+>Du kan öppna en sång på flera olika sätt. </para>
+
+<para
+>Först kan du välja <guimenuitem
+>Öppna...</guimenuitem
+> i menyn <guimenu
+>Arkiv</guimenu
+>, så visas en standarddialogruta för att öppna filer, där du kan välja sången som du vill öppna. </para>
+
+<para
+>Du kan dra en fil från ett &konqueror;- eller &dolphin;-fönster och släppa den i &kmid;-fönstret. Du kan också dra och släppa flera sånger på samma gång. </para>
+
+<para
+>Du kan ange ett eller flera sångfilnamn på kommandoraden när du startar &kmid;. Webbadresser stöds, så du kan klicka på och öppna en webblänk eller ett filnamn i filhanteraren. </para>
+
+<para
+>Du kan välja en sång från listan med de senaste spelade filerna, som visas med menyalternativet <menuchoice
+><guimenu
+>Arkiv</guimenu
+> <guimenuitem
+>Öppna senaste</guimenuitem
+></menuchoice
+>. </para>
+
+<para
+>Och det sista sättet är att välja sången från sånglistan i den aktiva spellistan. </para>
+
+<para
+>Hur som helst hämtas de sparade sånginställningarna från senaste gången sången spelades automatiskt, om alternativet <menuchoice
+><guimenu
+>Sång</guimenu
+><guisubmenu
+>Sånginställningar</guisubmenu
+> <guimenuitem
+>Automatisk</guimenuitem
+></menuchoice
+> är aktiverat. </para>
+
+</sect1>
+
+<sect1 id="playing-songs">
+<title
+>Att spela sånger</title>
+
+<para
+>För att spela en sång, öppna den först, och tryck sedan på knappen <guiicon
+>Spela</guiicon
+> i verktygsraden, välj <guimenuitem
+>Spela</guimenuitem
+> i menyn <guimenu
+>Sång</guimenu
+>, eller tryck på tangenten <keycap
+>Mellanslag</keycap
+>. </para>
+
+<para
+>Observera att &kmid; börjar spela en fil automatiskt när en fil öppnas. Beteendet kan inaktiveras med alternativet <guimenuitem
+>Starta automatiskt</guimenuitem
+> i menyn <guimenu
+>Sång</guimenu
+>. Om du drar och släpper med än en fil, kommer de att läggas till i en spellista och spelas i tur och ordning. </para>
+
+<para
+>När &kmid; väl spelar en sång, kan du flytta tidsreglaget för att gå till en angiven position, genom att trycka med musens mittenknapp. </para>
+
+<para
+>Om en sång spelas för snabbt eller för långsamt för dig, kan du använda temporeglaget. För att återställa det ursprungliga tempot, klicka bara på knappen "100 %". </para>
+
+</sect1>
+
+<sect1 id="displaying-lyrics">
+<title
+>Att visa sångtexter</title>
+
+<para
+>Det finns två metoder för att lagra sångtext i en &MIDI;-sångfil: Genom att använda <guimenuitem
+>Texthändelser</guimenuitem
+> eller <guimenuitem
+>Sånghändelser</guimenuitem
+>. Vissa sånger använder den första metoden, vissa den andra, båda eller ingenting alls när sången inte innehåller någon text. &kmid; väljer automatiskt den lämpligaste metoden för varje sång. </para>
+
+<para
+>SMF-standardens specifikation tillåter bara att ASCII-text inbäddas i en &MIDI;-fil. Du kan dock hitta många &MIDI;-filer med text kodad på olika sätt. Sångtextens textkodning kan väljas genom att använda kombinationsrutan placerad i huvudfönstret. Den valda kodningen blir kvar till någon annan kodning väljes, och blir ihågkommen till nästa session, </para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Inställningsdialogruta</title>
+
+<para
+>För att öppna dialogrutan <guilabel
+>Inställningar</guilabel
+> kan du använda menyn <menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Anpassa &kmid;...</guimenuitem
+></menuchoice
+>, eller motsvarande ikon i verktygsraden. </para>
+
+<para
+>Inställningarna får som vanligt effekt när du klickar på knapparna <guibutton
+>Ok</guibutton
+> eller <guibutton
+>Verkställ</guibutton
+>. </para>
+
+<sect1 id="configuration-lyrics">
+<title
+>Sångtextinställningar</title>
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Teckensnitt</guilabel
+>. Här kan du ställa in typografin som används för att visa sångtexten i huvudfönstret. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Teckenfärg</guilabel
+>. Det här är färgen som används för sångtexten när den redan har spelats. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Teckenstorlek</guilabel
+>. Här kan du ställa in teckenstorlek för sångtexten i huvudfönstret. </para>
+</listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="configuration-midi">
+<title
+>&MIDI;-inställningar</title>
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>&MIDI;-utgång</guilabel
+>. Listan visas de tillgängliga &MIDI;-utgångar som detekterades på systemet, som de rapporteras av operativsystemets inbyggda &MIDI;-system. Du bör välja en av dem, som kommer att anslutas till programmets &MIDI;-utgång. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Visa avancerade &MIDI;-portar</guilabel
+>. De avancerade &MIDI;-portarna är &MIDI;-enheter som sällan används och filtreras bort från listan med tillgängliga &MIDI;-utgångar om du inte markerar kryssrutan. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>&MIDI;-avbildningsfil</guilabel
+>. Här kan du välja &MIDI;-avbildningsfilen som kommer att användas med den externa &MIDI;-synthesizern. Du hittar mer information om &MIDI;-avbildningar i kapitlet <link linkend="MIDI-maps"
+>&MIDI;-avbildningar</link
+>. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Återställningsläge</guilabel
+>. Det här &MIDI;-meddelandet skickas valfritt till ansluten &MIDI;-utgång innan uppspelning av varje sång påbörjas, och återställer flera parametrar som kan ha ändrats av den senaste sångfilen. Här kan du välja en standardmeddelandetyp som känns igen av synthesizern, eller en egen systemexklusiv fil. </para>
+</listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="configuration-synths">
+<title
+>Inställningar av programvarusyntar</title>
+
+<sect2 id="fluidsynth">
+<title
+>&fluidsynth;</title>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Kör &fluidsynth; vid start</guilabel
+>. Om du markerar kryssrutan kommer programvarusynten &fluidsynth; automatiskt att köras vid start.. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Kommando</guilabel
+>. Här måste du ange sökväg och namn på kommandot för programvarusynten. Under textrutan finns ett värde som rapporterar detekterad programversion, och en ikon som anger att minimumkraven för att använda programmet uppfylls. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Ljuduppspelning</guilabel
+>. Här ska du välja ljudsystem som används av programvarusynten. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Ljudenhet</guilabel
+>. Här kan du ange ett ljudenhetsnamn för utdata från programvarusynten. Det är oftast säkert att lämna inställningen tom. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Samplingsfrekvens</guilabel
+>. Här kan du ange ljudets samplingsfrekvens som används av programvarusynten för att skapa digitalljud. Det är oftast säkert att lämna inställningen tom. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Ljudteckensnitt</guilabel
+>. Här måste du ange sökvägen och filnamnet för ljudteckensnittet som används av programvarusynten. Väljaren krävs. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Väljare</guilabel
+>. Här kan du ange andra valfria väljare som kan användas med programvarusynten. Det är vanligt att lämna det tomt. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="timidity">
+<title
+>&timidity;</title>
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Kör &timidity; vid start</guilabel
+>. Om du markerar kryssrutan kommer programvarusynten &timidity; automatiskt att köras vid start.. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Kommando</guilabel
+>. Här måste du ange sökväg och namn på kommandot för programvarusynten. Under textrutan finns ett värde som rapporterar detekterad programversion, och en ikon som anger att minimumkraven för att använda programmet uppfylls. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Ljuduppspelning</guilabel
+>. Här ska du välja ljudsystem som används av programvarusynten. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Ljudenhet</guilabel
+>. Här kan du ange ett ljudenhetsnamn för utdata från programvarusynten. Det är oftast säkert att lämna inställningen tom. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Samplingsfrekvens</guilabel
+>. Här kan du ange ljudets samplingsfrekvens som används av programvarusynten för att skapa digitalljud. Det är oftast säkert att lämna inställningen tom. </para>
+</listitem>
+<listitem>
+<para
+><guilabel
+>Väljare</guilabel
+>. Här kan du ange andra valfria väljare som kan användas med programvarusynten. Det är vanligt att lämna det tomt. </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+</chapter>
+
+<chapter id="playlists">
+<title
+>Spellistor</title>
+
+<para
+>En spellista är en lista av &MIDI;-filer som du lagrar i en samling, och som spelas en i taget. Det här avsnittet hjälper dig att använda dem, och ger dig några användbara tips för att använda dem på ett bra sätt. </para>
+
+<sect1 id="creating-a-playlist">
+<title
+>Att skapa en spellista</title>
+
+<para
+>För att skapa en spellista, öppna först dialogrutan <guilabel
+>Hantera spellistor</guilabel
+>, genom att välja alternativet <guimenuitem
+>Redigera spellistor</guimenuitem
+> i menyn <guimenu
+>Spellista</guimenu
+>, och lägg till dina filer i spellistan. Välj till sist alternativet <guimenuitem
+>Spara spellista</guimenuitem
+> i menyn <guimenu
+>Spellista</guimenu
+>, och ange katalog och filnamn för spellistan. </para>
+
+<para
+>Spellistefilen är en vanlig textfil som du kan redigera, kopiera och flytta med vanliga filhanteringsverktyg. </para>
+
+</sect1>
+
+<sect1 id="adding-songs-to-a-playlist">
+<title
+>Att lägga till sånger i en spellista</title>
+<subtitle
+>Hur menyalternativet <guimenuitem
+>Lägg till automatiskt i spellista</guimenuitem
+> används</subtitle>
+
+<para
+>Om <guimenuitem
+>Lägg till automatiskt i spellista</guimenuitem
+> är aktiverad, och du öppnar en sång (med <menuchoice
+><guimenu
+>Arkiv</guimenu
+> <guimenuitem
+>Öppna...</guimenuitem
+></menuchoice
+> eller drag och släpp) läggs den (de) till i den aktiva spellistan utan påverkan från användaren. </para>
+
+<para
+>Om <guimenuitem
+>Lägg till automatiskt i spellista</guimenuitem
+> inte är aktiverad, och du öppnar en sång så skapas och rensas en tillfällig spellista, och den öppnade sången läggs till i den. </para>
+
+</sect1>
+
+<sect1 id="removing-songs-from-playlists">
+<title
+>Att ta bort sånger från spellistor</title>
+
+<para
+>För att ta bort en sång från en spellista, öppna bara dialogrutan <guilabel
+>Hantera spellista</guilabel
+>, markera sången du vill ta bort, och klicka på knappen <guibutton
+>Ta bort</guibutton
+>. Tryck slutligen på knappen <guibutton
+>Ok</guibutton
+> för att stänga dialogrutan. </para>
+
+</sect1>
+
+<sect1 id="playing-order">
+<title
+>Spelordning:</title>
+
+<para
+>Sångerna spelas i samma ordning som de är lagrade i spellistan. Du kan redigera sångernas ordning med dialogrutan <guilabel
+>Hantera spellista</guilabel
+>. </para>
+
+<para
+><guimenuitem
+>Upprepa</guimenuitem
+> spelar spellistan om och om igen, och upprepar den första sången igen när den sista är klar. </para>
+
+<para
+>Här du väljer <guimenuitem
+>Blanda</guimenuitem
+>, gör &kmid; sångernas ordning i spellistan slumpmässig. Spellistan blandas varje gång du lägger till en ny fil i den aktiva spellistan, och när <guimenuitem
+>Blanda</guimenuitem
+> aktiveras. </para>
+
+</sect1>
+
+<sect1 id="selecting-from-a-playlist">
+<title
+>Att välja en sång från en spellista</title>
+
+<para
+>Du kan markera en sång bland sångerna i spellistan med dialogrutan <guilabel
+>Hantera spellista</guilabel
+>. </para>
+
+<para
+>Du kan också byta till nästa sång genom att använda <literal
+>Nästa sång</literal
+> i menyn <literal
+>Sång</literal
+>, knappen <literal
+>Nästa sång</literal
+> i verktygsraden, eller genom att trycka på den användarinställda snabbtangenten. </para>
+
+<para
+>För att byta till föregående sång, använd <literal
+>Föregående sång</literal
+> i menyn <literal
+>Sång</literal
+>, knappen <literal
+>Föregående sång</literal
+> i verktygsraden, eller genom att trycka på den användarinställda snabbtangenten. </para>
+
+</sect1>
+
+<sect1 id="deleting-a-playlist">
+<title
+>Ta bort en spellista</title>
+
+<para
+>För att ta bort innehållet i en spellista, öppna helt enkelt dialogrutan <guilabel
+>Hantera spellista</guilabel
+> och klicka på knappen <guibutton
+>Återställ</guibutton
+>. </para>
+
+<para
+>Använd ditt favoritverktyg för filhantering för att ta bort en spellista lagrad på disk. </para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="MIDI-maps">
+<title
+>&MIDI;-avbildningar</title>
+
+<sect1 id="what-is-a-midimap">
+<title
+>Vad är en &MIDI;-avbildning?</title>
+
+<para
+>En &MIDI;-avbildning är någonting som översätter &MIDI;-händelser till andra &MIDI;-händelser. </para>
+
+<para
+>Den är fullständigt nödvändig om en synthesizer inte förstår standardhändelserna (dvs. om en synthesizer inte uppfyller General &MIDI;), i detta fall översätter en &MIDI;-avbildning General &MIDI;-händelser till händelser som synthesizern förstår. </para>
+
+<para
+>Du kan till exempel skapa en &MIDI;-avbildning som ändrar alla händelser <literal
+>Ändra patch till piano</literal
+>, till <literal
+>Ändra patch till trumpet</literal
+>, så att när en sång försöker spela ett piano, så spelas en trumpet istället. </para>
+
+<para
+>Det kan låta konstigt (varför spela en trumpet när sången är gjord för att spela ett piano?), men det är mycket användbart. <acronym
+>GM</acronym
+>-standarden anger att ett &MIDI;-keyboard ska byta till <literal
+>flygel</literal
+> när det tar emot ett byte av patch till <literal
+>0</literal
+>, men en äldre synthesizer ändrar kanske exempelvis till en <literal
+>elektrisk gitarr</literal
+> när den tar emot <literal
+>0</literal
+>. Detta äldre keyboard behövde ta emot <literal
+>3</literal
+> (till exempel) för att byta till ett <literal
+>piano</literal
+>. Här träder &MIDI;-avbildningen in och byter alla <literal
+>ändra patch till 0</literal
+> mot <literal
+>ändra patch till 3</literal
+> och på så sätt spelas verkligen det riktiga instrumentet när det ska. </para>
+
+</sect1>
+
+<sect1 id="do-i-need-a-MIDI-map">
+<title
+>Behöver man en &MIDI;-avbildning?</title>
+
+<para
+>I korthet, om du inte har en extern synt, är svaret <emphasis
+>nej</emphasis
+>. </para>
+
+<para
+>Om du bara har ett ljudkort med en &MIDI;-synt, behövs troligen inte &MIDI;-avbildningar eftersom nästan alla ljudkort stöder <acronym
+>GM </acronym
+> (det innefattar AWE-kort, <acronym
+>GUS</acronym
+>-kort, <acronym
+>FM</acronym
+>-enheter och så vidare). </para>
+
+<para
+>Om du spelar musik via en extern synthesizer, och den inte följer GM, måste du skapa en &MIDI;-avbildning för &MIDI;-enheten. Även om du kanske använder en hel eftermiddag för att skapa avbildningsfilen och prova olika värden för alla alternativ, blir du belönad när den är färdig, eftersom du kommer att kunna lyssna på många sångfiler som annars skulle låta felaktiga. </para>
+
+</sect1>
+
+<sect1 id="creating-a-MIDI-map">
+<title
+>Att skapa en &MIDI;-avbildning</title>
+
+<para
+>Det finns inget program för att skapa &MIDI;-avbildningar, så du måste redigera en fil för hand (med din favorittexteditor). </para>
+
+<para
+>En Midi-avbildning är en textfil som innehåller alla nödvändiga översättningar som görs när musiken spelas upp. </para>
+
+<para
+>Den består av fyra delar: <literal
+>PATCHMAP</literal
+>, <literal
+>KEYMAP</literal
+>, <literal
+>CHANNELMAP</literal
+> och <literal
+>OPTIONS</literal
+>. Varje del får bara finnas en gång... </para>
+
+<para
+>Den allmänna strukturen för en avbildningsfil är en fil av ini-typ: </para>
+
+<screen
+>[PATCHMAP]
+...
+
+# comment line
+ 
+[KEYMAP]
+...
+
+[CHANNELMAP]
+...
+
+[OPTIONS]
+...
+</screen>
+
+<para
+>Var och en av de fyra delnamnen mellan hakparenteser inleder respektive del. Du kan lägga till kommentarer genom att inleda raden med tecknet <literal
+>&num;</literal
+>. Varje del är en samling av flera rader med paret nyckel=värde. </para>
+
+<para
+>Var snäll glöm inte bort att skicka mig din avbildningsfil med e-post, så att framtida utgåvor av &kmid; innehåller stöd för flera keyboards som inte stöder General MIDI. </para>
+
+<sect2 id="the-patchmap-section">
+<title
+><literal
+>PATCHMAP</literal
+> delen</title>
+
+<para
+>Den här delen används för att ange hur patcher ska översättas från GM till specifikationen för ditt keyboard. Den allmänna användningen är: </para>
+
+<screen
+>(Namn på GM-patch)=(<replaceable
+>N</replaceable
+>)
+</screen>
+
+<para
+>Där <replaceable
+>N</replaceable
+> är talet som ditt keyboard behöver ta emot för att ändra patchen till samma som GM-standarden använder. </para>
+
+<para
+>Observera att vänstersidan om likhetstecknet är en symbolisk nyckel, så att du kan ändra ordning på raderna eller utesluta vilket som helst av de 128 instrumenten. </para>
+
+</sect2>
+
+<sect2 id="The-keymap-section">
+<title
+><literal
+>KEYMAP</literal
+> delen</title>
+
+<para
+><literal
+>KEYMAP</literal
+>-delen används för att ange hur slagverkstangenter översätts. Den används så här: </para>
+
+<screen
+>[KEYMAP]
+C 0 =0
+C#0 =1
+D 0 =2
+...
+</screen>
+
+<para
+>Liksom med delen <literal
+>PATCHMAP</literal
+>, kan du ändra ordningen på raderna, och utelämna vilken som helst av dem. Bara de första fyra tecknen i varje nyckel tas hänsyn till. </para>
+
+<para
+>Tangentavbildningar används i enbart för att översätta tangenter för slagverkskanalen. Titta i de medföljande avbildningarna för att se några exempel. </para>
+
+</sect2>
+
+<sect2 id="the-channelmap-section">
+<title
+><literal
+>CHANNELMAP</literal
+> delen</title>
+
+<para
+>Den här delen kan användas för att översätta några kanaler till andra. Om du till exempel vill byta första och andra kanalen, kan du enkelt göra detta i <literal
+>CHANNELMAP</literal
+>-delen. </para>
+
+<para
+>Det är dock mer användbart för ett keyboard som måste ha slagverkskanalen som en särskild kanal (GM-standarden använder kanal 10, andra använder kanal 16 eller 9). </para>
+
+<para
+>Observera att midi-enheter använder 16 kanaler, så att <literal
+>CHANNELMAP</literal
+>-delen har 16 rader, från 0 till 15, som den här: </para>
+
+<screen
+>(N) = (M)
+</screen>
+
+<para
+>Där <literal
+>N</literal
+> är kanalen som avbildas på kanalen <literal
+>M</literal
+>. </para>
+
+</sect2>
+
+<sect2 id="the-options-section">
+<title
+><literal
+>OPTIONS</literal
+> delen</title>
+
+<para
+><literal
+>OPTIONS</literal
+> delen har en del allmänna alternativ som kan vara mycket användbara: </para>
+
+<screen
+>[OPTIONS]
+PitchBenderRatio = r
+MapExpressionToVolumeEvents = true
+ForceDrumsPatch = 30
+</screen>
+
+<para
+>Du kan ange alla alternativ, bara ett, eller inget av dem. </para>
+
+<para
+>Värdet <literal
+>PitchBenderRatio r</literal
+>, anger förhållandet som tonhöjdsförändringar kommer att multipliceras med. Dvs. när en &MIDI;-fil försöker skicka en MIDI-händelse med en tonhöjdsförändring som har värdet <literal
+>n</literal
+>, kommer det riktiga värdet som skickas att vara <literal
+>n*(r/4096)</literal
+> (värdet <literal
+>4096</literal
+> finns för att inte behöva ange decimalkomman i avbildningsfilen). </para>
+
+<para
+>Det används för att <acronym
+>GM</acronym
+>-standarden säger att när ett &MIDI;-keyboard tar emot en tonhöjdsförändring med datavärdet 4096, ska det ändra tonen till nästa högre ton, men vissa &MIDI;-keyboard försöker ändra initialtonen till två eller fler toner högre (till och med en oktav högre!) när de tar emot 4096. Detta kan lätt fixas genom att försöka med olika värden, så att istället för att skicka 4096, så skickar &kmid; det lämpliga värdet. </para>
+
+<para
+>När alternativet <literal
+>MapExpressionToVolumeEvents</literal
+> anges i avbildningsfilen, och en &MIDI;-fil försöker skicka en uttryckshändelse, skickar &kmid; en volymhändelse, som förstås av fler keyboards som inte följer GM, och som har en liknande effekt. Det finns många &MIDI;-filer som använder uttryckshändelser för att dämpa ljudet i slutet på en sång, så om du vill att musiken ska låta tystare och tystare, kan du aktivera det här alternativet och se om det är vad du behöver, eftersom din &MIDI;-synthesizer kanske ignorerar uttryckshändelserna därför att den inte förstår dem. </para>
+
+<para
+>Alternativet <literal
+>ForceDrumsPatch</literal
+> kan vara användbart för att till exempel alltid använda slagverkspatchen på slagverkskanalen. </para>
+
+</sect2>
+
+</sect1>
+
+<sect1 id="using-midimaps">
+<title
+>Att använda &MIDI;-avbildningar</title>
+
+<para
+>För att använda en &MIDI;-avbildning, öppna dialogrutan <guilabel
+>Inställningar</guilabel
+> genom att välja alternativet <guimenuitem
+>Anpassa &kmid;...</guimenuitem
+> i menyn <guimenu
+>Inställningar</guimenu
+>. </para>
+
+<para
+>Klicka därefter på kategori-ikonen <guilabel
+>&MIDI;</guilabel
+>, och välj avbildningsfilen i kombinationsrutan <guilabel
+>&MIDI;-avbildningsfil</guilabel
+>. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="advanced-features">
+<title
+>Avancerade funktioner</title>
+
+<sect1 id="song-settings">
+<title
+>Sånginställningar</title>
+<para
+>För varje spelad sång kan flera alternativ sparas och automatiskt hämtas nästa gång sången öppnas. Alternativen är: <itemizedlist>
+<listitem
+><para
+>Textkodning</para
+></listitem>
+<listitem
+><para
+>Volym</para
+></listitem>
+<listitem
+><para
+>Tonhöjd (ton, transponering)</para
+></listitem>
+<listitem
+><para
+>Rytm</para
+></listitem>
+<listitem
+><para
+>Kanalrubriker</para
+></listitem>
+<listitem
+><para
+>Kanalknappar</para
+></listitem>
+<listitem
+><para
+>Kanalinstrument</para
+></listitem>
+</itemizedlist>
+</para>
+
+<para
+>Om du inte vill ha spara och hämta automatiskt, kan du använda menyalternativen <guimenuitem
+>Läs in</guimenuitem
+> och <guimenuitem
+>Spara</guimenuitem
+> tillgängliga i menyn <menuchoice
+><guimenu
+>Sång</guimenu
+> <guisubmenu
+>Sånginställningar</guisubmenu
+></menuchoice
+>. </para>
+</sect1>
+
+<sect1 id="the-channel-view">
+<title
+>Kanalvisaren</title>
+
+<para
+>Kanalvisaren är en tabell med 16 rader, en för varje &MIDI;-kanal. Det finns en textruta på varje rad där du kan namnge kanalerna för egen referens, knappar för att aktivera funktionerna <guilabel
+>Solo</guilabel
+> och <guilabel
+>Tyst</guilabel
+>, en nivåmätare och dessutom en kombinationsruta där du kan se och ändra musikinstrument för varje kanal. </para>
+
+<para
+>Bara de aktiva kanalerna (kanalerna som används av den nuvarande sången) har aktiverade kontroller. </para>
+
+</sect1>
+
+<sect1 id="piano-player">
+<title
+>Pianoklaviaturen</title>
+
+<para
+>Pianoklaviaturen kan visa upp till 16 virtuella klaviaturer, en för varje &MIDI;-kanal. Bara de aktiva kanalerna (kanalerna som används av den nuvarande sången) kan aktiveras. De virtuella klaviaturerna visar inte bara de spelade tonerna i realtid, utan kan också användas för att spela toner med musen eller datorns tangentbord. </para>
+
+</sect1>
+
+<sect1 id="rhythm-controls">
+<title
+>Rytmreglagen</title>
+
+<para
+>Rytmkontrollerna är: en temporuta, som visar sångens tempo i taktslag per minut, en visuell metronom som innehåller en takträknare, och ett temporeglage för att ändra sångens tempo, dvs. sångens hastighet. </para>
+
+<para
+>Om du ändrade tempot, kan du få tillbaka det ursprungliga genom att klicka på knappen <guilabel
+>100 %</guilabel
+>. </para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="key-bindings">
+<title
+>Tangentbindningar</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+<row>
+<entry
+>Tangent</entry>
+<entry
+>Åtgärd</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry
+><keycap
+>P</keycap
+></entry>
+<entry
+>Spela den inlästa sången.</entry>
+</row>
+<row>
+<entry
+><keycap
+>S</keycap
+></entry>
+<entry
+>Stoppa uppspelning</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Avsluta &kmid;</entry>
+</row>
+<row>
+<entry
+><keycap
+>F1</keycap
+></entry>
+<entry
+>Öppna det här dokumentet</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+</chapter>
+
+<chapter id="frequently-asked-questions">
+<title
+>Vanliga frågor</title>
+
+<qandaset>
+<qandaentry>
+<question>
+<para
+>Exakt vad är en &MIDI;-fil? </para>
+</question>
+
+<answer>
+<para
+>En &MIDI;-fil är en fil som innehåller information om hur en sång ska spelas, dvs. den innehåller helt enkelt tonerna, rytmen, hastigheten, etc. Detta betyder att samma &MIDI;-fil som spelas i två olika enheter, kan ge mycket olika resultat, precis som ett givet nothäfte kan spelas mycket olika av två musiker. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jag kan få bättre ljud med en mp3/wav-spelare, varför ska jag då använda &kmid;? </para>
+</question>
+<answer>
+<para
+>En typisk &MIDI;-fil upptar omkring 50 Kibyte, medan typisk MP3-filstorlek är 4 Mibyte. Med en bra synthesizer kan du också få jämförbar ljudkvalitet. Dessutom kan du ändra individuella instrument, ändra hastigheten på en sång, etc. med en &MIDI;-fil, så du har större möjligheter att styra musiken. </para>
+<para
+>Ett annat sätt att se detta: Att jämföra &MIDI; och MP3 är som att jämföra en målning med ett fotografi, eller jämföra <acronym
+>SVG</acronym
+> med JPEG. Var och en har olika egenskaper och användningsfall. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jag får inte mitt sound-kort att fungera med &kmid;, vad kan jag göra? </para>
+</question>
+<answer>
+<para
+>Först bör du kontrollera installationen och inställningen av ALSA. Därefter måste du ansluta &kmid; till en &MIDI;-synthesizer. Om ljudkortet inte har någon, använd istället en programvarusynt. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jag vill lägga till en hel katalog i en spellista, men att behöva lägga till &MIDI;-filerna en i taget är inte roligt. </para>
+</question>
+<answer>
+<para
+>Jag håller med. Det är därför som &kmid; stöder dra och släpp. Öppna bara katalogen som du vill lägga till i &konqueror;, välj alla filerna, dra dem och släpp i &kmid;. </para>
+<para
+>Försäkra dig om att alternativet <guimenuitem
+>Lägg till automatiskt i spellista</guimenuitem
+> är aktiverat, så att filerna läggs till i den nuvarande spellistan Om du inte gör detta, kommer filerna att läggas till i en ny tillfällig spellista. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jag kan inte följa med i sångtexten, den spelas för snabbt! </para>
+</question>
+<answer>
+<para
+>Du kan användar rytmkontrollens temporeglage för att få den att spelas långsammare. Kom ihåg att du kan klicka på knappen <guilabel
+>100 %</guilabel
+> för att återställa det ursprungliga tempot. </para
+> 
+</answer>
+</qandaentry>
+</qandaset>
+
+</chapter>
+
+<chapter id="final-notes">
+<title
+>Slutanmärkningar</title>
+
+<sect1 id="some-tips-and-tricks">
+<title
+>Några tips och trick</title>
+
+<para
+>Jag inkluderar några tips så att du kan dra fördel av alla funktioner i &kmid; i full utsträckning: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Öppna filer</term>
+<listitem>
+<para
+>Jag har alltid ett &kde;-skrivbord med ett &konqueror;-fönster som visar min huvudkatalog med &MIDI;-filer, och &kmid; på skrivbordet (om jag spelar en &MIDI;-fil) eller på alla skrivbord (om jag spelar en Karaoke-fil). Om jag vill spela några filer när den aktiva spellistan avslutas, kan jag på så sätt bara gå till &konqueror;-fönstret, välja de önskade filerna och dra och släppa dem i &kmid;s fönster. </para>
+
+<para
+>Antag att du vill spela några &MIDI;-filer, men inte vill lägga till dem i någon spellista. Stäng då bara av alternativet <guimenuitem
+>Lägg till automatiskt i spellista</guimenuitem
+> i menyn <guimenu
+>Spellista</guimenu
+>, och öppna filerna. Då läggs de till i en tillfällig spellista. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Ett annat sätt att skapa en ny spellista</term>
+<listitem>
+<para
+>Antag att du har &MIDI;-filerna <filename
+>A.mid</filename
+>, <filename
+>B.mid</filename
+> och <filename
+>C.mid</filename
+>. Först vill du bara spela den första &MIDI;-filen, så du stänger av <guimenuitem
+>Lägg till automatiskt i spellista</guimenuitem
+> och öppnar <filename
+>A.mid</filename
+>. Då får du en tillfällig spellista med bara en &MIDI;-fil. </para>
+<para
+>Därefter bestämmer du dig för att också spela B och C, och göra en spellista med allihop. Vad gör du då? </para>
+<para
+>Enkelt, välj <guimenuitem
+>Lägg till automatiskt</guimenuitem
+>, öppna <filename
+>B.mid</filename
+> och <filename
+>C.mod</filename
+> (med någon av de olika metoderna), så läggs de automatiskt till i den tillfälliga spellistan som därefter innehåller <filename
+>A.mid</filename
+>, <filename
+>B.mid</filename
+> och <filename
+>C.mid</filename
+>. Vid detta tillfälle kan du använda dialogrutan <guimenuitem
+>Spara spellista</guimenuitem
+>, skriva in namnet på den nya spellistan, så är du klar. Du har redan en ny spellista som innehåller &MIDI;-filerna A, B och C, som inte tas bort när &kmid; avslutas. </para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="hall-of-kmids-friends">
+<title
+>Galleri med &kmid;s vänner</title>
+
+<para
+>Det här är några av dem som har skickat &MIDI;-filer eller ett vykort. Tack allesamman! </para>
+
+<itemizedlist>
+<listitem>
+<para
+>Ola Sigurdson - <literal
+>Taking Care of Business</literal
+> (Bachman Turner Overdrive)</para>
+</listitem>
+<listitem>
+<para
+>EG Lim - Ett verkligt trevligt vykort från Penang.</para>
+</listitem>
+<listitem>
+<para
+>Guenther Starnberger - <literal
+>Amadeus</literal
+> (Falco) och <literal
+>Schrei Nach Liebe</literal
+> (Die Ärzte)</para>
+</listitem>
+<listitem>
+<para
+>Leandro Terr&eacute;s - <literal
+>All That She Wants</literal
+> och <literal
+>The Sign</literal
+> (Ace of Base)</para>
+</listitem>
+<listitem>
+<para
+>Nick Stoic - Två &MIDI;-filer</para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="about-the-authors">
+<title
+>Om upphovsmännen</title>
+
+<para
+>&kmid; skapades ursprungligen av &Antonio.Larrosa.Jimenez;, från M&aacute;laga (i Spanien). Det har skrivits om, och underhålls och ges ut med namnet &kmid; av &Pedro.Lopez-Cabanillas;, också från Spanien. </para>
+
+<para
+>Tack till följande personer som har hjälpt till att utvecklar &kmid;: </para>
+
+<itemizedlist>
+<listitem>
+<para
+>Paul J. Leonard <email
+>P.J.Leonard@bath.ac.uk</email
+> - stöd för AWE-kort </para>
+</listitem>
+<listitem>
+<para
+>Sebestyen Zoltan <email
+>szoli@digo.inf.elte.hu</email
+>- överföring till FreeBSD och test av AWE </para>
+</listitem>
+<listitem>
+<para
+>Christian Esken <email
+>esken@kde.org</email
+> - för att ha organiserat ansträngningarna med &kde;:s multimedia </para>
+</listitem>
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;- konfigurationsskript och hjälp med <command
+>automake</command
+> och <command
+>CVS</command
+> </para>
+</listitem>
+<listitem>
+<para
+>Jaroslav Kysela - hjälp med att ta fram stöd för &Linux; Ultrasound Project drivrutin </para>
+</listitem>
+<listitem>
+<para
+>Takashi Iwai och Joseph H. Buehler - fixar för att tonhöjden på AWE-kort var för hög </para>
+</listitem>
+<listitem>
+<para
+>Adrian Knoth - för att ha gett mig goda nyheter och många förslag </para>
+</listitem>
+<listitem>
+<para
+>Kevin Street - programfix för att stöda FreeBSD 3.0 </para>
+</listitem>
+<listitem>
+<para
+>Tack också till Jose Luis Sanchez för test av GUS-stöd, Ignacio Garcia för test av AWE-stöd, Hans Petter Bieker, Ola Sigurdson, Marc Diefenbruch, Peter Gritsch, Magnus Pfeffer, Urko Lusa, Peter-Paul Witta, Thorsten Westheider, Ulrich Cordes och alla som skickat en patch till mig, en felrapport eller bara e-post för att uppmuntra mig. </para>
+</listitem>
+<listitem>
+<para
+>Och förstås till alla fantastiska musiker på nätet som fortsätter att ge oss alla underbara &MIDI;- och Karaoke-filer. </para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="copyright-and-license">
+<title
+>Copyright och licens</title>
+
+<para
+>Program and dokumentation copyright 1999-2001 &Antonio.Larrosa.Jimenez; </para>
+<para
+>Program and dokumentation copyright 2009-2010 &Pedro.Lopez-Cabanillas; </para>
+
+<para
+>Översättning Stefan Asserhäll <email
+>stefan.asserhall@comhem.se</email
+></para
+> 
+&underFDL; &underGPL; </sect1>
+
+</chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="how-to-obtain-kmid">
+<title
+>Hur man skaffar &kmid;</title>
+
+<para
+>&kmid; finns på hemsidan <ulink url="http://sourceforge.net/projects/kmid2"
+>http://sourceforge.net/projects/kmid2</ulink
+>. På hemsidan kan du följa utvecklingen, se en del information om det, några skärmbilder, etc. </para>
+
+</sect1>
+
+<sect1 id="requirements">
+<title
+>Krav</title>
+
+<para
+>För att fungera kräver &kmid;:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>&kde;-plattform </para>
+</listitem>
+<listitem>
+<para
+>&Linux; med ALSA-ljud, &MIDI;-drivrutiner och ALSA-biblioteket </para>
+</listitem>
+<listitem>
+<para
+>Ett ljudkort. Ett bra ljudkort och/eller extern synthesizer rekommenderas, eftersom ljudkvaliteten i stor utsträckning beror på ljudkortet. </para>
+</listitem>
+</itemizedlist>
+
+</sect1>
+
+<sect1 id="compilation-and-installation">
+<title
+>Kompilering och installation</title>
+&install.compile.documentation; <para
+>Några exempel finns installerade i <filename class="directory"
+>&dollar;<envar
+>KDEDIR</envar
+>/share/apps/kmid</filename
+> </para>
+
+</sect1>
+
+</appendix>
+
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

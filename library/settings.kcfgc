@@ -1,0 +1,8 @@
+File=kmid.kcfg
+ClassName=Settings
+Mutators=true
+UseEnumTypes=true
+GlobalEnums=true
+Singleton=false
+Visibility=KMIDBACKEND_EXPORT
+Namespace=KMid

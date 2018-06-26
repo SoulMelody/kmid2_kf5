@@ -1,0 +1,86 @@
+KMid2 is a MIDI/Karaoke player for KDE. 
+
+Developed by Antonio Larrosa more than ten years ago, KMid it is a venerable 
+classic, ported to KDE4 and some new platforms.
+
+KMid2 is a rewrite from scratch, with a new architecture consisting in that MIDI
+sequencing is implemented on pluggable backends. The ALSA sequencer backend
+for Linux, and also the Mac OSX and Windows backends are included here, but it 
+should be possible to write native backends for other platforms in the future. 
+
+Here are some major features from KMid that have been implemented in KMid2:
+* Playback to external hardware MIDI devices.
+* Allow to use software synths as well, like Timidity++ and QSynth/FluidSynth.
+* Tempo and volume controls.
+* Added a pitch (transpose) control.
+* Configurable character encodings for lyrics.
+* Channel view, with mute and solo controls and instrument selector.
+* Player Piano view.
+
+Some changes regarding the former KMid are:
+* Removed the deprecated OSS /dev/sequencer interface support. It has been 
+dropped from OSSv4, anyway.
+* Avoid using fork/kill for play/pause/stop actions.
+* The new ALSA sequencer implementation doesn't create/destroy the client and
+port instances on each play/pause/stop action. This enables the usage of MIDI
+patch bay applications like aconnect, kaconnect and qjackctl.
+
+Technical details
+-----------------
+
+The KMid::Backend is modelled after several Phonon interfaces. There is not a
+dependency on Phonon, only inspiration and C&P. There is a KMid::MIDIObject
+abstract class that resembles more or less a Phonon::MediaObject encapsulating
+the sequencer functionality, and a KMid::MIDIOutput class that represents a MIDI
+output port, similar to Phonon::AudioOutput. Main differences are:
+* KMid::MIDIObject time is measured in musical time (ticks) instead of
+milliseconds. Additions: timeSkew, textEncoding, lyrics and tempo properties,
+and several signals, one for each MIDI event type.
+* KMid::MIDIOutput has pitchShift and midiMap properties. Volume and mute
+properties take a MIDI channel argument. There are also some real-time MIDI 
+event slots, one for each MIDI event type.
+
+The ALSA sequencer backend uses a C++/Qt wrapper around the ALSA library
+sequencer interface (Drumstick) that is too young to be found as an external
+dynamic library, so the sources have been included here and will be statically
+linked to the ALSA backend, unless the shared libraries are found at build time. 
+This is convenient if you are building KMid for yourself, and it is your choice 
+to install a shared set of drumstick libraries instead of using the static 
+versions. However, if you are packaging KMid for distributions, please check if 
+there are in your distribution any packages of other programs using the same 
+libraries, and if so try to use shared dynamic libraries, if it is possible. 
+Programs using Drumstick at this moment are KMetronome and KMidimon, in addition 
+to KMid. The latest Drumstick library sources, documentation and examples can be 
+found here: https://sourceforge.net/projects/drumstick/files/
+
+The Mac OSX backend uses CoreMIDI, CoreAudio and AudioToolkit frameworks, 
+including support for the Apple DLS soft-synth. Everything is already included
+in the operating system, ready to make noise out of the box.
+
+The Windows backend uses the native MIDI streaming from Windows MM API. The soft
+synth provided by Microsoft doesn't need launch control or parameters, so there
+is no need for a Soft-Synth configuration page, making noise out of the box as
+well. The library drumstick-file is used to parse MIDI/karaoke files.
+
+How To Build KMid2
+------------------
+
+cd <project_name_path>
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`
+make
+make install or su -c 'make install'
+
+to uninstall the project:
+make uninstall or su -c 'make uninstall'
+
+Note: you can use another build path. Then cd in your build dir and:
+export KDE_SRC=path_to_your_src
+cmake $KDE_SRC -DCMAKE_INSTALL_PREFIX=$KDEDIR -DCMAKE_BUILD_TYPE=debugfull
+
+Comments?
+---------
+
+Please send comments, questions, rants, suggestions, complaints 
+to: Pedro Lopez-Cabanillas <plcl@users.sf.net>

@@ -1,0 +1,40 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="kmid_part" version="1">
+<MenuBar>
+  <Menu name="view"><text>&amp;View</text>
+    <Action name="play"/>
+    <Action name="pause"/>
+    <Action name="stop"/>
+  </Menu>
+</MenuBar>
+<ToolBar name="mainToolBar">
+  <Action name="play"/>
+  <Action name="pause"/>
+  <Action name="stop"/>
+</ToolBar>
+<State name="stopped_state">
+    <enable>
+        <Action name="play"/>
+    </enable>
+    <disable>
+        <Action name="stop"/>
+        <Action name="pause"/>
+    </disable>
+</State>
+<State name="playing_state">
+    <enable>
+        <Action name="stop"/>
+        <Action name="pause"/>
+    </enable>
+    <disable>
+        <Action name="play"/>
+    </disable>
+</State>
+<State name="disabled_state">
+    <disable>
+        <Action name="play"/>
+        <Action name="pause"/>
+        <Action name="stop"/>
+    </disable>
+</State>
+</kpartgui>

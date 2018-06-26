@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <include>kglobalsettings.h</include>
+  <include>kmidmacros.h</include>
+  <kcfgfile name="kmidrc"/>
+  <group name="Settings">
+    <entry name="font" type="Font">
+      <label>The font used to display the lyrics.</label>
+      <default code="true">KGlobalSettings::fixedFont()</default>
+    </entry>
+    <entry name="size" type="Int">
+      <label>Size of the lyrics font</label>
+      <default>22</default>
+    </entry>
+    <entry name="color" type="Color">
+      <label>Color of the lyrics text, after being played</label>
+      <default code="true">Qt::darkYellow</default>
+    </entry>
+    <entry name="encoding" type="String">
+      <label>Initial lyrics text encoding</label>
+    </entry>
+    <entry name="midi_backend" type="String">
+      <label>MIDI backend.</label>
+    </entry>
+    <entry name="output_connection" type="String">
+      <label>MIDI port connection.</label>
+    </entry>
+    <entry name="midi_mapper" type="String">
+      <label>MIDI mapper file.</label>
+      <default></default>
+    </entry>
+    <entry name="player_autostart" type="Bool">
+      <label>Start playing right after loading a song.</label>
+      <default>true</default>
+    </entry>
+    <entry name="player_loop" type="Bool">
+      <label>Loop the play list.</label>
+      <default>false</default>
+    </entry>
+    <entry name="playlist_shuffle" type="Bool">
+      <label>Shuffle the play list.</label>
+      <default>false</default>
+    </entry>
+    <entry name="reset_mode" type="Enum">
+      <label>MIDI reset message mode.</label>
+      <choices name="ResetMode">
+        <choice name="None"/>
+        <choice name="GM"/>
+        <choice name="GS"/>
+        <choice name="XG"/>
+        <choice name="Syx"/>
+      </choices>
+      <default>None</default>
+    </entry>
+    <entry name="sysex_file" type="Url">
+      <label>System Exclusive MIDI file for reset message.</label>
+    </entry>
+    <entry name="advanced_ports" type="Bool">
+      <label>Show advanced MIDI ports.</label>
+      <default>false</default>
+    </entry>
+    <entry name="auto_song_settings" type="Bool">
+      <label>Load and save automatically the song settings.</label>
+      <default>true</default>
+    </entry>
+
+    <entry name="exec_fluid" type="Bool">
+      <label>Run FluidSynth at startup</label>
+      <default>false</default>
+    </entry>
+    <entry name="cmd_fluid" type="Url">
+      <label>Command</label>
+      <default>/usr/bin/fluidsynth</default>
+    </entry>
+    <entry name="audio_fluid" type="Enum">
+      <label>Audio Output</label>
+      <choices name="AudioFluid" prefix="fluid_">
+        <choice name="alsa"/>
+        <choice name="pulseaudio"/>
+        <choice name="oss"/>
+        <choice name="jack"/>
+      </choices>
+      <default>alsa</default>
+    </entry>
+    <entry name="audiodev_fluid" type="String">
+      <label>Audio Device</label>
+      <default></default>
+    </entry>
+    <entry name="rate_fluid" type="String">
+      <label>Sample Rate</label>
+      <default></default>
+    </entry>
+    <entry name="sf2_fluid" type="Url">
+      <label>Sound Font</label>
+      <default>/usr/share/soundfonts/FluidR3_GM.sf2</default>
+    </entry>
+    <entry name="args_fluid" type="String">
+      <label>Arguments</label>
+      <default></default>
+    </entry>
+
+    <entry name="exec_timidity" type="Bool">
+      <label>Run TiMidity++ at startup</label>
+      <default>false</default>
+    </entry>
+    <entry name="cmd_timidity" type="Url">
+      <label>Command</label>
+      <default>/usr/bin/timidity</default>
+    </entry>
+    <entry name="audio_timidity" type="Enum">
+      <label>Audio Output</label>
+      <choices name="AudioTimidity" prefix="timidity_">
+        <choice name="alsa"/>
+        <choice name="pulseaudio"/>
+        <choice name="oss"/>
+        <choice name="jack"/>
+      </choices>
+      <default>alsa</default>
+    </entry>
+    <entry name="audiodev_timidity" type="String">
+      <label>Audio Device</label>
+      <default></default>
+    </entry>
+    <entry name="rate_timidity" type="String">
+      <label>Sample Rate</label>
+      <default></default>
+    </entry>
+    <entry name="args_timidity" type="String">
+      <label>Arguments</label>
+      <default>--sequencer-ports=1</default>
+    </entry>
+    
+    <entry name="exec_dls" type="Bool">
+      <label>Enable DLS Synth at startup</label>
+      <default>true</default>
+    </entry>
+    <entry name="default_dls" type="Bool">
+      <label>Default Apple DLS Sound Set</label>
+      <default>true</default>
+    </entry>
+    <entry name="soundfont_dls" type="Url">
+      <label>Sound Font</label>
+      <default></default>
+    </entry>
+    <entry name="reverb_dls" type="Bool">
+      <label>Use Internal Reverb</label>
+      <default>true</default>
+    </entry>
+
+  </group>
+</kcfg>

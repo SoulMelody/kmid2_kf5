@@ -1,0 +1,36 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=KMid/backend
+Comment=KMid backend
+Comment[bg]=Ядро за KMid
+Comment[ca]=Dorsal del KMid
+Comment[ca@valencia]=Dorsal del KMid
+Comment[cs]=Podpůrná vrstva KMid
+Comment[da]=KMid-motor
+Comment[de]=KMid-Modul
+Comment[en_GB]=KMid backend
+Comment[es]=Motor KMid
+Comment[et]=KMidi taustaprogramm
+Comment[fr]=Module KMid
+Comment[it]=Backend KMid
+Comment[km]=កម្មវិធី​ផ្នែក​ខាង​ក្រោយ​របស់ KMid
+Comment[nb]=KMid bakgrunnsmotor
+Comment[nds]=KMid-Hülpprogramm
+Comment[nl]=Backend voor KMid
+Comment[nn]=Gammal motor
+Comment[pt]=Infra-estrutura do KMid
+Comment[pt_BR]=Infraestrutura do KMid
+Comment[ru]=Модуль для KMid
+Comment[sr]=Зачеље за К‑мид
+Comment[sr@ijekavian]=Зачеље за К‑мид
+Comment[sr@ijekavianlatin]=Začelje za KMid
+Comment[sr@latin]=Začelje za KMid
+Comment[sv]=Kmid-gränssnitt
+Comment[th]=แบ็กเอนด์ของ KMid
+Comment[tr]=KMid arka ucu
+Comment[uk]=Сервер KMid
+Comment[x-test]=xxKMid backendxx
+Comment[zh_CN]=KMid 后端
+
+[PropertyDef::X-PluginIdentifier]
+Type=string
